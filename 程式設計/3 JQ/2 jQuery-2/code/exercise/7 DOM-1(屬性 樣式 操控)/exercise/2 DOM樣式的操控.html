@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>CSS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background: blue;
+        }
+    </style>
+  </head>
+  <body>
+      <div class="container">
+          <div>
+              <button type="button" id="getCss">取得背景顏色</button>
+              <button type="button" id="setCss">設定背景顏色</button>
+              <button type="button"  id="extend">伸展</button>
+          </div>
+          <br>
+          <div class="box"></div>
+      </div>
+    <script>
+        // =========================
+        // 取得css 屬性的內容==> 1個參數
+        // 變更css 屬性的內容==> 2個參數
+        // =========================
+        // 複習：按下「取得背景顏色」按鈕，
+        //       彈窗 來顯示 矩型的 背景顏色
+        // =========================
+        // $("#getCss").click(function(){
+        //   let bg=$(".box").css("background");
+        //   alert(bg);
+        // })
+        
+        // =========================
+        // 複習：按下「設定背景顏色」按鈕，
+        //       把矩型顏色變更為 粉紅色
+        // =========================
+        // $("#setCss").click(function(){
+        //     $(".box").css("background", "pink")
+        // })
+        
+        // =========================
+        // 練習：按下「伸展」按鈕，
+        //       把矩型向右延伸 50px
+        // =========================
+        // $("#extend").click(function(){
+        //     $(".box").css("width", ------)
+        // })
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" class="inputData" placeholder="請輸入待辦事項">
+    <input type="button" class="saveBtn" value="儲存待辦">
+
+    <ul class="list">
+        <li>待辦事項一<input type="button" class="delete" value="刪除待辦"></li>
+        <li>待辦事項二<input type="button" class="delete" value="刪除待辦"></li>
+    </ul>
+
+    <script>
+        let data = [
+            {
+                "content": "待辦事項一"
+            },
+            {
+                "content": "今天記得要帶便當"
+            },
+            {
+                "content": "今天開心"
+            }
+        ]
+        // ======================================
+        // 練習 準備要render到網頁上的資料data內的資料 
+        // ======================================
+
+        // 練習
+
+        str = "";
+
+        data.forEach(function (item) {
+
+            str += `<li>${item.content}<input type="button" class="delete" value = "刪除待辦"></li>`
+
+        })
+
+        console.log(str);
+
+        const List = document.querySelector(".list");
+        console.log(List);
+
+        List.innerHTML = str;
+
+    </script>
+</body>
+
+</html>

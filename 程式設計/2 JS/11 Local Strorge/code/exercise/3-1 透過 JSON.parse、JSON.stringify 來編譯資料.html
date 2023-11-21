@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // =========================================
+        // 透過 JSON.parse、JSON.stringify 來編譯資料
+        // (重要觀念：localStorage只能保存 string型態資料)
+        // 1 將 物件   轉為 string型態
+        // 2 將 string 轉為 物件型態
+        // =========================================
+        let classmate = [
+            {name : "Amber"},
+            {name : "Jasper"}
+        ]
+
+        // =========================================
+        // 將物件字串化 JSON.stringify()  放入 localStorage中
+        // 練習： 把 classmate 放入 localStorage
+        //        key為 allClassmate
+        // =========================================
+
+        let classmateString = JSON.stringify(classmate);                  
+        localStorage.setItem('allClassmate',classmateString);
+
+        // =========================================
+        // 於localStorage中 取出的資料為字串型態，
+        // 並轉換成物件資料
+        // =========================================
+        // 練習： 於localStorage 中取出 allClassmate 物件的資料
+        //        並把第一筆資料name屬性的內容顯示於 console
+        // =========================================
+        let getData = localStorage.getItem('allClassmate');
+        
+        // 第一筆資料顯示於console上
+        console.log(getData[0].name);//undefined
+        
+        // 轉換成物件資料
+        let getDataAry = JSON.parse(getData) ;              
+        
+        console.log(getDataAry);
+
+        // 第一筆資料name屬性的內容顯示於 console
+        console.log(getDataAry[0].name);
+
+    </script>
+</body>
+</html>

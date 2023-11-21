@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul style="padding:50px;background:#000;color:#fff" class="list"></ul>
+
+    <script>
+        let country = [
+            {
+                farmer:'陳時鐘'
+            }
+            ,{
+                farmer:'陳擊中'
+            }
+        ]
+        let List = document.querySelector('.list');
+
+        //更新農場資料
+        function updateList(){
+            let str = '';
+            country.forEach(function(item,index){
+                str +=  `<li data-num="${index}">${item.farmer}</li>`
+            })
+            List.innerHTML = str;
+        }
+
+        updateList();
+        // ===============================
+        ///練習：於console顯示 點擊(選擇到) 到哪位農夫
+        // ===============================
+        // 綁定事件
+        List.addEventListener('click',checkList,false);
+
+        function checkList(){
+            
+            // 檢查點擊倒正確的項目
+            
+            // 取得點擊項目的 index
+            
+            let num =          ;
+            console.log(num);
+
+            console.log(`你選擇的農夫是${country[num].farmer}`);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS & Style 的兩種姿勢 </title>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/12.css">
+</head>
+</head>
+
+<body>
+    <div id="app">
+        <h1 id="title">TVDI</h1>
+        <div class="btnbox">
+            <a id="fontSizeBig_btn" href="#">放大</a>
+            <a id="fontSizeSmall_btn" href="#">縮小</a>
+            <a id="fontSizeNormal_btn" href="#">正常</a>
+        </div>
+    </div>
+    <script>
+        //===============================================
+        // .css ==>可使用「物件」的寫法 ，來設定一個以上CSS屬性
+        // 另一種寫法
+        //===============================================
+
+        $(function () {
+            // 取得物件
+            let Title = $('#title');
+
+            // ==========================================
+            // 練習：「物件」的寫法 ，來設定一個以上CSS屬性
+            // ==========================================
+
+            $("#fontSizeBig_btn").on("click", function () {
+                Title.css({
+                    "font-size": "200px",
+                    "color": "#00d0ff",
+                });
+            })
+
+            $("#fontSizeSmall_btn").on("click", function () {
+                Title.css({
+                    "font-size": "100px",
+                    "color": "#fffac1",
+                });
+            })
+
+            $("#fontSizeNormal_btn").on("click", function () {
+                Title.css({
+                    "font-size": "150px",
+                    "color": "#ffffff",
+                });
+            })
+        })      
+    </script>
+</body>
+
+</html>

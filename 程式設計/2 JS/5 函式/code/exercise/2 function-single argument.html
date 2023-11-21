@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>       
+        //建立函式-->函式的參數(parameter)
+        
+
+        // 呼叫函式的參數(argument)引數
+
+        // ================================================
+        // function a(num){
+        //     console.log(`你輸入的數字是${num}`)
+        // }
+
+        // a();
+        // a(33);
+        // console.log(num); 
+        // a(11);
+        // 註：參數的scope概念(參數只存活在 「區塊」 中)
+        // ================================================
+        // 例題：以下為判斷輸入數值為奇數或偶數的程式
+        // ================================================
+        
+        // let myInput = Number(prompt("請輸入正整數",""));
+        // if( myInput % 2 == 0){
+        //     console.log(`輸入數值${myInput}為偶數`);
+        // }else {
+        //     console.log(`輸入數值${myInput}為奇數`);
+        // }
+
+        // -------------------------------------------
+        // 練習： 參考上例 撰寫 檢查數值為 奇數或偶數 之函式
+        
+        // let myInput = Number(prompt("請輸入正整數",""));
+        // function checkNumber(n){
+        //     if( n % 2 == 0){
+        //     console.log(`輸入數值${n}為偶數`);
+        // }else {
+        //     console.log(`輸入數值${n}為奇數`);
+        // }
+        // }
+        
+        // checkNumber(myInput);
+        
+        //====================================
+        //練習：設計一個1+...+n的函式
+        //====================================
+        
+        // function calc(regina){
+        //     let total=0
+        //     for(let i=1;i<=regina;i++){
+        //         // console.log(i);
+        //         total+=i;
+        //     }
+        //     console.log(total);
+        // }
+        
+        // calc(10);
+        // calc(3);
+        
+        //=========================================
+        //練習：設計一個1+...+n的函式（用prompt與使用者互動）
+        //=========================================
+        //
+        function calc(regina){
+            let total=0
+            for(let i=1;i<=regina;i++){
+                // console.log(i);
+                total+=i;
+            }
+            console.log(total);
+        }
+
+        let inputNum=Number(prompt("輸入整數",""));
+        calc(inputNum);
+
+
+
+    </script>
+</body>
+</html>

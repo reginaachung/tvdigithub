@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-4</title>
+</head>
+
+<body>
+    <h3>HTML DOM 網頁畫面操作</h3>
+    <div id="content">練習網頁畫面操作</div>
+
+    <button onclick="change()">點我</button>
+
+    <script>
+        // ==========================================
+        // 練習1： 請找到節點 div ---(使用 querySelector)
+        //        並顯示 innerHTML             
+        // =============================================
+
+        // console.log(document.querySelector("#content"));
+        // console.log(document.querySelector("#content").innerHTML);
+
+        // ==========================================
+        // 練習2： 承上，設定變數簡化寫法
+        // =============================================
+        // // 取得物件
+
+        // let Content=document.querySelector("#content");
+
+        // // 操作物件
+
+        // console.log(Content);
+        // console.log(Content.innerHTML);
+
+        // ==========================================
+        // 練習3： 1 點擊 按鈕 執行change()
+        //         2 不要整個畫面都被變更，只要改變div的內容為「新的內容」
+        // =============================================
+
+        function change() {
+            // 取得標籤物件!!!!!
+
+            let Content = document.querySelector("#content");
+            console.log(Content);
+
+            // 操作標籤物件
+            Content.innerHTML = "新的內容";
+            console.log(Content.innerHTML);
+        }
+
+    </script>
+</body>
+
+</html>

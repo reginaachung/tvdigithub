@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 建立物件成員</title>
+</head>
+<body>
+    <script>
+        //建立物件
+
+        let regina = new Object();
+
+        regina.x = 3;
+        regina.y = 4;
+
+        //「函式」也可以是物件的成員
+
+        regina.show = function(){
+            console.log("hello");
+        }
+
+        //使用物件
+        
+        console.log(regina);
+        console.log(regina.x);
+        console.log(regina.y);
+
+        console.log(regina.x + regina.y);
+
+        regina.show();
+
+    </script>
+</body>
+</html>

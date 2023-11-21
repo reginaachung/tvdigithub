@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技數器</title>
+</head>
+
+<body>
+    <input type="button" value="點擊" class="btn">
+
+    <!-- ul.list>li*2{標題} -->
+    <ul class="list">
+        <li>標題1</li>
+        <li>標題2<input type="button" value="按鈕" class="btn"></li>
+    </ul>
+
+    <script>
+        // =================================================
+        // 練習： 監聽 點擊到了什麼
+        // 當 點擊到 「點擊」按鈕 ==> 顯示 「你點擊到UL外部的按鈕」
+        //           「按鈕」按鈕 ==> 顯示 「你點擊到UL內部的按鈕」
+        // =================================================
+
+        // const Btn = document.querySelector(".btn");
+        // const List = document.querySelector(".list");
+
+        // --------------------------------------------
+        // 監聽 點擊到「點擊」按鈕
+        // 顯示 「你點擊到UL外部的按鈕」
+        // --------------------------------------------
+
+        // Btn.addEventListener('click', function(e){
+        // // //     console.log(e);
+        //     console.log(e.target)
+        //     // console.log(e.target.innerHTML);
+        //     console.log(e.target.nodeName);
+
+        //     if(e.target.nodeName == "INPUT"){
+        //         console.log('你點擊到UL外部的按鈕')
+        //     }
+        // })
+
+        // --------------------------------------------
+        // 練習： 
+        // 監聽 點擊到「按鈕」按鈕
+        // 顯示 「你點擊到UL內部的按鈕」
+        // --------------------------------------------
+
+        // const Btn = document.querySelector(".btn");
+        // const List = document.querySelector(".list");
+
+        // 程式碼
+
+        // List.addEventListener("click",function(e){
+        //     // console.log(e.target);
+        //     // console.log(e.target.nodeName);
+
+        //     if(e.target.nodeName == "INPUT"){
+        //         console.log("你點擊到UL內按鈕")
+        //     }
+
+        // })
+
+        // =============================================
+        // 承上,
+        // 練習： 當點擊到「標題1」==>「你點擊到「標題1」
+        //        當點擊到「標題2」==>「你點擊到「標題2」
+        // =============================================
+
+        const Btn = document.querySelector(".btn");
+        const List = document.querySelector(".list");
+
+        List.addEventListener("click", function (e) {
+            //     // console.log(e);
+            //     // console.log(e.target);
+            // console.log(e.target.nodeName);
+            //     console.log(e.target.innerHTML);
+
+            // if (e.target.nodeName == "INPUT") {
+            //     console.log("你點擊到UL內按鈕")
+            // }
+            // ---------------------------------- 
+            // 程式碼 
+            console.log(e.target.innerHTML);
+
+            if (e.target.innerHTML == "標題1") {
+                console.log("你點擊到標題1")
+            } else {
+                console.log("你點擊到標題2")
+            }
+        })
+        
+        // -----------------------------------
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 國中各校人數統計JSON
+        // 資料下載網址 http://odata.tn.edu.tw/ebookapi/api/getOdataJH
+
+        // 載入資料
+        data = [
+            { "school": "復興國中", "num": "2764" }, { "school": "後甲國中", "num": "1938" }, { "school": "民德國中", "num": "1749" }, { "school": "建興國中", "num": "1681" }, { "school": "崇明國中", "num": "1534" }, { "school": "永康國中", "num": "1468" }, { "school": "大灣高中", "num": "1416" }, { "school": "德光高中", "num": "1383" }, { "school": "大橋國中", "num": "1379" }, { "school": "歸仁國中", "num": "1279" }, { "school": "安南國中", "num": "1258" }, { "school": "新東國中", "num": "1191" }, { "school": "佳里國中", "num": "1091" }, { "school": "中山國中", "num": "1084" }, { "school": "金城國中", "num": "1075" }, { "school": "海佃國中", "num": "970" }, { "school": "昭明國中", "num": "929" }, { "school": "安平國中", "num": "914" }, { "school": "忠孝國中", "num": "883" }, { "school": "大成國中", "num": "781" }, { "school": "新化國中", "num": "733" }, { "school": "和順國中", "num": "727" }, { "school": "南新國中", "num": "714" }, { "school": "聖功女中", "num": "682" }, { "school": "麻豆國中", "num": "680" }, { "school": "南科實中", "num": "665" }, { "school": "興國高中", "num": "646" }, { "school": "新市國中", "num": "643" }, { "school": "善化國中", "num": "639" }, { "school": "安順國中", "num": "637" }, { "school": "仁德國中", "num": "586" }, { "school": "文賢國中", "num": "520" }, { "school": "永仁高中", "num": "494" }, { "school": "關廟國中", "num": "470" }, { "school": "六甲國中", "num": "403" }, { "school": "安定國中", "num": "403" }, { "school": "新興國中", "num": "393" }, { "school": "南寧高中", "num": "374" }, { "school": "白河國中", "num": "332" }, { "school": "沙崙國中", "num": "317" }, { "school": "下營國中", "num": "284" }, { "school": "玉井國中", "num": "252" }, { "school": "學甲國中", "num": "245" }, { "school": "西港國中", "num": "233" }, { "school": "土城高中", "num": "226" }, { "school": "鹽水國中", "num": "217" }, { "school": "成功國中", "num": "211" }, { "school": "明達高中", "num": "196" }, { "school": "仁德文賢國中", "num": "179" }, { "school": "延平國中", "num": "172" }, { "school": "後壁國中", "num": "150" }, { "school": "太子國中", "num": "144" }, { "school": "官田國中", "num": "143" }, { "school": "大內國中", "num": "120" }, { "school": "楠西國中", "num": "119" }, { "school": "東原國中", "num": "117" }, { "school": "東山國中", "num": "106" }, { "school": "將軍國中", "num": "95" }, { "school": "佳興國中", "num": "89" }, { "school": "北門國中", "num": "86" }, { "school": "竹橋國中", "num": "77" }, { "school": "左鎮國中", "num": "68" }, { "school": "南化國中", "num": "67" }, { "school": "光華高中", "num": "64" }, { "school": "柳營國中", "num": "58" }, { "school": "山上國中", "num": "54" }, { "school": "菁寮國中", "num": "48" }, { "school": "龍崎國中", "num": "39" }, { "school": "後港國中", "num": "15" }, { "school": "崑山中學", "num": "2" },
+        ];
+
+        // =================================
+        // 練習1：有幾所學校
+        // =================================
+
+        //方法1
+        // let schoolCount=data.length;
+
+        // console.log(`經統計共有${schoolCount}所學校`);
+
+        // //方法2
+        // let schoolCount = 0;
+
+        // data.forEach(function (item) {
+        //     schoolCount++;
+        // });
+
+        // console.log(`經統計共有${schoolCount}所學校`);
+
+        // ===========================================
+        // 練習2：資料中所有國中生的人數總共有多少人？
+        // ===========================================
+
+        // let studentCount = 0;
+        // data.forEach(function (item) {
+        //     studentCount+=Number(item.num);
+        // })
+
+        // console.log(`經統計共有${studentCount}學生`);
+
+        // ======================================
+        // 練習3:學生人數超過 1000人的有幾所
+        // ======================================
+
+        let bigSchoolCount = 0;
+        data.forEach(function (item) {
+
+            if (item.num > 1000) { 
+                bigSchoolCount++; 
+            }
+
+        })
+
+        console.log(`經統計超過1000人的學校共有${bigSchoolCount}所`);
+
+    </script>
+</body>
+
+</html>

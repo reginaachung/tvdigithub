@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background: pink;
+        }
+    </style>
+  </head>
+  <body>
+      <div class="contaUper">
+          <div class="py-2">
+            <button type="button"  id="slideUp">slideUp</button>
+            <button type="button"  id="slideDown">slideDown</button>
+            <button type="button"  id="slideToggle">slideToggle</button>
+          </div>
+          <br><br>
+          <div class="box"></div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <script>
+      // ===========================
+      // .slideUp()   .slideDown()   .slideToggle()  
+      //    滑入       滑出               滑入/滑出
+      // ===========================
+
+        $("#slideUp").click(function(){
+            // $(".box").slideUp();
+            // $(".box").slideUp('slow');
+            // $(".box").slideUp('fast');
+            $(".box").slideUp(3000);
+        })
+
+        $("#slideDown").click(function(){
+            // $(".box").slideDown();
+            // $(".box").slideDown('slow');
+            // $(".box").slideDown('fast');
+            $(".box").slideDown(3000);
+        })
+        
+        $("#slideToggle").click(function(){
+            // $(".box").slideToggle();
+            // $(".box").slideToggle(slow);
+            // $(".box").slideToggle('fast');
+            $(".box").slideToggle(3000);
+        })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">
+        <h2 class="title">
+            <span>標題1</span>
+            <input type="button" class="view1" value="TVDI-1">
+        </h2>
+        <h2 class="title">
+            <span>標題2</span>
+            <input type="button" class="view2" value="TVDI-2">
+        </h2>
+        <h2 class="title">
+            <span>標題3</span>
+            <input type="button" class="view3" value="TVDI-3">
+        </h2>
+    </div>
+    <script>
+        // 監聽大範圍
+        const Box = document.querySelector(".box");
+        // console.log(Box);
+
+        Box.addEventListener("click", function (e) {
+            // console.log(e.target.nodeName);
+            //練習：點擊到 按鈕 ==>顯示該按鈕的 value
+
+            // if(e.target.nodeName=="INPUT"){
+            //     console.log(e.target.value);
+            //     console.log(e.target.getAttribute("value"));
+            // }
+
+            // ===================================================
+
+            //練習：點擊到第一個 按鈕 ==>顯示該按鈕的 type 內容
+            // 
+            if (e.target.getAttribute("class") == "view1") {
+                console.log(e.target.getAttribute("type"));
+                console.log(e.target.type);
+            }
+        })
+
+    </script>
+</body>
+
+</html>

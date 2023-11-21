@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 使用JSON建立物件</title>
+</head>
+<body>
+    <script>
+        let man={
+                age:25,
+                name:'Jasper',
+                talk:function(){
+                console.log('Hello 我是',this.name,'年齡',this.age,'歲');
+                }
+        };  
+        
+        // ===============================
+        // 新增物件屬性
+        // ===============================
+        // 練習 新增屬性 gender  值為 男
+
+        man.gender="男"
+        console.log(man);
+
+        // ====================s===========
+        // 修改物件值
+        // ===============================
+        // 練習： 請將 年齡 更改為 30歲
+
+        man.age=30;
+        console.log(man);
+
+        // =================================
+        // 刪除物件的資料
+        // =================================
+        // 練習： 請刪除 物件中的 "性別" 屬性
+
+        delete man.gender;
+        console.log(man);
+        
+    </script>
+</body>
+</html>

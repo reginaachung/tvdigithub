@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // =============================
+        // map 觀念補充：
+        // 陣列之map() 
+        // 1 於 map()方法內 須搭配 return使用 
+        // 2 map()會產生新陣列，而 forEach()則不會產生新的陣列
+        // =========================
+        // 例1：於map()內，無 return 之情形
+        // ==========================================
+
+        // const arr = [10, 20, 30, 40, 50];
+
+        // const newArr=arr.map(function(item){
+        //     item*item;  //因為沒有return元素,所以每個元素都是undefined
+        // })
+
+        // console.log(newArr);
+
+        // ==========================================
+        // 例2：把例1 之 map() 改為 forEach()觀察結果
+        // ==========================================
+
+        const arr = [10, 20, 30, 40, 50];
+
+        const newArr = arr.forEach(function (item) {
+            return item * item;  //0
+        })
+
+        console.log(newArr);    //undefined
+        //因為使用forEach,不會產生新的陣列,僅針對每個元素做處理而已
+
+    </script>
+</body>
+
+</html>

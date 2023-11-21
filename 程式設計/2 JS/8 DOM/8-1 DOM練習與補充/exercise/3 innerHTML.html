@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <p>hello!</p>
+    </div>
+    
+    
+    <script>
+        // ================================
+        // innerHTML : 插入HTML標籤
+        // ================================
+        
+        const Main = document.querySelector(".main");
+        console.log(Main);
+        
+        // =============================================
+        // 練習：div節點(.main) 內之HTML ，
+        //       變更為
+        //       <h1 calss = "header" style="color:red">標題</h1>
+        // =============================================
+
+        // 程式碼
+        Main.innerHTML="<h1 calss = 'header' style='color:red'>標題</h1>"
+        
+        Main.textContent="<h1 calss = 'header' style='color:red'>標題</h1>"
+        
+        console.log(Main);
+
+    </script>
+</body>
+</html>

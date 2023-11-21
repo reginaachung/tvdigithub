@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Position</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <style>
+        .con{
+            padding: 30px 20px;
+            /* border: 1px solid black; */
+            /* position: relative; */
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background: pink;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="con"></div>  
+    <div class=" con">
+          <div class="box"></div>
+      </div>
+    <script>
+
+      // ================================
+      // .offset() 取得頁面絕對位置
+      // .position() 取得與母容器之相對位置
+      //             (母容器需宣告position: relative之樣式)
+      // ================================
+      // .offset() 絕對位置
+      //==========================
+      let boxOffset=$(".box").offset();
+      console.log(boxOffset)
+      console.log(`與頁面頂邊的距離${boxOffset.top},與頁面左邊的距離${boxOffset.left}`);
+      
+      //==========================
+      // .position()相對位置
+      //==========================
+        let boxPos = $(".box").position();
+        console.log(boxPos);
+        console.log(`與母容器上方的距離${boxPos.top},與母容器左邊的距離${boxPos.left}`);
+        
+    </script>
+  </body>
+</html>

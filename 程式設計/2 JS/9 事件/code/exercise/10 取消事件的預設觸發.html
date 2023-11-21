@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://www.yahoo.com.tw">連結</a>
+    <h1></h1>
+
+    <script>
+        // ============================
+        // 取消事件的預設觸發行為
+        // .preventDefault() -- 取消預設觸發行為
+        // ============================
+
+        // //行不通
+        
+        // const myLink = document.querySelector("a");
+
+        // myLink.addEventListener("click",function(e){
+        //     console.log("有被點擊到");
+        // })
+        
+        // ========================================
+        
+        // preventDefault -- 取消預設觸發行為
+        // ========================================
+        
+        const myLink = document.querySelector("a");
+
+        myLink.addEventListener("click",function(e){
+            // 程式碼
+            e.preventDefault();//去掉預設
+        
+            console.log("有被點擊到");
+            document.querySelector("h1").textContent = "Hello";
+        })
+
+    </script>
+</body>
+</html>

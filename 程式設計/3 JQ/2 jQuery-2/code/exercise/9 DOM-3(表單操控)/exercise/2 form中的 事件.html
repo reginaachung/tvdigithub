@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Form</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+      <div class="container">
+          <form action="target.php">
+              <button type="submit" id="" >送出(submit)</button>
+              <button type="button" id="send" >普通按鈕</button>
+              <input type="button" value="input" >
+              <input type="checkbox"><br><br>
+              <div >
+                  <input type="text" id="text" name= "test">
+              </div>
+              <br><br>
+              <div >
+                <select name="" id="select">
+                    <option value="">台北市</option>
+                    <option value="">新北市</option>
+                    <option value="">桃園市</option>
+                </select>
+            </div>
+          </form>
+      </div>
+    <script>
+        // ==============================
+        // 表單的事件
+        // .focus() 到文字方塊內
+        // .blur() 離開文字方塊
+        // 註：要先有.focus()才會有.blur() 的發生
+        // ==============================
+        
+        // $(":text").focus(function(){
+        //       console.log("focus")
+        //   })
+          
+        // ==============================
+        // 要先有.focus()才會有.blur() 的發生
+        // ==============================
+
+        // $(":text").blur(function(){
+        //     console.log("blur")
+        // })
+
+        // ==============================
+        // 表單的事件
+        // .change() 用於偵測 input 或 select 的變化
+        // ==============================
+        // 例：偵測 input的變化
+        // ==============================
+        // $(":text").change(function(){
+          //     console.log("change")
+          // })
+          
+        // ==============================
+        // 例：偵測 select的變化
+        // ==============================
+        // $("#select").change(function(){
+        //   console.log("change")
+        // })
+        
+        // ==============================
+        // 例：偵測 input 和 select的變化
+        // ==============================
+        // $(":text, #select").change(function(){
+        //     console.log("change")
+        // })
+
+        //===========================================
+        // .submit() 綁定 summit事件
+        // 練習：將form中的「普通按鈕」 綁定 .submit()事件
+        //===========================================
+        
+        // $("#send").click(function(){
+        //     $("form").submit();
+        // })
+ 
+    </script>
+  </body>
+</html>

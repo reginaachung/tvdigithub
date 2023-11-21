@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // ===============================================
+        // forEach 為陣列資料處理的「方法」
+        // forEach(function(參數1, 參數2, 參數3)){
+        //  }  
+        // 執行forEach函式 會對陣列中的每個元素 都逐一存取
+        // 參數1：內容
+        // 參數2：index
+        // 參數3：陣列
+        // ===============================================
+        // 練習：以for迴圈 顯示陣列內的元素
+        // ----------------------
+
+        // let data = [30, 50, 99];
+
+        // for(let i=0;i<data.length,i++){
+        //     console.log(data[i]);
+        // }
+
+        // -------------------------------
+        // 練習： 以陣列之 forEach方法撰寫之
+        //        並顯示各參數內容
+        // -------------------------------
+        
+        // let data = [30, 50, 99];
+
+        // data.forEach(function(jon){
+            
+        //     console.log(jon)
+
+        // })
+
+        // ---------------------------------
+        
+        // let data = [30, 50, 99];
+        // let sum=0;
+
+        // data.forEach(function(item){
+        
+        //     // console.log(item);
+        //     sum+=item;
+
+        // })
+
+        // console.log(sum);
+
+        // -----------------------------------
+        // 練習： 箭頭函式的寫法
+        // -----------------------------------
+        
+        // let data = [30, 50, 99];
+        // let sum=0;
+
+        // data.forEach((item)=>{
+        //     sum+=item;
+        // })
+
+        // console.log(sum);
+
+        // ----------------------------
+        // let data = [30, 50, 99];
+
+
+        // =============================
+        // 以下 forEach()的程式區塊執行幾次 ?
+        // =============================
+        
+        let data = [30, 50];
+        // let count=0;
+
+        // data.forEach(function(item){
+        //     console.log(item);
+        //     count++;
+        // })
+        
+        // console.log(`forEach()程式區塊執行${count}次`);
+
+        data.forEach(function(parm1,parm2,parm3){
+
+            console.log(parm1);
+            console.log(parm2);
+            console.log(parm3);
+            console.log('======');
+            
+        })
+
+    </script>
+</body>
+
+</html>

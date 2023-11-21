@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>範例</title>
+    <style>
+        button {
+            color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- ================================
+    練習： 運用this 優化程式碼
+    ================================ -->
+
+    <button onclick="clickit(this)">按鈕1</button>
+    
+    <button onmousedown="down(this)" 
+            onmouseup="up(this)"
+            onmouseout = "out(this)"
+    >按鈕2</button>
+
+    <script>
+        function clickit(Regina){
+            console.log(Regina);//驗證傳過來的是標籤物件
+            Regina.style.color="red";
+        }
+
+        function down(Regina){
+            Regina.style.color="red";
+        }
+        
+        function up(Regina){
+            Regina.style.color="green";
+        }
+
+        function out(Regina){
+            Regina.style.color = "black";
+        }
+    </script>
+</body>
+</html>

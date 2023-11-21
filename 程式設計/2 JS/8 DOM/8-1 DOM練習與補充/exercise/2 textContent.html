@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#"/>
+    <title>Document</title>
+
+</head>
+<body>
+    <h1 >hello world</h1>
+    <h2 class="title1">hello kitty</h2>
+    <script>
+        // =============================
+        // textContent 文字資料
+        // ============================
+        
+        //選取網頁元素
+        const H1 = document.querySelector("h1");
+        const Title1 = document.querySelector(".title1");
+
+        // ===============================================
+        // 練習1 把網頁上 「hello world」 變更為  「你好嗎？// ===============================================
+        console.log(H1.textContent);
+
+        H1.innerHTML= "你好嗎？"
+        H1.textContent= "你好嗎？"
+        
+        // ===============================================
+        // 練習2 把網頁上 「hello kitty」 變更為  「臺北市職能發展學院」
+        // ===============================================
+
+        Title1.textContent="臺北市職能發展學院";
+
+    </script>
+</body>
+</html>

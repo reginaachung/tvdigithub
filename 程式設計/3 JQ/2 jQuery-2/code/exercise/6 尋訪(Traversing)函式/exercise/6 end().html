@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>next prev</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <style>
+      table,
+      th,
+      td {
+        border-collapse: collapse;
+        border: 1px solid black;
+        width: 500px;
+        height: 30px;
+      }
+      th,
+      td {
+        padding: 0.25rem;
+      }
+  </style>
+  </head>
+  <body>
+      <div class="container">
+          <table class="table table-bordered">
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+          </table>    
+      </div>
+    <script>
+        //================================
+        // .end() 回到上一個選取狀態
+        //================================
+        // 複習：點擊滑鼠後，下一個td 變為 紅色
+        //================================
+        
+        // $("td").click(function(){
+        //         $(this).next().css("background", "red")
+        //     })
+            
+        //==============================================
+        // 練習：點擊滑鼠後，自己本身設為 無色 
+        //                   下一個td 變為 紅色
+        //==============================================
+        
+        // $("td").click(function(){
+        //     ------.css("background","none")
+        //     ------.css("background", "red")
+        // })
+
+        //==============================================
+        // 練習：
+        // 點擊滑鼠後，自己本身設為 無色 
+        //             前一個td 變為 藍色
+        //             下一個td 變為 紅色
+        // bug: 當滑鼠點擊到最後一格 ==> 失靈
+        //==============================================
+        
+        // $("td").click(function(){
+        //     $(this).css("background","none")
+        //     .next().css("background", "red")
+        //     -------.css("background", "blue")
+        // })
+        
+        //============================================
+        // 練習： 如何改進 上例的 bug 
+        // 使用 .end() 的寫法，就可以改進其缺點
+        // .end() 回到原本的 selector
+        //============================================
+        
+        // $("td").click(function(){
+        //     $(this).css("background","none")
+        //     .next().css("background", "red")
+        //     -------.css("background", "blue")
+        // })
+
+
+    </script>
+  </body>
+</html>

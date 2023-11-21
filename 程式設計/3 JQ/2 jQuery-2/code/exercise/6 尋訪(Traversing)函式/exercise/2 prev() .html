@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>next prev</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <style>
+      table,
+      th,
+      td {
+        border-collapse: collapse;
+        border: 1px solid black;
+        width: 500px;
+        height: 30px;
+      }
+      th,
+      td {
+        padding: 0.25rem;
+      }
+  </style>
+  </head>
+  <body>
+      <div class="container">
+          <table class="table table-bordered">
+              <tr>
+                  <td></td>
+                  <td class="stop" ></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td class="stop"></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+          </table>    
+      </div>
+    <script>
+        // ===============================
+        // .prev()
+        // .prevAll()
+        // .prevUntil()
+        // ===============================
+        // 被點擊(click)的 td 變顏色
+        // ===============================
+
+        // $("td").click(function(){
+        //     $(this).css("background", "red")
+        // })
+        
+        //===========================================
+        // 練習：被點擊(click)td的前一格 變顏色
+        //註： 範圍：同一層級標籤內的元素
+        //===========================================
+
+        // $("td").click(function(){
+        //     $(this).-----.css("background", "blue")
+        // })
+
+        //===========================================
+        // 練習：被點擊td之前的所有td 變顏色
+        //註： 範圍：同一tr標籤內的td
+        //===========================================
+        
+        // $("td").click(function(){
+        //         $(this).------.css("background", "blue")
+        // })
+        
+        //============================================
+        // 練習：被點擊td之前的td 變顏色,直到.stop 為止。
+        //       若無 .stop 就到最後
+        //註： 範圍：同一tr標籤內的td
+        //============================================
+        
+        // $("td").click(function(){
+        //     $(this).-----------.css("background", "red")
+        // })
+
+    </script>
+  </body>
+</html>

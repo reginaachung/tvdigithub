@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model 區塊模型 分離</title>
+    <style>
+        body{
+            background-color:pink
+        }
+        .title{
+            color:red;font-weight:bold;font-size:24px;margin-bottom:10px
+        }
+        .content {
+            width:400px;border:1px dashed blue; color:grey;padding:10px
+        }
+        .keyword{
+            color:red
+        }
+    </style>
+</head>
+<!-- 練習： HTML CSS 分離 ==> 於head標籤 建立CSS -->
+<body>
+    
+    <div class="title">文章第一段落的標題</div>
+    
+    <div class="content">        
+        我到<span class="keyword">台北市職能發展學院</span>教學大樓三樓
+    </div>
+    
+    <div class="title">文章第二段落的標題</div>
+    <div>
+        今天的<span class="keyword">心情</span>真是不錯
+    </div>
+
+</body>
+</html>

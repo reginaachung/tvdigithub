@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> addClass、removeClass、hasClass、toggleClass</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/11.css">
+</head>
+<body>
+    <div id="app">
+        <a id="Menu">
+            <span class="openBtn"><i class="fas fa-bars fa-4x"></i></span>
+            <span class="closeBtn"><i class="fas fa-times fa-4x"></i></span>
+        </a>
+        <!-- <img id="logo" src="./images/logo.jpg" alt=""> -->
+
+        <!-- 側邊選單 -->
+        <ul class="navBox">
+            <li><a id="n1" class="nav">首頁 > </a></li>
+            <li><a id="n2" class="nav">關於我們 > </a></li>
+            <li><a id="n3" class="nav">連絡客服 > </a></li>
+            <li><a id="n4" class="nav">最新課程 > </a></li>
+            <li><a id="n5" class="nav">最新消息 > </a></li>
+            <li><a id="n6" class="nav">課程公告 > </a></li>
+        </ul>
+    </div>
+    <script>
+        // ========================================
+        // jQuery 中 class的4種操作：
+        // 1  .addClass()    ==> 新增屬性
+        // 2  .hasClass()    ==> 檢查class是否存在?
+        // 3  .removeClass() ==> 移除 class
+        // 4  .toggleClass() ==> 當class存在時則移除class。
+        //                       當class不存在時則增加class
+        // ==========================================
+
+        // ====================================================
+        // 練習： 執行這個程式，(使用 F12 檢視/ 查看 element )
+        //        嘗試 撰寫 程式碼
+        // ====================================================
+        $(function(){
+            // 取得物件
+            const Menu = $("#Menu"); // 漢堡選單
+            const NavBox = $(".navBox"); // 側邊選單
+
+            Menu.on("click", function(){
+                // ==================================
+                //  為 漢堡選單 和 側邊選單 增加class 為open屬性
+                // 漢堡選單 增加 open屬性
+                // ==================================
+                console.log(this);
+                $(this).addClass("open");
+                // 側邊選單 增加 open屬性
+                NavBox.addClass("open");
+
+            });
+        });
+    </script>
+</body>
+</html>

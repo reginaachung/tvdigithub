@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript：HTML DOM 網頁畫面操作</title>
+    <!-- =========================================== -->
+    <style>
+        .text {
+            text-decoration: underline;
+            font-weight: bold;            
+        }
+    </style>
+</head>
+<body>
+    <h3>HTML DOM 畫面操作</h3>
+    
+    <!-- 只希望改變div的內容，而不要整個畫面都被變更 -->
+    <div id="content" >練習網頁畫面操作</div>
+    <!-- <div id="content" style="font-size: 30px;color: red;">練習網頁畫面操作</div> -->
+    <br>
+    <button onclick="change()">點我</button>
+
+    <script>
+        function change(){
+            //取得標籤物件
+            const Content = document.querySelector("#content");
+
+            // ===================
+            // 練習： 動態增加div中的 class屬性 內容為 text
+            // ===================
+            
+            Content.style.fomtSize="30px";
+            Content.style.color="red";
+
+            //==============================================
+            // 以上 操作class可以作何應用呢 ？
+            // ======> 筆記 
+            //  與使用者互動,動態得透過程式來產生互動效果            
+            // ==========================================
+            // 練習： 寫程式設定 css屬性
+            //        1 把字體大小設為 30px
+            //        2 字的顏色 設為 紅色 
+            // ==========================================
+        }
+        
+    </script>
+</body>
+</html>

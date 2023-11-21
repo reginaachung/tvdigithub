@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>On</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+      <div class="container">
+          <button type="button" class= "btn">on</button>
+      </div>
+    <script>
+        // ========================================
+        // 一個選擇器 綁定不同的event 處理不同的 事情（方法）
+        // .on() 綁定數個 event
+        // 使用 「物件」的寫法
+        // ========================================
+        
+        // $(".btn").on({
+        //     click: function(){
+        //         console.log("click")
+        //     },
+        //     mouseenter: function(){
+        //         console.log("mouse enter")
+        //     },
+        //     mouseleave: function(){
+        //         console.log("mouse leave")
+        //     }
+        // })
+
+        // ==================================
+        // 綁定不同的 event ,觸發後處理相同的事情（方法）
+        // .on() 綁定的不同事件 皆處理相同的事情
+        // ==================================
+
+        $(".btn").on("click mouseenter mouseleave", function(){
+            console.log("hello")
+        })
+
+    </script>
+  </body>
+</html>

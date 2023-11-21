@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 簡介 快速開始</title>
+    <script src=""></script>
+</head>
+<body>
+    
+    <script>
+        //  ==============================================
+        //     NaN (Not a Number)非數值
+        //     1 非數值之異常狀況  
+        //         本應返回數值型態的資料 而未返回數值型態資料
+        //         例如： 0/0之除法運算
+        //      2 產生時機  
+        //     註：
+        //      條件判斷時與任何數值都不相等，NaN自己與自己都不相等
+        //      因此，實務上使用 IsNaN() , 用來判斷這個值到底是不是Nan
+        //  ==============================================
+        // 狀況1
+        //  ==============================================
+
+        // let c = 0 / 0;   
+        // console.log(c);    //NaN
+        //註： 0/0 沒有返回值，即c沒有值，將導致後續再使用變數c時產生錯誤，為了避免這個問題，返回NaN
+        
+        // let x = 12 / 0;
+        // console.log(x);   // Infinty
+
+        // IsNaN() ,  用來判斷這個值到底是不是NaN
+        // 使用 alter(NaN == NaN) 無法做出判斷
+        
+        // alert( NaN == NaN);
+        // alert(isNaN(NaN)); // true
+        // alert(isNaN(25)); // false
+        // alert(isNaN(true)); // false
+
+        // ===============================
+        // 狀況2
+        // ===============================
+        // let a =  "rambo" + 10 ;
+        // console.log(a);
+        // console.log(typeof(a));
+
+        // let myName = "Rambo";
+        // let myAge = 20;
+        // let content = myName *  myAge;
+        // console.log(content);
+        // console.log(typeof(content));
+        
+        // ======================================
+        // 狀況3
+        //Number(),資料型態轉換：將非數值型 轉為數值型
+        //parseInt()轉換成數值，取整數
+        // ======================================
+
+        // alert(Number(true));    // true和false 分別對應 1及0
+        // alert(Number(null));    // 0
+        // alert(Number(undefined));    // NaN
+        
+        // alert(Number("123"));    
+        // alert(Number("088"));  
+        // alert(Number("0.3.3.3"));  
+        // alert(Number("123qq"));  
+
+        
+        // let x = "3";
+        // x = Number(x)+2;
+        // console.log(x);
+        
+        // let age2 = Number("Hello");
+        // console.log(age2);
+
+    </script> 
+</body>
+</html>

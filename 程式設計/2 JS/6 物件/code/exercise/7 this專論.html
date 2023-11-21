@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>this 指向觀念</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <script>
+    // ========================
+    // #1 一個函式中包含哪些參數
+    // 註： 查看 scope
+    // ========================
+    // var a = '全域'
+    // function fn(params) {
+    //   console.log(params, this, window, arguments);
+    //   debugger; // 查看 scope
+    // }
+
+    // fn();       
+
+    // -------------------------------------------
+    // var a = '全域'
+    // function fn(params) {
+    //   console.log(params, this, window, arguments);
+    //   debugger; // 查看 scope
+    // }
+
+
+    // fn(1, 2, 3); 
+
+    // ==================================
+    // #2 this 的指向為何
+    // 註： 查看 scope
+    // ==================================
+    // var obj = {
+    //   name: '小明',
+    //   fn: function (params) {
+    //     console.log(params, this, window, arguments);
+    //     debugger;
+    //   }
+    // }
+
+    // obj.fn();    
+    // --------------------------------------
+    // var obj = {
+    //   name: '小明',
+    //   fn: function (params) {
+    //     console.log(params, this, window, arguments);
+    //     debugger;
+    //   }
+    // }
+
+    // obj.fn(1, 2, 3); 
+
+    // =========================================
+    // #3 注意：this 的指向相當複雜，
+    //          大部分情境只需要了解其中一種即可(95 %)
+    // 註：傳統函式中的 this 只與調用方式有關
+    // =========================================
+    // var someone = '全域';
+    // function callSomeone() {
+    //   console.log(this.someone);
+    // }
+
+    // callSomeone();
+    
+    // 註：為simple call。this 會指向全域變數
+
+    // =================================
+    // #4 各種運用變化
+    // =================================
+    // ex1:
+    // ===========
+    // var obj = {
+    //   someone: '物件',
+    //   callSomeone() {
+    //     console.log(this.someone);
+    //   }
+    // }
+
+    // obj.callSomeone();
+
+    // =============
+    // ex2:
+    // =============
+    // var someone = '全域';
+
+    // function callSomeone() {
+    //   console.log(this.someone);
+    // }
+
+    // var obj2 = {
+    //   someone: '物件2',
+    //   callSomeone
+    // }
+
+    // obj2.callSomeone();
+
+    // =============
+    // ex3:
+    // =============
+    // var someone = '全域';
+
+    // function callSomeone() {
+    //   console.log(this.someone);
+    // }
+    
+    // var wrapObj = {
+    //   someone: '外層物件',
+    //   callSomeone,
+    //   innerObj: {
+    //     someone: '內層物件',
+    //     callSomeone
+    //   }
+    // }
+
+    // wrapObj.callSomeone();
+    // --------------------------------------------
+    // var someone = '全域';
+
+    // function callSomeone() {
+    //   console.log(this.someone);
+    // }
+    
+    // var wrapObj = {
+    //   someone: '外層物件',
+    //   callSomeone,
+    //   innerObj: {
+    //     someone: '內層物件',
+    //     callSomeone
+    //   }
+    // }
+
+    // wrapObj.innerObj.callSomeone();
+    // =============
+    // ex4: (觀念)
+    // =============
+    // var someone = '全域';
+
+    // function callSomeone() {
+    //   console.log(this.someone);
+    // }
+
+    // var obj3 = {
+    //   someone: '物件 3',
+    //   fn() {
+    //     callSomeone(); // 通常平常不會這樣去取用 this
+    //   }
+    // }
+
+    // obj3.fn();
+
+    // 註：simple call的方式來調用 this的指向，因為這種的 this的指向可能會不如預期。實務上通常不會如此使用 
+
+    // =============
+    // ex5:
+    // =============
+    // var someone = '全域';
+
+    // function callSomeone() {
+    //   console.log(this.someone);
+    // }
+
+    // var obj4 = {
+    //   someone: '物件 4',
+    //   fn() {
+    //     // callback function,為 simple call的形式
+    //     setTimeout(function () {
+    //       console.log(this.someone);
+    //     });
+    //   }
+    // }
+
+    // obj4.fn();
+
+    // 註：callback function,為 simple call的形式
+
+  </script>
+</body>
+
+</html>

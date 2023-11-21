@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> 照片牆展示切換 4 </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="css/v4.css">
+</head>
+<body>
+    <div id="app">
+        <a id="angleLeft"><i class="fas fa-angle-left fa-5x"></i></a>
+        <a id="angleRight"><i class="fas fa-angle-right fa-5x"></i></a>
+        <div id="contentPhoto"></div>
+        <div class="menu">
+            <nav>
+                <a id="a1"><img src="images/small/a1.jpg" alt=""></a>
+                <a id="a2"><img src="images/small/a2.jpg" alt=""></a>
+                <a id="a3"><img src="images/small/a3.jpg" alt=""></a>
+                <a id="a4"><img src="images/small/a4.jpg" alt=""></a>
+                <a id="a5"><img src="images/small/a5.jpg" alt=""></a>
+            </nav>
+        </div>
+    </div>
+    <script>
+        //取得元件
+        const ContentPhoto = document.querySelector("#contentPhoto");
+        const A1 = document.getElementById("a1");
+        const A2 = document.getElementById("a2");
+        const A3 = document.getElementById("a3");
+        const A4 = document.getElementById("a4");
+        const A5 = document.getElementById("a5");
+        
+        // 取得本例新增的左、右箭頭 元件
+        const AngleLeft = document.querySelector("#angleLeft");
+        const AngleRight = document.querySelector("#angleRight");
+        
+        // ===============================================
+        // 設定變數 記載顯示哪一張圖
+        let pageIndex = 1;
+        // ================================================
+        
+        //事件監聽
+        A1.addEventListener("click", showPhoto);
+        A2.addEventListener("click", showPhoto);
+        A3.addEventListener("click", showPhoto);
+        A4.addEventListener("click", showPhoto);
+        A5.addEventListener("click", showPhoto);
+        AngleLeft.addEventListener("click", angleLeftFn)
+        AngleRight.addEventListener("click", angleRightFn)
+
+        function showPhoto(){
+            
+            ContentPhoto.style.backgroundImage =  `url(images/big/${this.id}.jpg)`;
+        }
+
+        // ====================================================================
+        // 練習：新增左、右箭頭 被觸發的 function
+        // ====================================================================
+        
+        function angleRightFn(){
+            
+            console.log(pageIndex);
+            pageIndex += 1;
+            // ====================    
+            // 練習：判斷是否為最後1張照片
+            // ====================    
+            
+            
+            ContentPhoto.style.backgroundImage = `url(images/big/a${pageIndex}.jpg)`;
+        }
+        
+        function angleLeftFn(){
+            pageIndex -=  1;
+            
+            // ====================    
+            // 練習： 判斷是否為第1張照片
+            // ==================== 
+            if(pageIndex < 1){
+                pageIndex = 5;
+            }
+   
+            ContentPhoto.style.backgroundImage = `url(images/big/a${pageIndex}.jpg)`;
+        }
+        
+        // =======================================
+        // 思考： 這個程式有什麼缺點，如何修改
+        // =======================================
+
+
+    </script>
+</body>
+</html>

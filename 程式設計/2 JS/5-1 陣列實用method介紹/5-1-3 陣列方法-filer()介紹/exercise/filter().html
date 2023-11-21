@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // ============================================
+        // filter() 介紹
+        // filter() 是一個陣列處理方法，
+        // 功能：篩選出指定元素，並回傳一個陣列。
+        // 
+        //  不會修改原來的陣列，會產生一個新的陣列，並且可以指派給其他變數。
+        // =============================================
+        // 練習1 : 另外產生一個newArr陣列，內含元素為
+        //         arr陣列中 大於(含) 20的元素,
+        // ======================================     
+
+        // const arr = [10, 18, 30, 55];
+
+        // const Newarr=arr.filter(function (item) {
+        //     return item>20;
+        // })  
+        // console.log(newArr);
+
+
+        // console.log(newArr);
+        // console.log(arr);
+
+        // =============================================
+        // 練習2: 篩選原陣列 及格的成績 ，形成一個新陣列
+        // ============================================
+        // 分數
+
+        // const scoreData = [
+        //     {
+        //         name: "張三",
+        //         score: 88
+        //     },{
+        //         name: "李四",
+        //         score: 62
+        //     },{
+        //         name: "王五",
+        //         score: 53
+        //     }
+        // ]
+
+        // const filterSchool=scoreData.filter(function (item) {
+        //     return item.score>60
+        // })
+
+        // console.log(filterSchool);
+
+        // =====================================
+        //filter() 觀念整理:
+        // filter() 內需放入一個函式，並搭配 return使用
+        // filter() 會一一將陣列中的每個元素帶入函式測試，如果函式的回傳值為 true，則會將當前的元素保留至新陣列中，若為 false 則不保留。
+        // callback 函式常見會帶有三種參數
+        // item: 目前正在處理的元素。
+        // index: 目前正在處理的元素之索引
+        // array: 呼叫 filter 的原始陣列，此參數較為少用
+        // =============================================
+        // 練習：建立一個新陣列 內容為 價格大於20元(含)食物
+        // =============================================
+
+        let food = [
+            {
+                foodName: '鍋燒意麵',
+                price: 70
+            },
+            {
+                foodName: '炒麵',
+                price: 65
+            },
+            {
+                foodName: '蘿蔔泥',
+                price: 20
+            },
+            {
+                foodName: '荷包蛋',
+                price: 10
+            }
+        ];
+
+        const newArr = food.filter(function (item) {
+            return  food.item> 20
+        })
+
+        console.log(newArr);
+
+    </script>
+</body>
+
+</html>

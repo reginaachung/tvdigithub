@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 this</title>
+</head>
+
+<body>
+    <script>
+        //建立物件
+        let obj = new Object();
+        obj.x = 3;
+        obj.y = 4;
+
+        // ========================
+        // 在物件的方法中使用this，
+        //代表物件方法本身
+        // ========================
+        // 使用 this
+
+        // //白話文
+        // obj.show = function () {
+
+        //     console.log(obj.x + obj.y);
+
+        // };
+
+        // //文言文
+        // obj.show = function () {
+
+        //     console.log(this.x + this.y);
+
+        // };
+
+        //使用物件
+
+        obj.show();
+
+    </script>
+
+</body>
+
+</html>

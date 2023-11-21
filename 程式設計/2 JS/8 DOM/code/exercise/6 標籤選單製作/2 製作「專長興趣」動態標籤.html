@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 練習：製作「專長興趣」動態標籤  -->
+
+    <div>
+        <span>關於我</span>
+        <span onclick="changeToExp()">專長興趣</span>
+    </div>
+
+    <hr />
+
+    <div id="aboat">大家好 我是楊博斯</div>
+    <div id="exps" style="display:none">我服務於台北市職能發展學院，擔任資通訊群組專任訓練師</div>
+
+    <script>
+        function changeToExp() {
+
+            //先取得要操作的標籤
+            const About = document.querySelector("#about");
+            const Exps = document.querySelector("#exps");
+            // cosole.log(Exps);
+
+            //再對標籤做操作
+            Exps.style.display = "block";
+            About.style.display = "none";
+
+        }
+
+    </script>
+
+</body>
+
+</html>

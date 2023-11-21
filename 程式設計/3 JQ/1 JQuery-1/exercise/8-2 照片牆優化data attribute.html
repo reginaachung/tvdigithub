@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> data attribute </title>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/9.css">
+</head>
+<body>
+    <div id="app">
+        <div id="contentPhone">
+            <img class="photo" src="./images/photo/big/a1.jpg" alt="">
+        </div>
+        <div class="menu">
+            <nav id="nav">
+                <a data-id="a1"><img src="./images/photo/small/a1.jpg" alt=""></a>
+                <a data-id="a2"><img src="./images/photo/small/a2.jpg" alt=""></a>
+                <a data-id="a3"><img src="./images/photo/small/a3.jpg" alt=""></a>
+                <a data-id="a4"><img src="./images/photo/small/a4.jpg" alt=""></a>
+                <a data-id="a5"><img src="./images/photo/small/a5.jpg" alt=""></a>
+            </nav>
+        </div>
+    </div>
+    <script>
+        // =======================================
+        // 自定義屬性 data attribute
+        //            data-屬性名稱
+        js讀取自訂義屬性的內容 .dataset.屬性名稱
+        jq讀取自訂義屬性的內容 .data("屬性名稱")
+
+        // 取得自定義屬性的內容  .data()
+        // =======================================
+
+        $(function(){
+
+            $("#nav > a").on('click', function(){
+
+                //
+                // console.log($(this).---------);// jQ提供 取出自定義屬性 內容的方法
+                
+                let no = --------------------;
+                console.log(no);
+                
+                $(".photo").attr('src',`./images/photo/big/a${no}.jpg`);
+
+            });
+        });
+    </script>
+</body>
+</html>

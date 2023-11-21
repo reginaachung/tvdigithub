@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .QQ {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content">這是第一段文字</div>
+    <span id="keyword">這是第二段文字</span>
+    <br><br>
+    <button onclick="change()">執行</button>
+
+    <script>
+        // =============================================
+        // 作業：
+        // 當 按下「執行」按鈕後
+        // 1 「這是第一段文字」變為「這是新的文字」
+        //    顏色變更為 紅色 (CSS ==> .QQ) 
+        //    字的大小變更為 30px
+        // 2 「這是第二段文字」顏色變更成 藍色色
+        // =============================================
+        function change() {
+            //取得標籤物件        
+            let Content = document.querySelector(".content");
+            let Keyword = document.querySelector("#keyword");
+            console.log(Content); //確認成功
+            console.log(Keyword); //確認成功 
+
+            // //操作標籤物件 的 HTML 和 CSS
+            Content.innerHTML = "這是新的文字";
+            Content.className = "QQ";  //QQ為CSS
+            Content.style.fontSize = "30px";
+            Keyword.style.color = "blue";
+        }
+    </script>
+</body>
+
+</html>

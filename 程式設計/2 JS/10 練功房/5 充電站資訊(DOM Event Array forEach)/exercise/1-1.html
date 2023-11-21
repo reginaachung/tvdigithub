@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="list">
+        <li>官府充電站（免費）</li>
+    </ul>
+
+    <script>
+
+        let data = [
+            {
+                charge:"免費",
+                name:"官府充電站"
+            },
+            {
+                charge:"投幣式",
+                name:"重號充電站"
+            },
+            {
+                charge:"投幣式",
+                name:"柔均電站"
+            },
+            {
+                charge:"投幣式",
+                name:"乃偉電站"
+            },
+            {
+                charge:"免費",
+                name:"蠻頭電站"
+            }
+        ]
+        // ======================================================
+        // 習作： 修改以下程式，使上例 console.log 顯示的資料顯示在網頁上
+        // 提示： List.innerHTML = "<li>Hello</li>"; 
+        // ======================================================
+        // 取得物件
+        const List =  document.querySelector(".list");
+        
+        // 提示： List.innerHTML = "<li>Hello</li>"; 
+        data.forEach(function(item,index){
+            console.log(`<li>${item.name}（${item.charge}）</li>`);
+            // List.innerHTML = `<li>${item.name}（${item.charge}）</li>`;
+
+        }) 
+        
+        
+    </script>
+    
+</body>
+</html>

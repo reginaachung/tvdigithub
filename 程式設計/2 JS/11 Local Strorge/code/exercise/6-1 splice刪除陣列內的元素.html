@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul style="padding:50px;background:#000;color:#fff" class="list"></ul>
+
+    <script>
+        let country = [
+            {
+                farmer:'陳時鐘'
+            }
+            ,{
+                farmer:'陳擊中'
+            }
+        ]
+        // 取得物件
+        let List = document.querySelector('.list');
+
+        //更新農場資料
+        function updateList(){
+            let str = '';
+            country.forEach(function(item,index){
+                str +=  `<li data-num="${index}">${item.farmer}</li>`
+            })
+            List.innerHTML = str;
+        }
+        updateList();
+
+        // 綁定事件
+        List.addEventListener('click',checkList,false);
+        function checkList(e){
+            let num = e.target.dataset.num;
+            if(e.target.nodeName !== 'LI'){return};
+            console.log(`你選擇的農夫是${country[num].farmer}`);
+        }
+        // ========================================================
+        ///練習：綁定dblclick事件，刪除被dblclick事件觸發的農夫
+        // ========================================================
+        // 綁定 dblclick事件
+        List.addEventListener(        ,delList,false);
+
+        function delList(e){
+            // 檢查是否dblclick正確的項目
+            if(e.target.nodeName !== 'LI'){return};
+            
+            // 取得被dblclick 物件的 index
+            let num = 
+            // ===============================================
+            // 練習： 於陣列刪除被 dblclick的 元素
+            // ===============================================
+            // 把被dblclick的元素從陣列中移除
+
+            // render更新後的陣列
+
+        }
+
+    </script>
+</body>
+</html>

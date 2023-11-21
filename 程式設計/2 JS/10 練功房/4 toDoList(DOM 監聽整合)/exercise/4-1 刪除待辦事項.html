@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" class= "inputData" placeholder= "請輸入待辦事項">
+    <input type="button" class = "saveBtn" value= "儲存待辦">
+    <ul class = "list">
+        <li>待辦事項一<input type="button" class="delete" value = "刪除待辦"></li>
+        <li>待辦事項二<input type="button" class="delete" value = "刪除待辦"></li>
+    </ul>
+    <script>
+        // 資料集
+        let data = [];
+        
+        // 取得物件
+        const InputData = document.querySelector(".inputData");
+        const SaveBtn = document.querySelector(".saveBtn");
+        const List = document.querySelector(".list");
+        
+        // 渲染功能：待辦事項 render到網頁
+        function renderData(){
+            let str = "";
+            data.forEach(function(item,index){
+                // ===============================================================================
+                // 前置作業：
+                // 於li按鈕中 裝置 自訂屬性 data-num ==>記錄 按鈕的 index值
+                // 當「刪除待辦事項」的按鈕被點擊 ，就可以 由 data-num 屬性 得知要刪除哪一筆資料
+                // ================================================================================ 
+                str += `<li>${item.content}<input type="button" class="delete" data-num = "${index}" value = "刪除待辦"></li>`
+            })
+
+            const List = document.querySelector(".list");
+            List.innerHTML = str;
+            // 清除文字方塊輸入區
+            InputData.value="";
+        }
+        renderData();
+
+        // 新增待辦事項功能
+        SaveBtn.addEventListener('click',function(e){
+            
+            // 使用者沒輸入資料的判斷處理
+            if(InputData.value == ""){
+                alert("請輸入待辦事項");
+                return;
+            }
+            
+            // 將輸入的資料組成 object元素
+            let obj = {};
+            obj.content = InputData.value;
+
+            // 把物件元素 push 到陣列內
+            data.push(obj);
+            
+            // 資料rendor到網頁
+            renderData();
+        })
+
+        // 刪除待辦事項功能
+        List.addEventListener('click',function(e){
+            // ===============================
+            // 練習： 偵測是否點擊到「刪除待辦」按鈕
+            // ===============================
+            // 程式碼
+            // if(沒有點擊到刪除按鈕){
+            //     return;
+            // }
+            console.log(e.target);
+            console.log(e.target.getAttribute("class"));
+
+            if(e.target.getAttribute("class") !== ("delete")){
+
+                alert("你沒有點到刪除代辦按鈕")
+                return;
+            }
+
+            // =========================================
+            // 練習：找出要刪除的資料是陣列中的那一筆元素
+            // =========================================
+            // 程式碼
+            console.log(e.target.dataset.num);
+            let elemIndex = e.target.dataset.num;
+
+            // ============================
+            // 練習：刪除資料(刪除陣列內的元素)
+            // ============================
+            // 程式碼
+            data.splice(elemIndex,1)
+            console.log(data);
+
+            // =========================================
+            // 渲染到網頁
+            renderData();
+            // =========================================
+            // 程式碼
+        
+        })
+    </script>
+</body>
+</html>

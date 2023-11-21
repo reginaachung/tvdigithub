@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ======================
+        // 練習： 判斷陣列中有幾個偶數
+        // ======================
+        
+        // let data = [30, 40, 9, 78, 5687];
+        // let count=0;
+        // data.forEach(function(i){
+            
+        //     if(i%2==0){
+
+        //         count++;
+
+        //     }
+            
+        // })
+        
+        // console.log(`陣列中有${count}個偶數`);
+        
+        // ====================================
+        // 練習： 找出原陣列的偶數元素， 並組成一個新陣列
+        // ====================================
+        
+        let data = [30, 40, 9, 78];
+        let evenData = [];
+
+        data.forEach(function(item){
+            
+            if(item%2==0){
+
+                evenData.push(item);
+
+            }
+
+        })
+        
+        console.log(evenData);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- =========================================================== -->
+    <h1>新增充電站</h1>
+    <input type="text" class="stationName" placeholder="充電站名稱">
+    <!-- 改為下拉式選單
+    <input type="text" class="stationCharge" placeholder="免費、投幣式"> -->
+    <select class="stationCharge">
+        <option value="免費">免費</option>
+        <option value="投幣式">投幣式</option>
+    </select>
+
+    <input type="button" class="btn" value = "儲存">
+    <br><br>
+    <!-- =========================================================== -->
+    <h1>資料顯示</h1>
+    <div class="filter">
+        <input type="button" value="全部">
+        <input type="button" value="免費">
+        <input type="button" value="投幣式">
+    </div>
+    <ul class="list">
+        <li>官府充電站（免費）</li>
+    </ul>
+
+
+    <script>
+        let data = [
+            {
+                charge:"免費",
+                name:"官府充電站"
+            },
+            {
+                charge:"投幣式",
+                name:"重號充電站"
+            },
+            {
+                charge:"投幣式",
+                name:"柔均電站"
+            },
+            {
+                charge:"投幣式",
+                name:"乃偉電站"
+            },
+            {
+                charge:"免費",
+                name:"蠻頭電站"
+            }
+
+        ]
+        
+        const List =  document.querySelector(".list");
+        
+        // 預設載入
+        function init(){
+            
+            let str = "";
+
+            data.forEach(function(item,index){
+                let content = `<li>${item.name}（${item.charge}）</li>`;
+                str += content;
+            })  
+
+            List.innerHTML = str;
+        }
+        init();
+
+        // 篩選器
+
+        const Filter = document.querySelector(".filter");
+        
+        Filter.addEventListener("click",function(e){
+            
+            if(e.target.value == undefined){
+                console.log("未點擊正確按鈕");
+                return;
+            }
+
+            let str = "";
+            data.forEach(function(item, index){
+                
+                let content = `<li>${item.name}（${item.charge}）</li>`;
+                if(e.target.value == "全部"){
+                    str += content;
+                }else if(e.target.value == item.charge){
+                    str += content;
+                }
+            })
+            list.innerHTML = str;
+        })
+
+        // ===========================================================
+        // 新增資料
+        // ===========================================================
+        const StationName = document.querySelector(".stationName");
+        const StationCharge = document.querySelector(".stationCharge");
+        const Btn = document.querySelector(".btn");
+        
+        Btn.addEventListener("click",function(e){
+
+            let obj = {};
+            obj.charge = StationCharge.value;
+            obj.name   = StationName.value;
+
+            // console.log(obj);
+
+            data.push(obj);
+
+            init();
+
+            //=================================================
+            //=================================================
+            // 清空文字方塊 ，方便下一位使用者使用
+            StationCharge.value =  "免費";
+            StationName.value   = "";
+            //================================================
+            //================================================
+        })
+    </script>
+    
+</body>
+</html>

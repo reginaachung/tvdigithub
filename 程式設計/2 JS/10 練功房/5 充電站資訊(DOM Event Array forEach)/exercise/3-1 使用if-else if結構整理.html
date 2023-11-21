@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="filter">
+        <input type="button" value="全部">
+        <input type="button" value="免費">
+        <input type="button" value="投幣式">
+    </div>
+    <ul class="list">
+        <li>官府充電站（免費）</li>
+    </ul>
+
+    <script>
+        let data = [
+            {
+                charge:"免費",
+                name:"官府充電站"
+            },
+            {
+                charge:"投幣式",
+                name:"重號充電站"
+            },
+            {
+                charge:"投幣式",
+                name:"柔均電站"
+            },
+            {
+                charge:"投幣式",
+                name:"乃偉電站"
+            },
+            {
+                charge:"免費",
+                name:"蠻頭電站"
+            }
+
+        ]
+        
+        // =====================================================
+        const List =  document.querySelector(".list");
+        // =====================================================
+        
+        function init(){
+            
+            let str = "";
+
+            data.forEach(function(item,index){
+                let content = `<li>${item.name}（${item.charge}）</li>`;
+                str += content;
+            })  
+
+            List.innerHTML = str;
+        }
+
+        init();
+
+        const Filter = document.querySelector(".filter");
+
+        Filter.addEventListener("click",function(e){
+            
+            if(e.target.value == undefined){
+                console.log("未點擊正確按鈕");
+                return;
+            }
+
+            let str = "";
+            data.forEach(function(item, index){
+                
+            // =====================================================
+            // 練習： 使用 if-else if 結構來 整理程式碼
+            // =====================================================
+            let content = `<li>${item.name}（${item.charge}）</li>`;
+
+            <<程式碼>>
+            //=============================================================
+
+            List.innerHTML = str;
+        })
+
+
+    </script>
+    
+</body>
+</html>

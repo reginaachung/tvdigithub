@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-5</title>
+    <style>
+        .text {
+            text-decoration: underline;
+            font-weight :bold;
+            font-size : 40px;
+            color:red
+        }
+
+        .text1 {
+            text-decoration: underline;
+            font-weight :bold;
+            font-size : 40px;
+            color:red
+        }
+    </style>
+</head>
+<body>
+    <h3>HTML DOM 網頁畫面操作</h3>
+    
+    <!-- 只希望改變div的內容，而不要整個畫面都被變更 -->
+    <div id="content" class="888">練習網頁畫面操作</div>
+    <button onclick="change()">點我</button>
+
+    <script>
+        function change(){
+            //取得標籤物件
+            
+            let Content = document.querySelector("#content");
+            console.log(Content);
+
+            //操作標籤物件
+            Content.innerHTML = "新的內容";
+
+            //===================================
+            // 練習：動態修改 div中 class屬性為 text
+            //       以套用於head中設定的 css的屬性
+            // =================================
+            
+        }
+    </script>
+</body>
+</html>

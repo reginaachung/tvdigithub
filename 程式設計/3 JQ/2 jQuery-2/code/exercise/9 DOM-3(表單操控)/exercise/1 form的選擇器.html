@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Form</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+      <div class="container">
+          <form >
+              <button type="button" id="send" >button</button>
+              <input type="button"  value="input" >
+              <br><br>
+              
+              <input type="checkbox">
+              <input type="checkbox" checked>
+              <br><br>
+
+              <div>
+                  <button type="button" id="pullBlack" >拉黑</button>
+                  <button type="button" id="showEnable" >顯示enable的表單元件</button><br>
+                  <input type="text" id="text"  ><br><br>
+                  <input type="text" id="text1"  disabled><br>
+              </div>
+              <br>
+              
+              <div>
+                  <button type="button" class="btn" id="getVal">get val</button>
+                  <button type="button" class="btn" id="setVal">set val</button>
+              </div>
+        </form>
+        <h1>hello world</h1>
+      </div>
+    <script>
+        // ===============================
+        // :button 為 表單 button的選擇器
+        // ================================
+        // 練習： 點擊 form內的 button,
+        //        顯示 button
+        // ================================
+
+        // $(------------).click(function(){
+        //   console.log("button")
+        // })
+
+        // ===============================
+        // :checkbox 為  checkbox的選擇器
+        // ================================
+        // 練習： 點擊 checkbox,
+        //        顯示 checkbox
+        // ================================
+        
+        // $(-------).click(function(){
+        //     console.log("checkbox")
+        // })
+        
+        // ==========================================
+        // :disabled 為  input 中 有 disabled的選擇器
+        // ==========================================
+        // 練習：點擊「拉黑按鈕」 
+        //  有disabled的文字方塊 變成灰色
+        // ==========================================
+        
+        // $(----------).click(function(){
+        //     $(-------).css("background", "grey")
+        // })
+        
+        // ==========================================
+        // :enabled 為  input 中 有 enabled的選擇器
+        // ==========================================
+        // 練習：點擊「顯示enable的表單元件」 把 enable屬性的 表單元件 變成黃色
+        // ==========================================
+        
+        // $("#showEnable").click(function(){
+        //     $(-------).css("background", "yellow");
+        // })
+        
+        // ============================================
+        // 練習： 把所有的 input
+        //        background設為 粉紅色
+        // ============================================
+        
+        // $(--------).css("background", "pink");
+
+        // ============================================
+        // 練習： input中type為 text  ==> background設為 紅色
+        // ============================================
+        
+        // $(---------------).css("background", "red")
+
+        //=========================================
+        //練習：點擊 getVale按鈕 ，顯示 h1的內容 
+        //=========================================
+        // $("#getVal").click(function(){
+        //   let content = ----------;
+        //   alert(content);
+        // })
+
+        //=========================================
+        //練習：點擊 setVale按鈕 ，設定 文字方塊的內容為
+        //                          Hello TVDI
+        //=========================================
+        //設定值 
+        // $("#setVal").click(function(){
+        //     $("h1").-------------;
+        // })
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: #000;
+        }
+    </style>
+</head>
+<body class="body">
+    <div class="box"></div>
+    <script>
+        // =====================================================
+        // 探討 addEventListener的第三個參數 為何要使用false
+        // 參數： false 為Default(事件氣泡 - event Bubbling)  
+        //              - 從指定元素往外找
+        // 
+        // 參數：  true (事件捕捉  - event capturing) 
+        // - 從最外面找到指定元素
+        // =====================================================
+
+        let Box = document.querySelector('.box');
+
+        Box.addEventListener('click',function(){
+            alert('box');
+            console.log('box');
+        },false);
+
+        // let Body = document.querySelector('.body');
+        // Body.addEventListener('click',function(){
+        //     alert('body');
+        //     console.log('body');
+        // },false);
+    </script>
+</body>
+</html>

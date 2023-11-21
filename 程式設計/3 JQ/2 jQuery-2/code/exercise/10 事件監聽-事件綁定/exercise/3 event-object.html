@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Mouse Event</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+      <div class="container">
+          <button type="button" class="btn btn-primary">mouse event</button>
+      </div>
+    <script>
+        // ======================================
+        // 事件(event): 在瀏覽器中是以「物件」是以物件的形式存在的
+        // ======================================
+        // $(".btn").click(function(){
+        // console.log("click")
+        // })
+        
+        //===================================
+        // 練習： 查看 例子中 event參數的內容
+        // 觀察： event參數的內容 vs $(this)
+        //===================================
+        $(".btn").click(function(event){
+          // 練習： 查看 event物件
+          // console.log(event);
+          // console.log(event.target);
+          // event.target.getAtribute()
+
+          // 練習： 查看 $(this) 與 this[0] 
+          // console.log(this);
+          // console.log($(this))
+          // console.log($(this)[0]);
+        })
+    </script>
+  </body>
+</html>

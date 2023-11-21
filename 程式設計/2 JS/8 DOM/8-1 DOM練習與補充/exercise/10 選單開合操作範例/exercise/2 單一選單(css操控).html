@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM選單開合操作</title>
+    <style>
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div onclick ="toggleMenu()">選單標題1</div>
+    <Ul id = "menu" class = "hide">
+        <li>項目1-1</li>
+        <li>項目1-2</li>
+        <li>項目1-3</li>
+    </Ul>
+    <script>
+        function toggleMenu(){
+            const Menu = document.getElementById("menu");
+            // ======================================
+            // 練習: 搭配 .hide屬性 處理
+            // =====================================
+            console.log(Menu.getAttribute("class"));
+            
+            // if(){
+            //     顯示選單;
+            // }else{
+            //     隱藏選單;
+            // }
+        }
+    </script>
+</body>
+</html>

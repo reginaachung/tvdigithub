@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 使用JSON建立物件</title>
+</head>
+
+<body>
+    <script>
+        //=====================================
+        //建立物件 man
+        // 姓名：Jon
+        // 年齡：25
+        // ===============================
+
+        // let man = new Object();
+        // man.age = 25;
+        // man.name = "Jon";
+        // man.talk = function () {
+        //     console.log('大家好，我是凡哥');
+        // };
+
+        // //使用物件
+
+        // console.log(man);
+        // console.log(man.age);
+
+        // // console.log(age > 30);//age is not defined
+
+        // // 註：man.talk();//呼叫 物件(內)的方法(函式)
+
+        // man.talk();
+
+        //=========================================
+        // 物件方法中得 this 關鍵字
+        // 註： 物件方法中使用this,this代表物件本身
+        // ========================================
+
+        //建立物件
+
+        // let man=new Object();
+        // man.age=25;
+        // man.name="Jon";   
+        // man.talk=function(){
+        //         // ------------------------------------
+        //         // 物件方法中使用this,this代表物件本身
+        //         // ------------------------------------
+        //         console.log(`Hello我是${this.name}年齡${this.age}`);
+        // };   
+
+        // //使用物件      
+
+        // man.talk();//呼叫 物件的方法(函式)
+
+        //======================================
+        //練習：上例 使用JSON 語法來建立物件 
+        //(成員名稱.資料,成員名稱.資料,.....)
+        //======================================
+        
+        // let man = {
+        //     age: 25,
+        //     name: "Jon",
+        //     talk: function () {
+
+        //         console.log(`Hello我是${this.name}年齡${this.age}`);
+
+        //     }
+
+        // };
+
+        // console.log(man);
+
+        // //使用物件
+        // console.log(man.age > 25);
+        // console.log(man.age < 30);
+        // // man.talk();//呼叫 物件的方法(函式)
+        // console.log(man);
+
+        // ============================================
+        // 政府資料開放平台
+        // ============================================
+        // 政府資料開放平台/資料集/行政院/衛生福利部/疾病管制署/地區年齡性別統計表-嚴重特殊傳染性肺炎-依個案研判日統計
+
+        // trick:
+        // chrome瀏覽器 安裝的 JSONview chrome
+        //使用https://jsonformatter.org/查看
+    </script>
+</body>
+
+</html>

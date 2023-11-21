@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ES6 縮寫(語法糖)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+  </ul>
+  <script>
+    // ==========================
+    // #1 語法糖與新增語法
+    // 語法糖： 不會影響運作，邏輯與當前 JS 一致
+    //         使用語法糖使程式更簡潔
+    // ==========================
+
+    // const obj = {
+    //   myName: '物件',
+    //    function () 
+    // }
+
+    // console.log(obj.fn());
+
+    // --------------------------------
+    // 練習： ES6語法糖 撰寫 上面程式
+    // --------------------------------
+    // 解答：
+
+    // const obj={
+    //   myName:'物件',
+    //   fn(){
+    //     return this.myName;
+    //   }
+    // }
+
+    // console.log(obj.fn());
+
+    // ------------------------------
+    // 語法糖   邏輯與當前 JS 一致，不會影響運作
+    // 註： 箭頭函式 為ES新增的語法,要注意可能會影響運作
+    // ------------------------------
+
+
+    // ==========================
+    // #2 物件字面值 Object literals
+    // ==========================
+    // #2-1 物件內的函式
+    // ==========================
+
+    // const obj3 = {
+    //   myName: '物件',
+    //   fn() { 
+    //     return this.myName;
+    //   }
+    // }
+
+    // console.log(obj3.fn());
+
+    // ----------------------------
+    // 練習：把以上程式 請改為縮寫
+    // ----------------------------
+
+    // function sum(a,b){
+    //   return a+b;
+    // }
+
+    // console.log(sum());   //NaN
+    // console.log(sum(1));  //NaN
+
+    // function sum(a=0, b=0){  //給定預設值
+    //                          // 當沒有傳東西給a或b時，
+    //                          // 就以 a = 0, b=0 來執行
+    //   return a + b;
+    // }
+
+    // ==========================
+    // #2-2 物件內的變數
+    // ==========================
+
+    // const person = {
+    //   name: '老高'
+    // };
+
+    // const people =  {
+    //   person: person
+    // }
+
+    // console.log(people);
+
+    // ----------------------------
+    // 練習：把以上程式 請改為縮寫
+    // ----------------------------
+    // 解答：
+
+  //   //A1
+  //   const person = {
+  //     name: '老高'
+  //   };
+
+  //   const people={
+  //     person:person
+  //   }
+
+  // console.log(people);
+
+  //   //A2(簡寫)
+  //   const person = {
+  //     name: '老高'
+  //   };
+
+  //   const people={
+  //     person
+  //   }
+
+  // console.log(people);
+
+    // ===============================
+    // #3 展開
+    // ===============================
+    // #3-1 不同陣列合併
+
+    // const groupA = ['小英', '小昌', '阿中'];
+    // const groupB = ['阿哲', '老高'];
+
+    // // 陣列合併
+
+    // const groupAll = groupA.concat(groupB);
+
+    // console.log(groupAll);
+
+    // ----------------------------
+    // 練習：把以上程式 以ES6 改寫
+    // ----------------------------
+    // // 解答：
+
+    // const groupA = ['小英', '小昌', '阿中'];
+    // const groupB = ['阿哲', '老高'];
+
+    // // 陣列合併
+
+    // console.log(...groupA);//取得groupA陣列的元素
+    // const groupAll=[...groupA,...groupB];
+
+    // console.log(groupAll)
+
+    // ================================
+    // #3-2 物件擴展
+    // ================================
+    
+    // const methods = {
+    //   fn1() {            //fn1:function(){console.log(1)}
+    //     console.log(1);
+    //   },
+    //   fn2() {
+    //     console.log(2);  //fn2:function(){console.log(2)}
+    //   }
+    // }
+
+    // --------------------------
+    // 練習：建立一個新物件 newMethods
+    //       新增一個物件包含新方法fn，
+    //       同時加入原有的方法
+    // --------------------------
+    // 解答：
+
+    //   //方法1
+    //   const methods = {
+    //   fn1() {            
+    //     console.log(1);
+    //   },
+    //   fn2() {
+    //     console.log(2);  
+    //   }
+    // }
+
+    // const newMethods= {
+    //   fn1() {            
+    //     console.log(1);
+    //   },
+    //   fn2() {
+    //     console.log(2);  
+    //   },
+    //   fn(){console.log(0);
+    //   }
+    // }
+
+    // console.log(newMethods);
+
+      //方法2
+      const methods = {
+      fn1() {            
+        console.log(1);
+      },
+      fn2() {
+        console.log(2);  
+      }
+    }
+
+    const newMethods= {
+    
+      fn(){console.log(0);
+      },
+      ...methods           //糖在這裡
+    }
+
+    console.log(newMethods);
+
+    // =============================
+    // 陣列的轉換（轉換為純陣列）--- 實務中常用
+    // #3-3 轉成純陣列(DOM講完再回頭來看)
+    // =============================
+    // const doms = document.querySelectorAll('li');
+    // console.log(doms);// doms為nodeList。類似陣列但非陣列
+    // -------------------------
+    // 練習：把doms請轉為純陣列
+    // -------------------------
+
+
+
+    // ==============================
+    // #4 function的預設值
+    // ==============================
+    // function sum(a, b) { // 加入預設值避免錯誤
+    //   return a + b;
+    // }
+    // console.log(sum(1));// NaN
+
+    // ---------------------------
+    // 練習： 如何修改以上程式，避免 argument不足
+    // 註：加入預設值避免錯誤
+    // ---------------------------
+
+
+
+
+
+
+
+    // ---------------------------
+    // 練習： ES6的寫法
+    //        當參數不足時， 給定參數預設值
+    // ---------------------------
+
+    // //x
+    // function sum(a, b) {
+    //   console.log(a + b);
+    // }
+
+    // sum(1);
+    
+    // //o
+    // function sum(a=0, b=0) {
+    //   console.log(a + b);
+    // }
+
+    // sum(1);
+
+  </script>
+</body>
+
+</html>

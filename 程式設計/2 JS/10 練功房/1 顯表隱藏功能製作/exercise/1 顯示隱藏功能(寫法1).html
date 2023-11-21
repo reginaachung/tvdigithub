@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>顯示/隱藏操作</title>
+    <style>
+        #img {
+            width: 200px;
+            height: 300px;
+            margin-top: 30px;
+        }
+    </style>
+
+</head>
+<body>
+    <input type="button" value="顯示" id="btn1" onclick="displayImg()">
+    <input type="button" value="隱藏" id="btn2" onclick="hideImg()"><br>
+    <img src="加油.png" id="img">
+
+    <script>
+        // =================================
+        // 練習：綁定事件寫法2
+        //       function名稱 分別為 displayImg()
+        //                           hideImg()  
+        // =================================
+        // 取得物件
+
+        const Btn1=document.querySelector("#btn1")
+        // document.getElementById("btn1");//寫法二
+        const Btn2=document.querySelector("#btn2")
+        const Img=document.querySelector("#img")
+
+        // console.log(Btn1);
+        // console.log(Btn2);
+
+        // 函式
+        function displayImg(){
+            Img.style.display="block";
+        }
+
+        function hideImg(){
+            Img.style.display="none";
+        }
+
+    </script>
+    
+</body>
+</html>

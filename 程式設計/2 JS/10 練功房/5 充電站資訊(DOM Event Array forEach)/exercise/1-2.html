@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="list">
+        <li>官府充電站（免費）</li>
+    </ul>
+
+    <script>
+        let data = [
+            {
+                charge:"免費",
+                name:"官府充電站"
+            },
+            {
+                charge:"投幣式",
+                name:"重號充電站"
+            },
+            {
+                charge:"投幣式",
+                name:"柔均電站"
+            },
+            {
+                charge:"投幣式",
+                name:"乃偉電站"
+            },
+            {
+                charge:"免費",
+                name:"蠻頭電站"
+            }
+
+        ]
+        // const List =  document.querySelector(".list");
+        let str = "";
+
+        // list.innerHTML = "<li>Hello</li>"; 
+        data.forEach(function(item,index){
+
+            str += `<li>${item.name}（${item.charge}）</li>`;
+            // str += `<li>${item.name}（${item.charge}）</li>`;
+            // 實務上較常以下列2句之寫法
+            content = `<li>${item.name}（${item.charge}）</li>`;
+            str += content;
+        })  
+        List.innerHTML = str;
+    </script>
+    
+</body>
+</html>

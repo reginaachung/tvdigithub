@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="點擊" class = "btn">
+    <h1>標題</h1>
+    <script>
+        // =======================================================
+        // 練習： 點擊按鈕後==>h1 文字「標題」變更為「按鈕被點擊了」
+        // =======================================================
+        
+        // 一口氣寫完     
+        // 監聽 事件
+
+        // document.querySelector(".btn").addEventListener("click", function(){
+        // console.log("按鈕被點擊了");
+        // })
+
+        //=============================================
+        // 練習： 同上例,
+        //        以 1 取得DOM元素
+        //           2 和綁定事件  分開撰寫
+        //=============================================
+
+        const Btn = document.querySelector(".btn");
+        const H1 = document.querySelector("h1");
+
+        // console.log(Btn);
+        // console.log(H1);
+
+        Btn.addEventListener("click",function(){
+            H1.innerHTML="按鈕被點擊了"
+        })
+        
+
+    </script>
+
+</body>
+</html>

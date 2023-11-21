@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ================================
+        // 練習： 把data陣列內的資料，放入chargingStation
+        //        物件中
+        // ================================
+        let data = [
+            {
+                charge:"免費",
+                name:"原田充電站"
+            },
+            {
+                charge:"投幣式",
+                name:"夏希充電站"
+            },
+            {
+                charge:"投幣式",
+                name:"裕詳電站"
+            },
+            {
+                charge:"投幣式",
+                name:"加薪電站"
+            }
+        ]
+
+        let chargingStation ={
+            free: [],
+            pay: []
+        }
+        
+        console.log(chargingStation);
+        console.log(`目前免費充電站有${}處`);
+        console.log(`目前收費充電站有${}處`);  
+
+    </script>
+</body>
+</html>

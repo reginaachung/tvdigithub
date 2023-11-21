@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="list">
+        <li>官府充電站（免費）</li>
+    </ul>
+
+    <script>
+        let data = [
+            {
+                charge:"免費",
+                name:"官府充電站"
+            },
+            {
+                charge:"投幣式",
+                name:"重號充電站"
+            },
+            {
+                charge:"投幣式",
+                name:"柔均電站"
+            },
+            {
+                charge:"投幣式",
+                name:"乃偉電站"
+            },
+            {
+                charge:"免費",
+                name:"蠻頭電站"
+            }
+
+        ]
+        // =================================
+        // 網頁初始化：通常會撰寫函式來處理
+        // 練習：撰寫 網頁初始化函式(於網頁顯示所有的資料)
+        // =================================
+            
+            const List =  document.querySelector(".list");
+            let str = "";
+            
+            // List.innerHTML = "<li>Hello</li>"; 
+            data.forEach(function(item,index){
+
+                let content = `<li>${item.name}（${item.charge}）</li>`;
+                str += content;
+
+            })  
+
+            console.log(str);
+
+            List.innerHTML = str;
+
+    </script>
+    
+</body>
+</html>

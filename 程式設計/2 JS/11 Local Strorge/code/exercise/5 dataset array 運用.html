@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul style="padding:50px;background:#000;color:#fff" class="list"></ul>
+
+    <script>
+        let country = [
+            {
+                farmer:'陳時鐘'
+            }
+            ,{
+                farmer:'陳擊中'
+            }
+        ]
+        // ============================================
+        // 練習： 撰寫一個函式 updateList(),
+        //        把 陣列country的每筆資料
+        //        顯示在網頁上
+        // ============================================
+        // 取得物件
+        let List = document.querySelector(".list");
+        //更新農場資料
+        function updateList(){
+            let str = '';
+
+            //  =======================================================
+            // 使用用單純的 for語法來完成
+            // let len = country.length;
+            // for(let i = 0;len>i;i++){
+            //     str+= `<li data-num="${i}">${country[i].farmer}</li>`
+            // }
+            //  =======================================================
+            // 練習：使用forEach()函式來完成上列for迴圈之功能
+            
+            // 程式碼
+
+            List.innerHTML = str;
+        }
+        updateList();
+        // ===============================
+        //練習：確認點擊(選擇到) 到哪位農夫
+    </script>
+</body>
+</html>

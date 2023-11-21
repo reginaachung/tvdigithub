@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background: pink;
+        }
+    </style>
+  </head>
+  <body>
+            <button type="button"  id="fadeIn">fadeIn</button>
+            <button type="button"  id="fadeOut">fadeOut</button>
+            <button type="button"  id="fadeToggle">fadeToggle</button>
+            <br><br>
+            <div class="box"></div>
+      
+      <script>
+      // ===========================
+      // .fadeIn() .fadeOut()  .fadeToggle()  
+      //  淡入       淡出         淡入/淡出
+      // ===========================
+  
+      $("#fadeIn").click(function(){
+            // $(".box").fadeIn();
+            // $(".box").fadeIn('slow');
+            // $(".box").fadeIn('fast');
+            // $(".box").fadeIn(3000);
+        })
+
+        $("#fadeOut").click(function(){
+            // $(".box").fadeOut();
+            // $(".box").fadeOut('slow');
+            // $(".box").fadeOut('fast');
+            // $(".box").fadeOut(3000);
+        })
+        
+        $("#fadeToggle").click(function(){
+            // $(".box").fadeToggle();
+            // $(".box").fadeToggle('slow');
+            // $(".box").fadeToggle('fast');
+            // $(".box").fadeToggle(3000);
+        })
+    </script>
+  </body>
+</html>

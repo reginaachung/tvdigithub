@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" class= "inputData" placeholder= "請輸入待辦事項">
+    <input type="button" class = "saveBtn" value= "儲存待辦">
+    <ul class = "list">
+        <li>待辦事項一<input type="button" class="delete" value = "刪除待辦"></li>
+        <li>待辦事項二<input type="button" class="delete" value = "刪除待辦"></li>
+    </ul>
+    <script>
+        
+        let data = [
+            {
+                "content": "待辦事項一"
+            },
+            {
+                "content": "今天記得要帶便當"
+            }
+        ]
+
+        
+        const InputData = document.querySelector(".inputData");
+        const SaveBtn = document.querySelector(".saveBtn");
+        
+        // 檢查DOM元素是否設定正確
+        // console.log(InputData);
+        // console.log(SaveBtn);
+        function renderData(){
+            let str = "";
+            data.forEach(function(item,index){
+                str += `<li>${item.content}<input type="button" class="delete" value = "刪除待辦"></li>`
+            })
+            // console.log(str);
+
+            const List = document.querySelector(".list");
+            List.innerHTML = str;
+        }
+        renderData();
+
+        // ==========================================
+        // 練習： 新增功能
+        //        1 檢查 是否有輸入資料
+        //        2 新增資料
+        // ==========================================
+        SaveBtn.addEventListener('click',function(e){
+            // 確認事件是否綁定成功
+
+            // =================================
+            // 檢查 是否有輸入資料
+            // =================================
+
+            if(InputData.value==""){
+                return;
+            }
+            
+            // alert("請輸入待辦事項");
+
+            // ==============================
+            // 新增資料
+            // ==============================
+            // 將輸入的資料組成 object元素
+
+            let obj={};
+            obj.content=InputData.value;
+
+            console.log(obj);
+
+            // 把物件元素 加入到陣列內
+
+            data.push(obj);
+
+            console.log(data);
+
+            //資料顯示在網頁
+
+            renderData();
+
+            //資料顯示在網頁
+            InputData.value="";
+
+        })
+
+    </script>
+</body>
+</html>

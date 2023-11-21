@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--     
+    ==================================
+    練習： 點擊按鈕 將h3的內容置換為 其他文字
+    ================================== -->
+    
+    <h3 >事件處理的練習</h3> <!-- H3是這句標籤的物件 -->
+    <button onclick="change()">Regina</button>
+    
+    <script>
+        function change(){
+            // 取得物件
+            const H3=document.querySelector("h3");
+            // console.log(H3);
+            
+            // 使用物件
+            H3.innerHTML="~!~!~!~";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> 照片牆展示切換 v1 </title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/v1.css">
+</head>
+<body>
+    <div id="app">
+        <div id="contentPhoto"></div>
+        <div class="menu">
+            <nav>
+                <a id="a1"><img src="images/small/a1.jpg"></a>
+                <a id="a2"><img src="images/small/a2.jpg"></a>
+                <a id="a3"><img src="images/small/a3.jpg"></a>
+                <a id="a4"><img src="images/small/a4.jpg"></a>
+                <a id="a5"><img src="images/small/a5.jpg"></a>
+            </nav>
+        </div>
+    </div>
+    
+    <script>
+        //取得元件
+        const ContentPhoto = document.querySelector("#contentPhoto");
+        const A1 = document.getElementById("a1");
+        const A2 = document.getElementById("a2");
+        const A3 = document.getElementById("a3");
+        const A4 = document.getElementById("a4");
+        const A5 = document.getElementById("a5");
+
+        // ==========================================
+        // 練習：使用 addEventListener 監聽事件
+        // ==========================================
+
+        A1.addEventListener("click",photo1)
+        A2.addEventListener("click",photo2)
+        A3.addEventListener("click",photo3)
+        A4.addEventListener("click",photo4)
+        A5.addEventListener("click",photo5)
+        
+        function photo1(){
+            // console.log("a1");
+            ContentPhoto.style.backgroundImage = 'url("images/big/a1.jpg")';
+        }
+        
+        function photo2(){
+            ContentPhoto.style.backgroundImage = 'url("images/big/a2.jpg")';
+        }
+        
+        function photo3(){            
+            ContentPhoto.style.backgroundImage = 'url("images/big/a3.jpg")';
+        }
+        function photo4(){
+            ContentPhoto.style.backgroundImage = 'url("images/big/a4.jpg")';            
+        }
+        
+        function photo5(){
+            ContentPhoto.style.backgroundImage = 'url("images/big/a5.jpg")';
+        }
+
+
+    </script>
+</body>
+</html>

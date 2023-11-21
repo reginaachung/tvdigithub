@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background: pink;
+        }
+    </style>
+  </head>
+  <body>
+      <div class="container">
+          <div class="py-2">
+            <button type="button"  id="show">show</button>
+            <button type="button"  id="hide">hide</button>
+            <button type="button"  id="toggle">toggle</button>
+          </div>
+          <br><br>
+          <div class="box"></div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <script>
+      // ===========================
+      // .show() .hide()  .toggle()  
+      //  顯示    隱藏     顯示/隱藏
+      // ===========================
+
+      $("#show").click(function(){
+            $(".box").show();
+        })
+
+        $("#hide").click(function(){
+            $(".box").hide();
+        })
+        
+        $("#toggle").click(function(){
+            $(".box").toggle();
+        })
+    </script>
+  </body>
+</html>

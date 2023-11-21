@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+
+    </div>
+
+    <script>
+        // ===============================================
+        // textContent 與 innerHTML 運用的差異
+        // textContent 係針對  文字     ==>以文字方式處理
+        // innerHTML   係針對  html結構 ==>以html處理 
+
+        // textContent 用來設置或取得元素的純文本內容。它會將任何 HTML 標記都視為普通文字，不會解釋它們為 HTML 元素。這意味著如果你將包含 HTML 標記的字串設置為 textContent，它會將標記以純文本形式顯示，而不會解釋它們為元素。
+
+        // ===============================================
+
+        const  Main = document.querySelector(".main");
+        // console.log(Main);
+
+        Main.innerHTML = "<h1 style = 'color:red'>標題</h1>";
+
+        // console.log(Main);
+        
+        // =================================================
+        
+        // const  Main = document.querySelector(".main");
+        // console.log(Main);
+
+        // Main.textContent = "<h1 style = 'color:red'>標題</h1>";
+
+        // console.log(Main);
+
+    </script>
+</body>
+</html>

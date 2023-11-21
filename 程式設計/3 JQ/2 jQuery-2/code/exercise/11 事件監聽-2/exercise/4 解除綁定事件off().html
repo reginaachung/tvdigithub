@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>off</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+      <div>  
+              <button type="button"  id="say">say</button>
+              <button type="button"  id="btn1">啟動say按鈕功能</button>
+              <button type="button"  id="btn2">關閉say按鈕功能</button>
+      </div>
+    <script>
+        
+        // function sayHi(){
+        //       alert("hi")
+        // }
+
+        // $("#say").click(function(){
+        //     sayHi();
+        // })
+        //========================================
+        // 練習：
+        //   「啟動say按鈕功能」(btn1)，使 「say」按鈕 具有功能 
+        //   「關閉say按鈕功能」(btn2)，使 「say」按鈕 不具有功能 
+        // =======================================
+        function sayHi(){
+              alert("hi")
+        }
+
+        $("#btn1").click(function(){
+          $("#say").on('click', sayHi);
+        })
+        
+        $("#btn2").click(function(){
+          $("#say").off('click', sayHi);
+        })
+            
+    </script>
+  </body>
+</html>

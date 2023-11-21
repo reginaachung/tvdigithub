@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="content">這是一段字</div>
+    <button onclick=change()>點我</button>
+
+    <script>
+        // ===========================================
+        // 練習： 
+        // 點擊 "點我"按鈕後 
+        // 1 "這是一段文字" 變更為 "這是新的文字"
+        // 2 文字的顏色變更為 藍色
+        // ===========================================
+
+        function change() {
+            //取得標籤物件
+            const Content = document.querySelector("#content");
+            console.log(Content);
+            //操作標籤物件
+            Content.innerHTML = "這是新的字";
+            Content.style.color = "blue";
+        }
+
+    </script>
+</body>
+
+</html>

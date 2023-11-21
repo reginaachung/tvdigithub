@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>計數器</title>
+</head>
+<body>
+    <input type="button" value = "點擊" class = "btn">
+    <h1>0</h1>
+    <script>
+        // ======================================
+        // nodeName : 瞭解目前 DOM的 HTML位置
+        // ======================================
+        
+        const Btn = document.querySelector(".btn");
+        const Title = document.querySelector("h1");
+        
+        // ==============================
+        // 複習：取得 DOM元素Btn 之各屬性 內容
+        // ==============================
+
+        console.log(Btn.getAttribute("class"));
+        console.log(Btn.getAttribute("value"));
+        console.log(Btn.getAttribute("type"));
+        
+        // ===========================================
+        // 透過nodeName 瞭解指定 DOM元素的 HTML標籤名稱
+        // ===========================================
+        console.log(Btn); 
+        console.log(Btn.nodeName); 
+        console.log(Title.nodeName); 
+
+        
+    </script>
+</body>
+</html>

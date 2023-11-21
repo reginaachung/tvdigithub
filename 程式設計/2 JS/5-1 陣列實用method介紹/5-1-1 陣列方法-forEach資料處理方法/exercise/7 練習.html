@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 請根據以下要求撰寫程式碼:
+        // 1如果 NumberAll 陣列內的值大於或等於 30，則用 push() 方法將其加入 NumberAbove30 陣列中。
+        // 2如果 NumberAll 陣列內的值小於 30，則用 push() 方法將其加入 NumberUnder30 陣列中。
+
+        let NumberAll = [25, 30, 15, 50, 17, 40];
+        let NumberAbove30 = [];
+        let NumberUnder30 = [];
+
+        NumberAll.forEach(function(n){
+            if(n>=30){
+                NumberAbove30.push(n);
+            }else{
+                NumberUnder30.push(n)
+            }
+        });
+        console.log(NumberAbove30);
+        console.log(NumberUnder30);
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="filter">
+        <input type="button" value="免費">
+        <input type="button" value="投幣式">
+    </div>
+    <ul class="list">
+        <li>官府充電站（免費）</li>
+    </ul>
+
+    <script>
+        let data = [
+            {
+                charge:"免費",
+                name:"官府充電站"
+            },
+            {
+                charge:"投幣式",
+                name:"重號充電站"
+            },
+            {
+                charge:"投幣式",
+                name:"柔均電站"
+            },
+            {
+                charge:"投幣式",
+                name:"乃偉電站"
+            },
+            {
+                charge:"免費",
+                name:"蠻頭電站"
+            }
+
+        ]
+        
+        // 函式 init()  : 展示 data 內的每筆資料 於網頁上
+        function init(){
+            
+            const list =  document.querySelector(".list");
+            let str = "";
+
+            data.forEach(function(item,index){
+
+                let content = `<li>${item.name}（${item.charge}）</li>`;
+                str += content;
+
+            })  
+            list.innerHTML = str;
+        }
+        init();
+
+        // ================================================================
+        // 練習：分別將 「免費」、「投幣式」 按鈕 綁定事件 並製作出篩選資料的功能
+        // ================================================================
+        // 取得物件
+        const Filter = document.querySelector(".filter");
+        // 綁定事件
+        Filter.addEventListener("click",function(e){
+
+            // =======================================================
+            // 練習： 當沒有點擊正確的按鈕 於 console顯示 "未點擊正確按鈕"
+            // =======================================================
+            if(沒有點擊正確的按鈕){
+                於 console顯示 "未點擊正確按鈕"
+            }
+            
+        })
+
+
+    </script>
+    
+</body>
+</html>

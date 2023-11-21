@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>plugin</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- =====================================
+    step2
+    要先引入自己製作的plug-in 才能使用 
+    ===================================== -->
+
+  </head>
+  <body>
+      <h1>hello world</h1>
+      <h1>hello kitty</h1>
+    
+    <script>
+      // ============================
+      // 建立自己的 jQuery Plugin 步驟
+      // step1：
+      //  於自己撰寫的 plugin 檔案 ， 
+      //  確保$是給jQuery使用
+      //   (function($){
+      //    })(jQuery)
+      //
+      // step2:
+      //   引入自己撰寫的 plug-in
+      // step3:
+      //  使用 自己建立的 plug-in
+      // ===================================
+
+      // ============================
+      // 練習：自己建立一個能重複被使用的套件 
+      //       名稱： redText()
+      // 建立於 color.js檔案
+      // ============================
+      // step1 
+      // ============================
+
+      //setp 2： 引入 自己建立的 plugin檔案
+
+
+      // step 3： 使用自己建立的 redText()外掛
+
+      // $("h1").redText();
+
+
+      // ==============================
+      // 練習1-1： 撰寫jQuery套件 .color(參數)，
+      //       參數為：顏色
+      // ==============================
+      
+      // $('h1').color("green");
+
+      // ==============================
+      // 練習1 步驟說明：
+      // ==============================
+      // step1:
+      // 於 color.js 檔案中建立
+      // 1  確保 $ 是給 jQuery使用
+      // (function($){
+
+      // })(jQuery);
+      
+      // 2 開始撰寫 內容
+      
+      // (function($){
+      //   $.fn.redText = function(){
+      //     this.css("color", "red");
+      //     return this;
+      //   }
+      // })(jQuery);
+      // ==============================
+
+
+    </script>
+  </body>
+</html>

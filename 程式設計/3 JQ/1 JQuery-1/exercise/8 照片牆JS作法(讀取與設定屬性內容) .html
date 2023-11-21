@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Attr </title>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/9.css">
+</head>
+<body>
+    <div id="app">
+        <div id="contentPhone">
+            <img class="photo" src="./images/photo/big/a1.jpg" alt="">
+        </div>
+        <div class="menu">
+            <nav id="nav">
+                <a id="a1"><img src="./images/photo/small/a1.jpg" alt=""></a>
+                <a id="a2"><img src="./images/photo/small/a2.jpg" alt=""></a>
+                <a id="a3"><img src="./images/photo/small/a3.jpg" alt=""></a>
+                <a id="a4"><img src="./images/photo/small/a4.jpg" alt=""></a>
+                <a id="a5"><img src="./images/photo/small/a5.jpg" alt=""></a>
+            </nav>
+        </div>
+    </div>
+    <script>
+        // ===============================================
+        // JavsScript
+        // .getAttribute
+        // 1  .getAttribute(參數) ==> 獲取屬性的內容 ==>取得「參數」屬性的內容
+        // 2  .setAttribute(參數1, 參數2) ==> 改變屬性的內容 ==>把「參數1」屬性的內容 變更為 「參數2」
+        // =================================================
+        // 練習：使用JS 撰寫照片牆
+        // ==================================================
+        
+        $(function(){
+            
+            //========================================
+            // JS的寫法
+            //========================================
+            $("#nav>a").on('click', JavaScriptFn);
+            
+            function JavaScriptFn(){
+
+                // 練習：如何取得 id屬性 的值
+                // =====================
+                // 方法1： 
+                // =====================
+                // console.log(this.id);//x
+
+                // =====================
+                // 方法2：(使用getAttribute來讀取屬性內容-)
+                // =====================
+                // console.log(this);//js用法
+                console.log(this.getAttribute('id').substr(1,1));
+
+                // 取得 id的數值部分
+                // let no = ----.getAttribute('id').--------;
+                let no = this.getAttribute('id').substr(1,1);
+
+                // 練習： 變更 .photo的屬性 以取得 點擊的圖片
+                // 取得物件
+
+                const Photo = document.querySelector(".photo");
+                // ----.set---(-----,`./images/photo/big/a${---}.jpg`);
+                Photo.setAttribute('src',`./images/photo/big/a${no}.jpg`);
+            }
+        });
+    </script>
+</body>
+</html>

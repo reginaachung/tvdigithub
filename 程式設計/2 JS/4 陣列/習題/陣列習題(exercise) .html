@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // =====================================
+        // 練習1
+        // 把成績放入陣列中，
+        // 成績分別為 80 75 69 95 92 88 76 87
+        // 並且計算陣列中元素的 加總 及 平均
+        // 備註： .toFixed(n) 為小數點取 n 位
+        // =====================================
+        
+        // let score=[80 ,75, 69, 95, 92, 88, 76,87];
+        // let total=0;
+        // let avg=0;
+
+        // for(let i =0;i<score.length;i++){
+        //     console.log(score[i]);
+        //     total+=score[i];
+        // }
+
+        // avg=total/score.length;
+        // console.log("陣列總和為",total);
+        // console.log("陣列平均為",avg.toFixed(2)); 
+        // // 拆解
+        // console.log("陣列平均為",avg);
+        // console.log(avg.toFixed(1));
+
+        // ================================
+        // 練習2
+        // 找出陣列元素中的最大值
+        // ================================
+        
+        // let arr = [2, 6, 1, 77, 52, 25, 7, 99];
+        // let max = 0;
+
+        // for(let jon=0;jon<arr.length;jon++){
+        //     console.log(arr[jon]);
+        //     if(arr[jon]>max) {
+        //         max=arr[jon];
+        //     }
+        // }
+
+        // console.log(`陣列元素中的最大值是${max}`);
+        // =================================
+        // 練習3
+        // 篩選出陣列元素中 大於或等於10的元素
+        // 放到 newArray陣列中
+        // ==================================
+        
+        // let arr = [2, 0, 6, 1, 77, 0, 52, 0,25, 7];
+        // let newArr = [];
+
+        // for(let i=0;i<arr.length;i++){
+        //     // console.log(arr[i]);
+        //     if(arr[i]>=10){
+        //     newArr.push(arr[i])
+        //     }
+        // }
+        // console.log(newArr)
+        
+        // =================================
+        // 練習 :刪除指定的陣列元素
+        // 將陣列中內容非0的元素刪除
+        // ==================================
+        // 方法一
+        // let arr = [2, 0, 6, 1, 77, 0, 52, 0,25, 7];
+        // let newArr=[];
+
+        // for (let n=0;n<arr.length;n++){
+        //     // console.log(arr[n]);
+        //     if(arr[n]!=0){
+        //     newArr.push(arr[n]);
+        //     }
+        // }
+        // console.log(newArr);
+
+        // 方法二
+        // let arr = [2, 0, 6, 1, 77, 0, 52, 0,25, 7];
+        // let newArr=[];
+
+        // for (let n=0;n<arr.length;n++){
+        //     // console.log(arr[n]);
+        //     if(arr[n]==0){
+        //         continue;
+        //     }
+        //     newArr.push(arr[n]);
+        //     }
+        // console.log(newArr);
+
+        // =================================
+        // 練習 :刪除指定的陣列元素
+        // 請使用者輸入欲刪除陣列的第幾個元素
+        // 然後刪除之
+        // ==================================
+        
+        // 方法一
+        // let arr = [2, 0, 6, 1, 77, 0, 52, 0,25, 7];
+        // let newArr=[];
+        // let indexNo = Number(prompt("請問你想刪除陣列中的第幾個元素",""));
+        // console.log(indexNo);
+        // arr.splice(indexNo-1,1);
+        // console.log(arr);
+
+        // 方法二
+        // let arr = [2, 0, 6, 1, 77, 0, 52, 0,25, 7];
+        // let newArr=[];
+        // let indexNo = Number(prompt("請問你想刪除陣列中的第幾個元素",""));
+        
+        // for(let q=0;q<arr.length;q++){
+        //     if(q==indexNo-1){
+        //         continue;
+        //     }
+        //     newArr.push(arr[q]);
+        // }
+        // console.log(newArr);
+                
+        // =================================
+        // 練習 :翻轉陣列內元素的順序
+        // ==================================
+        
+        // let arr = [2, 0, 6, 1, 77, 0, 52, 0,25, 7];
+        // let newArr = [];
+        
+        // for(let i=arr.length-1;i>=0;i--){
+        //     newArr.push(arr[i]);
+        // }
+        // console.log(newArr);
+        
+        // =====================================
+
+
+    </script>
+    
+</body>
+</html>

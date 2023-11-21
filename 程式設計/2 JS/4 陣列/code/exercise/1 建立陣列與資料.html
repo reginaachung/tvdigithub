@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-1 建立陣列物件與資料</title>
+</head>
+<body>
+    <script>
+        //建立陣列物件
+
+        // 方法1
+        // let grades = new Array();
+        // console.log(grades);
+        // ---------------------------------
+
+        // 方法2
+        // let grades=[];
+        // console.log(grades);
+
+        //=====================================
+        //建立陣列物件, 並在陣列中新增資料
+
+        // let grades=[];
+
+        // grades.push(70);
+        // grades.push(50);
+        // grades.push(84);
+
+        // console.log(grades);
+
+        // // 讀出元素50
+        // console.log(grades[1]);
+        
+        // // ===============================
+        // // 陣列的長度  陣列名稱.length
+        // // ===============================
+
+        // console.log(`grades陣列內有${grades.length}個元素`);
+
+        // ===============================
+        // 建立陣列物件 同時給予資料
+        // ===============================
+
+        // let grades=[70,50,85];
+
+        // grades.push(25);
+        // grades.push(100);
+        // console.log(grades);
+        
+        // //取得陣列內的特定資料
+
+        // console.log(grades[3]);
+
+        // console.log(grades.length);// 陣列的長度
+        
+        // ==================================
+        //練習：上例 
+        // 運用for迴圈 逐一取得陣列中的資料
+        // =====================================
+
+        // let grades=[70,50,84];
+        // grades.push(25);
+        // grades.push(100);
+        // console.log(grades);
+        
+        // for(let i=0;i<grades.length;i++){
+        //     console.log(grades[i]);
+        // }
+
+        // ========================================
+        //綜合練習 利用for迴圈 計算陣列內元素的平均數
+        //提示：算平均數  先算出總和
+        // ========================================
+        
+        let grades=[70,50,84];
+        let total =0;
+
+        grades.push( 25);
+        grades.push(100);
+        grades.push( 25);
+        grades.push(100);
+        grades.push( 25);
+        grades.push(100);
+        console.log(grades);
+
+        for(let i=0;i<grades.length;i++){
+            total += grades[i];
+        }
+        
+        console.log(`陣列內各元素的總和為${total}、平均數為${total/grades.length}`);
+    </script>
+</body>
+</html>

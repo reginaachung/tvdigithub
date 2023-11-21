@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 事件處理的練習</title>
+    <style>
+        .btn
+        {
+            background-color: pink;
+            padding: 8px;
+            border-radius:5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- 練習： 承上題 
+        「我也要跟.....」
+        也能隨著變化
+    -->
+    
+    <h3>事件處理的練習-自製簡易按鈕</h3>
+    
+    <span 
+    class='btn'
+            onmouseover="over(this)";
+            onmouseout="out(this)";
+            onmousedown="down(this)"; 
+            onmouseup="up(this)";   
+    >點我</span>
+    
+    <span 
+    class='btn'
+            onmouseover="over(this)"; 
+            onmouseout="out(this)";
+            onmousedown="down(this)"; 
+            onmouseup="up(this)"   
+    >第二個按鈕</span>
+    
+    <br><br>
+    <span>我也要跟.....</span>
+    
+    <script>
+        // ==========================================
+        // 練習： 觸發按鈕事件後 使「我也要跟.....」文字 
+        //                     也會有和按鈕 相同的變化
+        // ==========================================
+        
+        // 取得物件 （使用 getElementById）
+
+        function over(elem){
+            elem.style.backgroundColor="#ddcccc";
+
+        }
+        
+        function out(elem){
+            elem.style.backgroundColor="#ffcccc";
+
+        }
+        
+        function down(elem){
+            elem.style.color = "red";
+
+        }
+        
+        function up(elem){
+            elem.style.color="black";
+            
+        }
+        
+    </script>    
+       
+</body>
+</html>

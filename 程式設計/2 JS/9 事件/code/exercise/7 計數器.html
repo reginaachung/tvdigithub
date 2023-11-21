@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>計數器</title>
+</head>
+<body>
+    <input type="button" value = "點擊" class = "btn">
+    <h1>0</h1>
+    <script>
+        // ================================
+        // 練習： let count = 0 要放在哪裡 ?
+        // ================================
+
+        // 取得物件
+        // const Btn = document.querySelector(".btn");
+        // const Title = document.querySelector("h1");
+
+        // 綁定事件
+        // let count=0
+        // Btn.addEventListener("click",function(e){
+        //     count ++;//+= 1;
+        //     console.log(count);
+        // })
+
+        // =============================================
+        // 練習： 承上, render 於網頁
+        // =============================================
+        
+        const Btn = document.querySelector(".btn");
+        const Title = document.querySelector("h1");
+        
+        let count=0
+        Btn.addEventListener("click",function(e){
+            count += 1;
+            Title.textContent = count;
+        })
+
+        // =============================================
+        // 複習 local variable 、 global variable概念
+        // =============================================
+        
+        // const Btn = document.querySelector(".btn");
+        // const Title = document.querySelector("h1");
+        
+        // Btn.addEventListener("click",function(e){
+        
+        //     let count = 0;
+        //     count += 1;
+        //     Title.textContent = count;
+        // })
+
+    </script>
+</body>
+</html>

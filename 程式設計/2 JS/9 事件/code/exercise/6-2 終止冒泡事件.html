@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rBox="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: #000;
+        }
+    </style>
+</head>
+<body class="body">
+    <div class="box"></div>
+
+    <script>
+        // ====================================
+        // 阻斷冒泡事件  .stopPropagation();
+        // ====================================
+
+        let Box = document.querySelector('.box');
+        
+        Box.addEventListener('click',function(e){
+            //===========================
+            // 練習：阻斷冒泡事件
+            //===========================
+
+
+            alert('box');
+            console.log('box');
+        },false);
+
+        let Body = document.querySelector('.body');
+        Body.addEventListener('click',function(){
+            alert('你沒有點到box');
+            console.log('你沒有點到box');
+        },false);
+
+    </script>
+    
+</body>
+</html>

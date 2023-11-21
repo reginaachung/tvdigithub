@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // ================================================
+        // 讀取陣列內的元素
+        // 陣列內的元素可以是 數字、字串、物件、陣列...等
+        // ================================================
+        // 例： 讀取陣列內的 數字、字串、布林值
+        // ================================================
+        // let data = [30, "hello", true];
+
+        // data.forEach(function(item,index){
+        //     console.log(item);
+        // })
+
+        // ------------------------
+        // 練習：使用箭頭函式的寫法
+        // ------------------------
+        
+        // let data = [30, "hello", true];
+
+        // data.forEach((item,index)=>{
+        //     console.log(item,index);
+        // })
+
+        // ====================================
+        // 例：讀取陣列內的 物件
+        // ====================================
+        
+        // let data = [
+        //     {
+        //         name: "Tom",
+        //         gender: "male",
+        //     },
+        //     {
+        //         name: "Mary",
+        //         gender: "feamale",
+        //     }
+        // ]
+
+        // data.forEach(function(item){
+        //     console.log(item)
+        // })
+
+        // ===========================================
+        // 練習： 顯示  name、gender 屬性的資料
+        // ===========================================
+        
+        let data  = [
+            {
+                name   : "Tom",
+                gender : "male",                
+            },
+            {
+                name   : "Mary",
+                gender : "feamale",            
+            }            
+        ]
+
+        data.forEach(function(item){
+            console.log(`姓名:${item.name}性別:${item.gender}`)
+        })
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#"/>
+    <title>Document</title>
+
+</head>
+<body>
+    <h1 >我是h1標籤,來選我</h1>
+    <h2 class="title1">我是class,來選我</h2>
+    <h3 id="title2">我是id,來選我</h3>
+
+    <script>
+        // ============================
+        // 認識querySelector 選擇器
+        // 1 標籤  ===>  例如 "h1"標籤
+        // 2 id    ===>  #
+        // 3 class ===>  .
+        // ============================
+        //練習 ：選取網頁元素
+        //       並用 console.log驗證 
+        //       是否選取成功
+        // ============================
+        //選取 h1
+        const H1 =document.querySelector("h1")
+        console.log(H1)
+
+        //選取 title1
+        const Title1 =document.querySelector(".title1")
+        console.log(Title1)
+
+        //選取h3
+        const Title2 =document.querySelector("#title2")
+        console.log(Title2)
+
+    </script>
+</body>
+</html>

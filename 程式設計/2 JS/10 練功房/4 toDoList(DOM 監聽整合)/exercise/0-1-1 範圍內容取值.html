@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 class="title">
+        <span>標題內容</span>
+        <input type="button" class="view" value="TVDI">
+    </h2>
+    <script>
+        // 取值 getAttribute
+        const Title = document.querySelector(".title");
+
+        Title.addEventListener("click",function(e){
+
+            // 練習：使用正面表列的方式判斷 點擊倒 button
+            // 並取出 button 的value屬性 內容
+            if(e.target.getAttribute == "view"){
+                console.log("你有正確點擊到 input");
+                console.log(e.target.getAttribute("value"));
+            }
+            
+        })
+    </script>
+</body>
+</html>

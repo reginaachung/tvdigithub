@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 自定義的屬性：格式為  data-自訂的屬性名稱  -->
+    <ul class="list">
+        <!-- 例如：陳時鐘 養了3隻狗 -->
+        <li data-index="0" data-dog="3">陳時鐘</li>
+        <li data-index="1" data-dog="1">陳擊中</li>
+    </ul>
+    
+    <!-- 
+        討論：為何要使用自定義屬性 data- 呢？
+        ，於HTML標籤物件埋藏資訊，方便被程式使用 
+    -->
+
+    <script>
+        let List = document.querySelector('.list');
+        
+        // ================================================
+        // 練習：當觸發 click事件  
+        // ==>顯示「編號 ，有 幾隻狗」
+        // ================================================
+        
+        // 綁定事件
+        List.addEventListener('click',checkList,false);
+        
+        function checkList(){
+            
+            // 使用自定義屬性
+            let index =                   ;
+            let dog =                     ;
+            let name =                    ;
+
+            console.log(`你點選姓名為${name}編號是${index}，有${dog}隻狗`);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // =========================
+        // JS 陣列.map() 介紹
+        // 1 將原始陣列每一元素經處理後，
+        //   產生一個新陣列==>必須使用return
+        // 2 原陣列仍然存在，不受影響
+        // ==========================================
+        // 練習1：產生一個新陣列newArr，內容為原陣列元素之自乘
+        // ==========================================
+        
+        // //1
+        // const arr = [10, 20, 30, 40, 50];
+
+        // arr.map(function(item)){
+        //     item*item
+        // }
+
+        // console.log(arr);
+        // console.log(newArr);
+
+        // //2
+
+        // const arr = [10, 20, 30, 40, 50];
+
+        // const newArr=arr.map(function(item){
+        //     return item*item
+        // })
+
+        // console.log(arr);
+        // console.log(newArr);
+        
+        // ==========================================
+        // 練習2：產生一個新陣列，內容為判斷原陣列中每個元素 是否 大於 20
+        // ==========================================
+        
+        // const arr = [10, 20, 30, 40, 50];
+        // const newArr=arr.map(function(item){
+        //     return item>20;
+        // })
+
+        // console.log(arr);
+        // console.log(newArr);
+        
+        // ==========================================
+        // 練習3：產生一個陣列其中陣列中的元素為物件型態，
+        // 內容為判斷原陣列中每個元素 是否 大於 20之 物件(object)
+        // ==========================================
+        
+        const arr = [10, 20, 30, 40, 50];
+
+        const newArr=arr.map(function(item){
+            
+            let jon={};
+            jon.isGreater20=item>20;
+            return jon;
+            
+        })
+
+        console.log(arr);
+        console.log(newArr);
+
+    </script>
+</body>
+</html>

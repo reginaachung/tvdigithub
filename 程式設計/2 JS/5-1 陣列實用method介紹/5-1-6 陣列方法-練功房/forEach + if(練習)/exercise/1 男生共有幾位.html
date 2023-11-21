@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="list"></ul>     
+    
+    <script>
+
+        let data = [
+            {
+                name : "Tom",
+                gender : "male"
+            },
+            {        
+                name : "Jane",
+                gender : "feamale"
+            },
+            {
+                name : "David",
+                gender : "male"
+            },
+            {        
+                name : "John",
+                gender : "male"
+            },
+            {
+                name : "Mary",
+                gender : "feamale"
+            }
+        ]
+
+        //練習：使用forEach() 輸出 「男生有  位」
+        
+        let maleCount=0;
+
+        data.forEach(function (item) {
+            if(item.gender=="male"){
+                maleCount++;
+            }
+        })
+
+        console.log(`男生有${maleCount}位`);
+
+        // 刻意練習 ： 顯示在網頁上(在 line 10 ul下增加項目)
+        // const List = document.querySelector(".list");
+        // List.innerHTML = `<li>男生有${maleCount}位</li>`;
+
+    </script>
+</body>
+</html>

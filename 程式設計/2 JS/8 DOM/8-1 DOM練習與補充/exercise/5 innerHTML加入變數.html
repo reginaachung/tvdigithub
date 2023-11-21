@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Ul class = "list"></Ul>
+    
+    
+
+    <script>
+        // =================================
+        // 主題：  innerHTML 字串 可以帶變數
+        // =================================
+        
+        const List = document.querySelector(".list");
+        console.log(List);
+        
+        
+        // ======================================
+        // 練習： 在 .list之ul中 新增1個li 節點 
+        //        為「台北市職能發展學院」 的連結
+        // ======================================
+
+        List.innerHTML="<li><a href='https://www.tvdi.gov.taipei/'>台北市職能發展學院</a></li>"
+
+        // ============================================
+        // innerHTML 字串 可以帶入變數(樣版模版運用) 的使用技巧       =
+        // ============================================
+        const List = document.querySelector(".list");
+
+        let myLink = "https://www.tvdi.gov.taipei"
+        let myName = "台北市職能發展學院"
+
+        List.innerHTML =`<li><a href="${myLink}">${myName}</li>`
+        
+        console.log(List);
+        
+        // ================================================
+        // 以下程式執行後的臺北市結果 ？
+        // ================================================
+        
+        
+        // const List = document.querySelector(".list");
+        // let myLink = "https://www.tvdi.gov.taipei"
+        
+        // let city = prompt("請輸入都市名稱","");
+        // let content = `<li><a href="${myLink}">${city}職能發展學院</a></li>`
+        
+        // List.innerHTML = content;
+        // console.log(List);
+        
+        // ==================================================
+        // 練習：使用者輸入 網站名稱及網址, 渲染(render)於網頁
+        // ================================================
+        
+
+    </script>
+</body>
+</html>

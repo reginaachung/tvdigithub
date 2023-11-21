@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="filter">
+        <input type="button" value="免費">
+        <input type="button" value="投幣式">
+    </div>
+    <ul class="list">
+        <li>官府充電站（免費）</li>
+    </ul>
+
+
+    <script>
+        let data = [
+            {
+                charge:"免費",
+                name:"官府充電站"
+            },
+            {
+                charge:"投幣式",
+                name:"重號充電站"
+            },
+            {
+                charge:"投幣式",
+                name:"柔均電站"
+            },
+            {
+                charge:"投幣式",
+                name:"乃偉電站"
+            },
+            {
+                charge:"免費",
+                name:"蠻頭電站"
+            }
+
+        ]
+        
+        function init(){
+            const List =  document.querySelector(".list");
+            let str = "";
+
+            data.forEach(function(item,index){
+
+                let content = `<li>${item.name}（${item.charge}）</li>`;
+                str += content;
+
+            })  
+            List.innerHTML = str;
+        }
+        init();
+
+        const Filter = document.querySelector(".filter");
+
+        Filter.addEventListener("click",function(e){
+            
+            if(e.target.value == undefined){
+                console.log("未點擊正確按鈕");
+                return;
+            }
+
+            //=============================================
+            // 練習：判斷 付費或投幣式 並將其 顯示在網頁上
+            //=============================================
+
+            data.forEach(function(item, index){
+                // console.log(e.target.value);
+                // console.log(item.charge);
+
+                // ========================================
+                // 練習： 依據使用者點擊「付費」或「投幣式」按鈕
+                //        整合 符合條件的資料
+                // ========================================
+                程式碼
+
+
+            })
+
+            
+        })
+
+
+    </script>
+    
+</body>
+</html>

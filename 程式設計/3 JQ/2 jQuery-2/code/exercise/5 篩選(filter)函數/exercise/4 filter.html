@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>filter</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <style>
+      table,
+      th,
+      td {
+        border-collapse: collapse;
+        border: 1px solid black;
+        width: 500px;
+        height: 30px;
+      }
+      th,
+      td {
+        padding: 0.25rem;
+      }
+  </style>
+    <style>
+        .box {
+            width: 60px;
+            height: 60px;
+            margin: 5px;
+            float: left;
+            background: #ccc;
+            border: 5px white solid;
+        }
+    </style>
+  </head>
+  <body>
+      <div class="container">
+        <div class="box"></div>
+        <div class="box middle"></div>
+        <div class="box middle"></div>
+        <div class="box middle"></div>
+        <div class="box middle"></div>
+        <div class="box"></div>
+      </div>
+      
+    <script>
+        $(".box").css("background", "green");
+            
+        //============================================
+        // 練習： 把 1 所有的格子變成綠色 
+        //           2 再把其中class屬性為 middle 的 
+        //             border-color設為"紅色" 
+        //============================================
+        $(".box").css("background", "green")
+            .------------------
+            .------------------
+        //
+    </script>
+  </body>
+</html>

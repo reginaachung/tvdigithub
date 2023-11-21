@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>next prev</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <style>
+      table,
+      th,
+      td {
+        border-collapse: collapse;
+        border: 1px solid black;
+        width: 500px;
+        height: 30px;
+      }
+      th,
+      td {
+        padding: 0.25rem;
+      }
+  </style>
+  </head>
+  <body>
+      <div class="container">
+          <table class="table table-bordered">
+              <tr>
+                  <td><input type="checkbox" name="" id=""></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td><input type="checkbox" name="" id=""></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td><input type="checkbox" name="" id=""></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td><input type="checkbox" name="" id=""></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td><input type="checkbox" name="" id=""></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+          </table>    
+      </div>
+    <script>
+        // =====================================
+        // .parent() 上一層（父層）   
+        // =====================================
+        // 練習： 點擊 checkbox , 使該td變成 黃色
+        // ========================
+        // ------------.click(function(){
+        //     -----------.css("background", "yellow")
+        // })
+        
+        // ===============================================
+        // 練習： 點擊 checkbox , 使該td 之往上2層變成 黃色
+        // ===============================================
+
+        
+        // ===============================================
+        // .closest() 到底是誰（符合條件最接近的「長輩」）
+        // ===============================================
+        // 練習：找到最近的 tr ，使背景 變成黃色
+        // ===============================================
+
+        // $("input[type = 'checkbox']").click(function(){            
+        //     -------------.css("background", "yellow")
+        // })
+        // ==========================================
+        // .parents()  祖先    （較不常用）
+        // ==========================================
+        // 練習： 找出所有的祖先，使變成黃色
+        // ==========================================
+        // $("input[type = 'checkbox']").click(function(){            
+        //     -------------.css("background", "yellow")
+        // })
+
+    </script>
+  </body>
+</html>

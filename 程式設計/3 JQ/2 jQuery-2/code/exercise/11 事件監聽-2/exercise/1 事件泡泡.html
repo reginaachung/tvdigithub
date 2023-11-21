@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Event bubbling</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        .container{
+            background: pink;
+        }
+    </style>
+  </head>
+  <body>
+      <div class="container">
+          <button type="button"class ='btn'>click</button>
+      </div>
+    <script>
+        // =====================================
+        // event-bubble 事件冒泡
+        // 按下 .btn 就產生了 「事件冒泡」 的問題
+        // =====================================
+        
+        // $(".btn").click(function(){
+        //     alert("觸發 button的 click")
+        // })
+
+        // $(".container").click(function(){
+        //    alert("觸發 container的 click")
+        // })
+        
+        //========================================
+        // 防止 「事件冒泡」的現象
+        // .stopPropagation()
+        //========================================
+        
+        // $(".btn").click(function(event){
+        //     event.stopPropagation();
+
+        //     console.log("觸發 button的 click")
+        // })
+
+        // $(".container").click(function(){
+        //     console.log("觸發 container的 click")
+        // })
+    </script>
+  </body>
+</html>

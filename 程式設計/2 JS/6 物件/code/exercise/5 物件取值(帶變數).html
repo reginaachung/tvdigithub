@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //-------------------------
+        //物件取值的另一種寫法
+        //--------------------------
+        // // 練習1：物件取值
+        // // =============================
+
+        // let family = {
+        //     motherName : "Mary",
+        //     fatherName: "Tom",
+        //     dogs: 3,
+        //     IsWakeUp : false
+        // }
+
+        // // ----------------------------
+        // // 練習：顯示 motherName屬性值
+        // // ----------------------------
+
+        // console.log(family.motherName);
+
+        // // ****************************************
+        // // 練習：物件取值的另一種寫法
+        // // ****************************************
+
+        // //可以用[]但要加""
+        // console.log(family["motherName"]);
+
+        // // ----------------------------
+        // // 練習：顯示 dogs屬性值
+        // // ----------------------------
+
+        // console.log(family["dogs"]);
+
+        // ========================================
+        // 練習2
+        // ========================================
+
+        // let family = {
+        //     motherName : "Mary",
+        //     fatherName: "Tom",
+        //     dogs: 3,
+        //     IsWakeUp : false,
+        // }
+
+        // 練習： 顯示family物件中 motherName屬性值
+
+        //寫法1
+        // console.log(family["motherName"]);
+
+        //寫法2
+        // let a = "motherName";
+        // console.log(family[a]);
+
+        // =======================================
+        // 練習3 
+        // =======================================
+
+        // let family = {
+        //     motherName : "Mary",
+        //     fatherName: "Tom",
+        //     dogs: 3,
+        //     IsWakeUp : false,
+        //     "001" : "hello"
+        // }
+
+        // // console.log(family.001);         //錯誤，如何修改
+        // console.log(family["001"])          // 請填入正確的內容
+
+        // =====================================
+        // 練習4
+        // =====================================
+
+        let family = {
+            motherName: "Mary",
+            fatherName: "Tom",
+            dogs: 3,
+            IsWakeUp: false,
+            "001": "hello"
+        }
+
+        let item = "dogs";
+
+        // 練習：用腦袋 run 
+
+        console.log(family.item);
+        console.log(family["dogs"]);
+
+        // 下列哪句是正確的寫法 
+
+        family["item"]  //錯誤
+        family[item]    //正確
+        console.log(family.dogs); //正確
+        console.log(family.item); //錯誤
+        console.log(family[item]); //正確
+
+    </script>
+</body>
+
+</html>

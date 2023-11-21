@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>scrollTop</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/13.css">
+    <script src="./js/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div class="page1">page1</div>
+        <div class="page2">page2</div>
+        <div class="page3">page3</div>
+        <div class="page4">page4</div>
+
+        <a id="scrollTop"><i class="fas fa-angle-double-up fa-4x"></i></a>
+    </div>
+    <script>
+        // =====================================
+        // 垂直轉軸的控制
+        // .scrollTop(y) 移到垂直捲軸 座標y的位置(y為數值)
+        // =====================================
+        // 練習： 點擊 右下角的箭頭 
+        //        ==> 返回到 垂直捲軸的top位置
+        // =====================================
+        
+        $(function(){
+        
+            $("#scrollTop").on("click", function(){
+                $("html").scrollTop(0)// Y座標的最前面為 0
+            })
+        })      
+    </script>
+</body>
+</html>

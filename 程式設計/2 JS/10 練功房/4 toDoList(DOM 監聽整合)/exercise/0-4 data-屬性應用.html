@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 class="title" data-content = "標題內容" data-num ="3" data-jon ="帥哥">標題內容</h2>
+    <script>
+        // 自訂義HTML屬性 
+        // data-自訂名稱 ==> 埋藏一些資料於 標籤 內
+        // data-自訂名稱="值"   的屬性取值
+        // 讀出自訂義屬性的內容 .dataset.自訂名稱
+        // 例如 data-num = "3"
+        const Title = document.querySelector(".title");
+
+        // 練習：取出data-num的值
+        console.log(Title.dataset.num);
+        console.log(Title.dataset.jon);
+        
+        // 練習：取出data-content的值
+        let data = Title.dataset.content;
+        console.log(data);
+        
+    </script>
+</body>
+</html>

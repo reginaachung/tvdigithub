@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 獲取DOM物件(class)</title>
+    <div id="app">
+        <h1>臺北市職能發展學院</h1>
+        <button class='btn'>招生簡章1</button>
+        <button class='btn'>招生簡章2</button>
+        <button class='btn'>招生簡章3</button>
+        <button class='btn'>招生簡章4</button>
+        <button class='btn'>招生簡章5</button>
+    </div>
+
+    <script>
+        
+        let Btn = document.getElementsByClassName('btn');
+        
+        console.log(Btn);  
+        
+        //取得第3個元素
+        console.log(Btn[2]);
+        //====================================================
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

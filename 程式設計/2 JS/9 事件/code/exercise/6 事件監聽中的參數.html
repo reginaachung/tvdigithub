@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>計數器</title>
+</head>
+<body>
+    <input type="button" value = "按鈕" class = "btn">
+    <script>
+
+        
+        // ============================================
+        // 事件監聽中fucntion(e){}中的參數e是什麼，有些人寫event ,或自訂名稱都可以
+        //指向
+        // 以物件 來記載事件被啟動當下的狀態
+        // e於離開 {} 區塊即消失
+        // ============================================
+        
+        const Btn = document.querySelector(".btn");
+        
+        Btn.addEventListener("click",function(e){
+        
+        console.log(e);
+            
+        // ============================================
+        // 練習：顯示 click點擊的 座標
+        // ============================================
+
+        console.log(e.clientX);
+        console.log(e.clientY);
+        
+        // ============================================
+        // 按住alt按鍵 再點擊按鈕
+        // 觀察altKey 屬性會有什麼變化
+        // ============================================
+        
+        console.log(e.altKey);
+        
+        })
+    </script>
+</body>
+</html>

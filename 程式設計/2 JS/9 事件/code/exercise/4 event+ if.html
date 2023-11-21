@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>註冊事件處理函式</title>
+</head>
+<body>
+    <div onclick="change(this)">點擊</div>
+    
+    <button onmouseover="mouseOver(this)">按鈕</button> 
+        <!-- this代表被觸發事件的標籤（物件），
+        此處的this代表整個div的物件 -->
+    
+    <script>
+       // =====================================================
+       // 練習1： 當「點擊」被點擊 ==> 按鈕文字變更為
+       //        「我被點擊了」  並變為 紅色
+       // =====================================================
+        
+        function change(elem){
+        elem.innerHTML  = "我被點擊了";
+        elem.style.color="red";            
+        }
+
+       // =====================================================
+       // 練習2： 承上題, 使用「按鈕」按鈕被滑入 ==> 按鈕文字變更為
+       //               「我被點擊了」
+       //                再滑入一次按鈕  按鈕上就顯示「按鈕」
+       // =====================================================
+        
+        function mouseOver(elem){
+            let content = elem.innerHTML;
+            if(content==="按鈕"){
+            elem.innerHTML = "我被點擊了";
+            }else{
+            elem.innerHTML= "按鈕";
+            }
+        }
+
+    </script>
+</body>
+</html>

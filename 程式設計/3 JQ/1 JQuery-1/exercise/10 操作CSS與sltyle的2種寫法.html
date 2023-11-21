@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS & Style 的兩種姿勢 </title>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/12.css">
+</head>
+</head>
+
+<body>
+    <div id="app">
+        <h1 id="title">TVDI</h1>
+        <div class="btnbox">
+            <a id="fontSizeBig_btn" href="#">放大</a>
+            <a id="fontSizeSmall_btn" href="#">縮小</a>
+            <a id="fontSizeNormal_btn" href="#">正常</a>
+        </div>
+    </div>
+    <script>
+        //  ===============================
+        // 改變CSS 屬性的值
+        // .css(參數1, 參數2)  
+        // 參數1為屬性。 參數2 為值。
+        // =================================
+
+        $(function () {
+            // 取得物件
+            const Title = $('#title');
+
+            // =================================
+            // 練習： 點擊 按鈕
+            //        ==> 改變CSS 「font-size」和「color」
+            //          "#00d0ff"   "#fffac1"   "#ffffff"
+            // =================================
+
+            // 放大按鈕
+            $("#fontSizeBig_btn").on("click", function () {
+                //寫法1
+                // Title.css("font-size", "200px");
+                // Title.css("color", "#00d0ff");
+
+                //寫法2
+                Title.css({
+                    "font-size":"200px",
+                    "color": "#00d0ff",
+                });
+            })
+
+            // 縮小按鈕
+            $("#fontSizeSmall_btn").on("click", function () {
+                // code
+                Title.css("font-size", "100px");
+                Title.css("font-size", "#fffac1");
+            })
+
+            // 正常按鈕
+            $("#fontSizeNormal_btn").on("click", function () {
+                // code
+                Title.css("font-size", "150px");
+                Title.css("font-size", "#ffffff");
+            })
+        })
+        
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>show、hide</title>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/5.css">
+</head>
+<body>
+    <div id="app">
+        <img id="logo" src="./images/logo.jpg" alt="">
+        <ul>
+            <li><a class="newBtn">● 最新消息</a></li>
+            <li><a class="aboutBtn">● 關於我們</a></li>
+            <li><a class="courseBtn">● 最新開課</a></li>
+            <li><a class="hotBtn">● 熱門話題</a></li>
+            <li><a class="communityBtn">● 社群影響</a></li>
+        </ul>
+    
+    </div>
+    <div id="page">
+        <div class="page1">
+            <h1>最新消息</h1>
+            <p>您可能常看到坊間許多 JavaScript 課程包山又包海，彷彿什麼都學得到，但課程結束後，發現為什麼都無法學以致用？又或是，課程所教的技術不符合潮流，不僅只學到皮毛還落後產業技術一大截...</p>
+        </div>
+        <div class="page2">
+            <h1>關於我們</h1>
+            <p>本課程，明確的帶您往前端工程師的技術門檻前進！</p>
+        </div>
+        <div class="page3">
+            <h1>最新開課</h1>
+            <p>
+                新手入門篇：<br/>
+                漸進式學習讓您從 0 到得心應手....<br/>              
+            </p>
+        </div>
+        <div class="page4">
+            <h1>熱門話題</h1>
+            <p>
+                中階實戰篇：<br/>
+                深厚的 JavaScript 觀念 + 情境實作範例。<br/>
+            </p>
+        </div>
+        <div class="page5">
+            <h1>社群影響</h1>
+            <p>
+                不用擔心沒有任何程式基礎，我們從“認識程式”開始教...<br/>
+            </p>
+        </div>
+    </div>
+    <script>
+        $(function(){
+            // =============================
+            // 練習1：隱藏 所有的頁面
+            //        只顯示 最新消息的 內容
+            // =============================
+            // 隱藏所有頁面使不顯示
+
+            $('#page>div').hide();
+            
+            //  顯示 最新消息
+
+            $('.page1').show();
+            
+            // =============================
+            //練習2： 製作 按鈕的功能(綁定事件、方法)
+            // =============================
+            // 最新消息
+            $('.newBtn').on('click',function(){
+                $('#page>div').hide();
+                $('.page1').show();
+            })
+
+            // 關於我們
+            $('.aboutBtn').on('click',function(){
+                $('#page>div').hide();
+                $('.page2').show();
+            })
+
+            // 最新開課
+            $('.courseBtn').click(function(){
+                $('#page>div').hide();
+                $('.page3').show();
+            })
+
+            // 熱門話題
+            $('.hotBtn').click(function(){
+                $('#page>div').hide();
+                $('.page4').show();
+            })
+
+            // 社群影響
+            $('.communityBtn').click(function(){
+                $('#page>div').hide();
+                $('.page5').show();
+            })
+            
+        })
+    </script>
+
+</body>
+</html>

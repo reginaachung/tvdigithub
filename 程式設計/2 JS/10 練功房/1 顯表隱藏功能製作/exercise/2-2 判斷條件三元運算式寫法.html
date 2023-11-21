@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>顯示/隱藏操作</title>
+    <style>
+        #img {
+            width: 200px;
+            height: 300px;
+            margin-top: 30px;
+        }
+    </style>
+
+</head>
+<body>
+    <input type="button" value="顯示/隱藏" id="btn"><br>
+    <img src="加油.png" id="img">
+
+    <script>
+        const Btn = document.getElementById("btn");
+        const Img  = document.getElementById("img");
+        
+        // isShow表示圖片的顯示狀態
+        let isShow = true;
+
+        // 綁定事件
+        Btn.addEventListener("click", function(){
+            
+            //練習：簡化切換狀態
+            isShow = !isShow;
+
+            // 依據狀態調整圖片顯示
+            // =====================================
+            // 練習： 使用 「三元運算式」 撰寫 本例判斷句 
+            //              布林 ? 布林為true的值 : 布林為false的值
+            // =====================================
+
+            Img.style.display = isShow ? "block" : "none"
+            
+        })
+
+    </script>
+    
+</body>
+</html>

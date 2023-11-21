@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>animate</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background: palevioletred;
+        }
+    </style>
+  </head>
+  <body>
+      <div class="container">
+          <button type="button" class = "btn">animate</button>
+          <br><br>
+          <div class="box"></div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      
+      <!-- ====================================
+      1 引入 jquery easing
+        jquery.easing.1.3.js 3 已載入於專案資料夾
+      ==================================== -->
+      <script src="jquery.easing.1.3.js"></script>
+      
+      <!-- ====================================
+      練習： 由網路引入 jquery easing plugin
+      外掛位置 : 搜尋 jquery easing plugin  
+                http://gsgd.co.uk/sandbox/jquery/easing/
+      ==================================== -->
+
+
+    
+    <script>
+        // ===============================
+        // easing 參數：控制動畫過程中的加減速效果
+        // 原生的time function很少，要靠 plugin補強
+        // 外掛位置 : 搜尋 jquery easing plugin  
+        //         http://gsgd.co.uk/sandbox/jquery/easing/
+        // 動畫說明： http://easings.net/zh-tw
+        // ===============================
+        // 
+        // $(".btn").click(function(){
+        //     $(".box").animate({
+        //         width: "400px",
+        //         height: "300px"
+        //     }, 3000)
+        // })
+
+        //=====================================
+        // 練習： easing參數
+        // linear 相等速度(linear)的展示動畫效果
+        //=====================================
+        
+        // $(".btn").click(function(){
+        //     $(".box").animate({
+        //         width: "400px",
+        //         height: "300px"
+        //     }, 3000, 'linear')
+        // })
+
+        //=====================================
+        // 練習： 1 easing參數， swing為預設的轉場效果(填充1)
+        //        2 動畫執行完畢 彈窗顯示 動畫完成(填充2)
+        //===============================
+
+        // $(".btn").click(function(){
+        //     $(".box").animate({
+        //         width: "400px",
+        //         height: "300px"
+        //     }, 3000, )
+        // })
+        
+        
+        //=====================================
+        // 練習： easing參數
+        // 於 http://easings.net/zh-tw ，自己找幾個動畫效果 練習(填充)
+        //  easeInQuart 、 easeInOutQuart效果
+        //===============================
+
+        // $(".btn").click(function(){
+        //     $(".box").animate({
+        //         width: "400px",
+        //         height: "300px"
+        //     }, 3000, 填充, function(){
+        //         alert("動畫完成")
+        //     })
+        // })
+    </script>
+  </body>
+</html>

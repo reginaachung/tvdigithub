@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jquery 事件</title>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/2.css">
+</head>
+<body>
+    <div id="app" class="box">
+        <h1>TVDI</h1>
+        <a id="Btn" href="#">職能培育</a>
+    </div>
+
+    <script>
+        $(function(){
+
+            //寫法一 ( 推薦，因為有 on也有 off )
+            
+            $('#Btn').on('click', clickFn);
+
+            // 練習： 按鈕點擊過一次 該案扭即失效（移除事件)
+            
+            function clickFn(){
+                alert('hello');
+                // 程式碼
+                $('#Btn').off('click',clickFn)
+            }
+
+        })
+    </script>
+
+</body>
+</html>

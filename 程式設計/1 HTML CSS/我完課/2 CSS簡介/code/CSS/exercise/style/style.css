@@ -1,0 +1,28 @@
+/*標籤名稱選擇器*/
+body {
+    background-color: pink
+}
+
+/*id選擇器*/
+#title-1 {
+    text-decoration: line-through;
+}
+
+/* class選擇器 */
+.title {
+    color: red;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px
+}
+
+.content {
+    width: 400px;
+    border: 1px dashed blue;
+    color: grey;
+    padding: 10px
+}
+
+.keyword {
+    color: red
+}

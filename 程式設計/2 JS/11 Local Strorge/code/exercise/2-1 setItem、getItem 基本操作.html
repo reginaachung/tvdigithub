@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>請輸入你的姓名</h2>
+    <input type="text" id="textBox" placeholder = "請輸入">
+    <input type="button" class="btnClass" value="點擊後存入localStorage">
+    <br><br>
+    <hr>
+    <br>
+    <input type="button" class="btnFetch" value="取出localStorage的內容">
+    <div class="list"></div>
+    
+    <script>
+    // 取得物件    
+    const BtnClass = document.querySelector(".btnClass");
+    const BtnFetch = document.querySelector(".btnFetch");
+    const TextBox = document.getElementById(".textBox");
+    
+    // 綁定事件
+    BtnClass.addEventListener('click', saveName); 
+    BtnFetch.addEventListener('click', getName);
+
+    // 練習： 存入 localStorages， 欄位名稱為 inputValue
+    function saveName(){
+        // 取出文字方塊的內容
+        let str = TextBox.value;
+
+        //把輸入值存入 localStorage內(欄位名稱(key)為 inputValue) 
+
+        localStorage.setItem("inputValue",str);
+    }
+    
+    // 練習： 取出 localStorage， 欄位名稱為 inputValue
+    function getName(){
+        // 取出 inputValue於 localStorage內的 值
+        let str =localStorage.getItem("inputValue"); 
+
+        alert("localStorage取出的inputValue是"+str);
+    }
+    </script>
+
+</body>
+</html>

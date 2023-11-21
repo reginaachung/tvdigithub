@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Attr </title>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/9.css">
+</head>
+<body>
+    <div id="app">
+        <div id="contentPhone">
+            <img class="photo" src="./images/photo/big/a1.jpg" alt="">
+        </div>
+        <div class="menu">
+            <nav id="nav">
+                <a id="a1"><img src="./images/photo/small/a1.jpg" alt=""></a>
+                <a id="a2"><img src="./images/photo/small/a2.jpg" alt=""></a>
+                <a id="a3"><img src="./images/photo/small/a3.jpg" alt=""></a>
+                <a id="a4"><img src="./images/photo/small/a4.jpg" alt=""></a>
+                <a id="a5"><img src="./images/photo/small/a5.jpg" alt=""></a>
+            </nav>
+        </div>
+    </div>
+    <script>
+        // ===============================================
+        // jQuery 中
+        // .attr()
+        // 1  .attr(參數) ==> 獲取屬性的內容 ==>取得「參數」屬性的內容
+        // 2  .attr(參數1, 參數2) ==> 改變屬性的內容 ==>把「參數1」屬性的內容 變更為 「參數2」
+        // =================================================
+        // 練習：使用jQ的語法 撰寫 照片牆
+        // ==================================================
+        $(function(){
+
+            //========================================
+            // JQ的寫法
+            //========================================
+            $("#nav > a").on('click', jQueryFn);
+
+            function jQueryFn(){
+                // console.log($(this));
+                // console.log($(this)[0]);
+                // console.log($(this)[0].id);
+
+                // 使用 .attr()取得 id屬性 的內容
+                // console.log($(this)[0].attr('id'));//X
+
+                // console.log($(this).attr('id'));//o
+
+                let no = $(this).attr('id').substr(1,1);
+                
+                // 使用 .attr()取得 id屬性 的內容
+                $(".photo").attr('src',`./images/photo/big/a${no}.jpg`);
+            }
+        });
+    </script>
+</body>
+</html>

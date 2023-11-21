@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-2</title>
+</head>
+<body>
+    <script>
+        // ===========================================
+        // 在函式中使用 return 時，只能返回一個值
+        // 即使使用逗號隔開多個值，也只有最後一個值被返回
+        // =========================================
+        // function fn(num1, num2,num3){
+        //     return num1, num2,num3;
+        // }
+
+        // console.log(fn(1,2,3));
+
+        // ========================
+        // 練習： 用 ES6 箭頭函式語法 改寫
+        // ========================
+        //匿名函式寫法
+
+        // let fn=function(num1, num2,num3){
+        // return num1, num2,num3;
+        // }
+
+        // console.log(fn(1,2,3));
+
+        // let fn=(num1, num2,num3)=>{
+        // return num1, num2,num3;
+        // }
+
+        // console.log(fn(1,2,3));
+
+        //=============================================
+        //當要於函式中返回多個值時，可以運用陣列 來實現
+        // =========================================
+        
+        // function getResult(n1, n2){
+        //     return [n1 + n2, n1 - n2, n1 * n2, n1 / n2];
+        // }
+        // console.log(getResult(1, 2));
+        
+        // ========================
+        // 練習： 用 ES6 箭頭函式語法 改寫
+        // ========================
+        
+        let getResult=(n1, n2)=>{
+        return [n1 + n2, n1 - n2, n1 * n2, n1 / n2];
+        }
+
+        console.log(getResult(1, 2));
+
+    </script>
+</body>
+</html>

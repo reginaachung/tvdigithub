@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- =========================================================== -->
+    <h1>新增充電站</h1>
+    <input type="text" class="stationName" placeholder="充電站名稱">
+    <input type="text" class="stationCharge" placeholder="免費、投幣式">
+    <input type="button" class="btn" value = "儲存">
+    <br><br>
+    <!-- =========================================================== -->
+    <h1>資料顯示</h1>
+    <div class="filter">
+        <input type="button" value="全部">
+        <input type="button" value="免費">
+        <input type="button" value="投幣式">
+    </div>
+    <ul class="list">
+        <li>官府充電站（免費）</li>
+    </ul>
+
+
+    <script>
+        let data = [
+            {
+                charge:"免費",
+                name:"官府充電站"
+            },
+            {
+                charge:"投幣式",
+                name:"重號充電站"
+            },
+            {
+                charge:"投幣式",
+                name:"柔均電站"
+            },
+            {
+                charge:"投幣式",
+                name:"乃偉電站"
+            },
+            {
+                charge:"免費",
+                name:"蠻頭電站"
+            }
+
+        ]
+        
+        const List =  document.querySelector(".list");
+        
+        // 預設載入
+        function init(){
+            
+            let str = "";
+
+            data.forEach(function(item,index){
+                let content = `<li>${item.name}（${item.charge}）</li>`;
+                str += content;
+            })  
+
+            List.innerHTML = str;
+        }
+        init();
+
+        // 篩選器
+
+        const Filter = document.querySelector(".filter");
+        
+        Filter.addEventListener("click",function(e){
+            
+            if(e.target.value == undefined){
+                console.log("未點擊正確按鈕");
+                return;
+            }
+
+            let str = "";
+            data.forEach(function(item, index){
+                
+                let content = `<li>${item.name}（${item.charge}）</li>`;
+                if(e.target.value == "全部"){
+                    str += content;
+                }else if(e.target.value == item.charge){
+                    str += content;
+                }
+            })
+            list.innerHTML = str;
+        })
+
+        const StationName = document.querySelector(".stationName");
+        const StationCharge = document.querySelector(".stationCharge");
+        const Btn = document.querySelector(".btn");
+        
+        // ===========================================================
+        // 練習： 把新增的資料 組成如data陣列內的物件元素，加入 data陣列內
+        //        並顯示於網頁上
+        // ===========================================================
+        Btn.addEventListener("click",function(e){
+
+            let obj = {};
+                       = StationCharge.value;
+                       = StationName.value;
+            
+            // 練習：把物件資料 加入到data陣列內
+            <<程式碼>>
+
+            // ========================================
+            // 練習：把data 陣列內的每筆資料顯示在網頁上
+            // ========================================
+            <<程式碼>>
+
+            // 練習
+            // 不要忘了，把文字方塊資料清空
+            // 方便下一位使用者使用
+
+        })
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Html</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <style>
+        h1 span{
+            color:red;
+        }
+    </style>
+  </head>
+  <body>
+      <div class="container">
+          <div>
+              <button type="button" id="getContent">get content              
+              </button>
+          </div>
+          <h1 id="source">Hello <span>world</span></h1>
+          <hr>
+          <p>.text()</p>
+          <h1 id="target1"></h1>
+          <hr>
+          <p>.html()</p>
+          <h1 id="target2"></h1>
+
+      </div>
+    <script>
+        // ===============================
+        // 複習： .text()  vs  .html()
+        // 點擊 get content按鈕 
+        // 1 於console顯示 由.text()及.html()取得的內容 
+        // 2 並於網頁上的呈現 
+        // ===============================
+        $("#getContent").click(function(){
+            let content1=$("#source").text();
+            let content2=$("#source").html();
+            
+            console.log(content1);
+            console.log(content2);
+            
+            $("#target1").html(content1);
+            $("#target2").html(content2);
+
+        })
+    </script>
+  </body>
+</html>

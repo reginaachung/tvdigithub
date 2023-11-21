@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>猜數字遊戲</title>
+	</head>
+	
+	<body>
+		<div class="box">
+			<h2 >猜數字遊戲</h2>
+			<div>電腦已產生一個1~100之間的整數，猜猜看是多少！</div>
+			<input type="text" id="text" placeholder="?"><br>
+			<input type="button" value="確定" id="bt" onclick = "guessNum()">
+			<div id="info"> ..... </div>
+			<div id="infoCount"></div>
+		</div>
+		
+		<script>
+			// 取得物件
+			const Text = document.querySelector("    ");
+			const Bt = document.querySelector("#bt");
+			const Info = document.            ("info");
+			const InfoCount = document.       ("infoCount");
+								
+			// 產生1-100的隨機變數
+			let random = 
+			
+			// 統計猜的次數
+			let count = 0;
+			
+			// 事件函式
+			
+			function guessNum(){
+				count ++;
+				if(Text.value == ""){	// 無内容
+					alert("請輸入內容")
+				} else {		        // 有内容
+					// 獲取输入内容
+					let num = Number(    );
+					
+					if( num > random){
+						顯示  = "太大了";
+					} else if( num < random){
+						顯示 = "太小了";
+					} else {
+						顯示 = "恭喜您猜中了!!"
+						顯示 = `猜了${count}次`
+					}
+				}
+			}
+		</script>
+	</body>
+</html>

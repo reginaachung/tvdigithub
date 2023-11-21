@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>計數器</title>
+</head>
+<body>
+    <input type="button" value = "點擊" class = "btn">
+    
+    <!-- ul.list>li*2{標題} -->
+    <ul class="list"> 
+        <li>標題1</li>
+        <li>標題2<input type="button" value = "按鈕" class = "btn"></li>
+    </ul>
+
+    <script>
+        // ========================================
+        // e.target -的使用
+        // e.target - 瞭解目前 event作用的節點 
+        // ========================================
+        // 取得物件
+        const Btn = document.querySelector(".btn");
+        
+        // 監聽：綁定事件 
+        Btn.addEventListener("click",function(e){
+            console.log(e);  // 找到 target屬性
+
+        //     // ---------------------------------
+        //     // 練習： 顯示 target屬性的內容
+        //     // ---------------------------------
+            console.log(e.target);
+
+        })
+
+        // =======================================
+        // 練習： 監聽 ul中那一個li 被觸發
+        // =======================================
+        // 取得物件
+        const List = document.querySelector(".list");
+        // console.log(List);
+
+        // 監聽
+        List.addEventListener("click" , function(e){
+            
+            console.log(e);
+
+            console.log(e.target);//較精確
+
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jquery 事件</title>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/2.css">
+</head>
+
+<body>
+    <div id="app" class="box">
+        <h1>TVDI</h1>
+        <a id="Btn" href="#">職能培育</a>
+    </div>
+
+    <script>
+        //======================================
+        // 綁定事件
+        //======================================
+        // 練習： 點擊按鈕 ==> 彈窗 ('職能培育');
+
+        $(function () {
+
+            //寫法一
+            // $('#Btn').on('click',function(){
+
+            //     alert('職能培育');
+
+            // })
+
+            // =================================
+            //寫法二 ( 推薦，因為有 on也有 off )
+
+            $('#Btn').click(function () {
+
+                alert('職能培育');
+
+            })
+
+            // ===================================
+            // 討論：為何推薦 寫法二
+        })
+    </script>
+
+</body>
+
+</html>

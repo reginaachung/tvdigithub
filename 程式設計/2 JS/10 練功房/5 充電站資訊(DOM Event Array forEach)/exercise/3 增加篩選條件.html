@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="filter">
+        <input type="button" value="全部">
+        <input type="button" value="免費">
+        <input type="button" value="投幣式">
+    </div>
+    <ul class="list">
+        <li>官府充電站（免費）</li>
+    </ul>
+
+
+    <script>
+        let data = [
+            {
+                charge:"免費",
+                name:"官府充電站"
+            },
+            {
+                charge:"投幣式",
+                name:"重號充電站"
+            },
+            {
+                charge:"投幣式",
+                name:"柔均電站"
+            },
+            {
+                charge:"投幣式",
+                name:"乃偉電站"
+            },
+            {
+                charge:"免費",
+                name:"蠻頭電站"
+            }
+
+        ]
+        
+        // ===================================
+        // 主體：撰寫「全部」按鈕 功能
+        // ===================================
+        
+        const List =  document.querySelector(".list");
+        
+        function init(){
+            
+            let str = "";
+            // list.innerHTML = "<li>Hello</li>"; 
+            data.forEach(function(item,index){
+
+                let content = `<li>${item.name}（${item.charge}）</li>`;
+                str += content;
+
+            })  
+            // console.log(str);
+            List.innerHTML = str;
+        }
+        init();
+
+        const Filter = document.querySelector(".filter");
+
+        Filter.addEventListener("click",function(e){
+            
+            if(e.target.value == undefined){
+                console.log("未點擊正確按鈕");
+                return;
+            }
+
+            let str = "";
+            data.forEach(function(item, index){
+                
+                // =====================================================
+                // 練習：撰寫「全部」按鈕之功能
+                // ======================================================
+                if(點擊「全部」按鈕){
+
+                    程式碼
+                }
+
+                if(e.target.value == item.charge){
+                    let content = `<li>${item.name}（${item.charge}）</li>`;
+                    str += content;
+                }
+            })
+
+            List.innerHTML = str;
+        })
+
+        // 練習 判斷式 使用 if-else if 語法 寫寫看
+
+    </script>
+    
+</body>
+</html>

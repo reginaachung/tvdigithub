@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <style>
+        .blue{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" class="btnOn" value="on點擊">
+    <input type="button" class="btnAdd" value="add點擊">
+    
+    <script>
+        // =====================================================
+        // 於HTML 中(例如line 16、line17 於HTML中綁定event)之缺點
+        // 1 同一個標籤物件無法綁定多個相同個事件
+        // 2 較易被植入惡意程式，亦衍生資安的問題 
+        // =====================================================
+        // 
+        // ======================================
+        // 觀察：同一個標籤物件無法綁定多個相同個事件
+        // ========================================
+
+        let BtnOn = document.querySelector('.btnOn');
+        
+        // 練習：使用 函式的第二種寫法，來綁定事件
+        // --------------------------
+        // 註：複習函式的兩種寫法
+
+        //----------------------------
+        // 第一種寫法
+        // function abc(){
+        //     console.log("on-1");
+        // }
+
+        //----------------------------
+        //第二種寫法(指定匿名函式)
+
+        // let abc=function(){
+        //     console.log("on-1");
+        // }
+
+        //----------------------------
+        //第三種寫法
+
+        // BtnOn.onclick=function(){
+        //     console.log("on-1");
+        // }
+
+        // ---------------------
+        // 練習：仿上面寫法 ，同一個按鈕再綁定 click事件
+        //       當被觸發 執行 alert("on-2")
+        // ---------------------
+
+        // BtnOn.onclick=function(){
+        //     console.log("on-2");
+        // }
+
+        // 問題：以上BtnOn綁定2個事件，只有第2個事件綁定成功
+        // ===========================================
+        // 解決方法：事件監聽 （OK）
+        // 使同一個物件綁定多個事件，使用第二種寫法(指定匿名函式)
+        // ===========================================
+
+        let BtnAdd = document.querySelector('.btnAdd');
+
+        BtnAdd.addEventListener("click",function(){
+            alert("add-1")
+        })
+
+        BtnAdd.addEventListener("click",function(){
+            alert("add-2")
+        })
+
+    </script>
+</body>
+</html>

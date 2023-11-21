@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>範例</title>
+    <style>
+        button {
+            color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- =============================================
+    練習：撰寫 各事件的 方法
+    ============================================= -->
+    <button class= 'btn1' 
+            onclick="clickit()"
+    >按鈕1</button>
+    
+    <button  id= 'btn2' 
+            onmousedown="down()" 
+            onmouseup="up()"
+            onmouseout = "out()"
+    >按鈕2</button>
+
+    <script>
+        function clickit(){
+            // 取得物件
+            const Btn1 = document.querySelector(".btn1");
+            // console.log(Btn1);
+
+            // 使用物件
+            Btn1.style.color= "red";
+        }
+        
+        function down(){
+            // 取得物件
+            const Btn2 = document.querySelector("#btn2");
+
+            // 使用物件
+            Btn2.style.color="red";
+        }
+        
+        function up(){
+            // 取得物件
+
+            // 使用物件
+            Btn1.style.color="green";
+        }
+        
+        function out(){
+            // 取得物件
+            
+            // 使用物件
+            Btn1.style.color = "black";
+        }
+    </script>
+</body>
+</html>

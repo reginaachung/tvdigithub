@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> 照片牆展示切換 v2 </title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/v1.css">
+</head>
+<body>
+    <div id="app">
+        <div id="contentPhoto"></div>
+        <div class="menu">
+            <nav>
+                <a id="a1"><img src="images/small/a1.jpg"></a>
+                <a id="a2"><img src="images/small/a2.jpg"></a>
+                <a id="a3"><img src="images/small/a3.jpg"></a>
+                <a id="a4"><img src="images/small/a4.jpg"></a>
+                <a id="a5"><img src="images/small/a5.jpg"></a>
+            </nav>
+        </div>
+    </div>
+    
+    <script>
+        
+        //取得元件
+
+        const ContentPhoto = document.querySelector("#contentPhoto");
+        const A1 = document.getElementById("a1");
+        const A2 = document.getElementById("a2");
+        const A3 = document.getElementById("a3");
+        const A4 = document.getElementById("a4");
+        const A5 = document.getElementById("a5");
+        
+        //使用元件
+        ContentPhoto.style.backgroundImage = 'url("images/big/a1.jpg")';
+
+        // //監聽事件
+        A1.addEventListener('click', showPhoto);
+        A2.addEventListener('click', showPhoto);
+        A3.addEventListener('click', showPhoto);
+        A4.addEventListener('click', showPhoto);
+        A5.addEventListener('click', showPhoto); 
+
+        
+        // function showPhoto() 
+        // {
+        // smallPhotoId = this.id
+        //     switch (smallPhotoId) {
+        //     case "a1":
+        //         ContentPhoto.style.backgroundImage = 'url("images/big/a1.jpg")';           
+        //         break;
+        //     case "a2":
+        //         ContentPhoto.style.backgroundImage = 'url("images/big/a2.jpg")';           
+        //         break;
+        //     case "a3":
+        //         ContentPhoto.style.backgroundImage = 'url("images/big/a3.jpg")';           
+        //         break;
+        //     case "a4":
+        //         ContentPhoto.style.backgroundImage = 'url("images/big/a4.jpg")';          
+        //         break;
+        //     default:
+        //         ContentPhoto.style.backgroundImage = 'url("images/big/a5.jpg")';          
+        //         break;
+        //      }
+        // }
+        //======================================================================
+        //優化程式碼
+        // 提示：活用 this 
+        //======================================================================
+        function showPhoto(){
+            
+            //寫法: 運用樣版字元
+            ContentPhoto.style.backgroundImage = ;
+
+        }
+        
+    </script>
+    </body>
+</html>
