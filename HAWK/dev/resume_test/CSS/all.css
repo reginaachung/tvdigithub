@@ -1,0 +1,186 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+img{
+    /* display: block; */
+    vertical-align: middle;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, ”Microsoft JhengHei”, Roboto , “Helvetica Neue”, Arial, sans-serif; 
+    box-sizing: border-box;
+    color: #000;
+    /* font-family: Microsoft JhengHei; */
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+h1, h2, h3 {
+    line-height: 1.2; 
+}
+h1{
+    font-family: Roboto;
+    font-size: 80px;
+    font-weight: 900;
+}
+h2{
+    font-family: Microsoft JhengHei;
+    font-size: 32px;
+    font-weight: 700;
+    border-bottom: 2px solid #5B5B5B;
+}
+h2>span{
+    line-height: 38px;
+}
+h3{
+    font-family: Microsoft JhengHei;
+    font-size: 24px;
+    font-weight: 700;
+}
+.container{
+    width: 1200px;
+    /* background-color: #fdd493; */
+    margin: 0 auto;
+} 
+/* header */
+header{
+    border-bottom: 2px solid #5B5B5B;
+}
+/* Profile */
+h2>span{
+    color: #A30101;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+    margin-left: 16px;
+    /* vertical- align: middle; */
+}
+/* skill */
+.darkBlue {
+    background-color: #415165;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 2px;
+}
+.darkBlue *{
+    color:#fff;
+}
+.skill{
+    width: 996px;
+    margin: 0 auto;
+}
+.skill h2{
+    border-bottom: 1px solid #D9D9D9;
+}
+.skill ul{
+    width: 230px;
+    margin: 0 auto 0 382px ;
+    text-align: left;
+    border-left: 1px solid #D9D9D9;
+}
+.skill li{
+    margin-bottom: 20px;
+}
+/* workEx */
+.workEx ul{
+    width: 587px;
+    border-left: 1px solid #415165;
+    margin-left: 24px;
+}
+/*footer_contactMothod */
+.contact{
+    border-bottom: 1px solid #D9D9D9;
+}
+.darkBlue img{
+    margin: 0px 12px;
+}
+.darkBlue li:nth-child(4){
+    margin-bottom: 20px;
+}
+/* 通用工具  */
+.hr{
+    height: 2px;
+    background-color: #8d8d8d;
+}
+/* 去除image-inline特性的 空隙 */
+.block{
+    display: block;
+}
+/* 間距類以8px作倍數 */
+.pb-1{
+    padding-bottom: 8px;
+}
+.pb-4{
+    padding-bottom: 32px;
+}
+.pl-3{
+    padding-left: 24px;
+}
+.mb-1{
+    margin-bottom: 8px;
+}
+.mb-2{
+    margin-bottom: 16px;
+}
+.mb-3{
+    margin-bottom: 24px;
+}
+.mb-4{
+    margin-bottom: 32px;
+}
+.mb-6{
+    margin-bottom: 48px;
+}
+.mb-9{
+    margin-bottom: 72px;
+}
