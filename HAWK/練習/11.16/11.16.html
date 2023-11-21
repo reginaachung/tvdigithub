@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11.16</title>
+
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./11.16.css">
+
+</head>
+
+<body>
+
+    <!-- .container>(header>(.logo>img)+(nav>ul.menu>li.list*4))+(main>(h2+h3+p*4))+(aside>(.asideimg>img)*3)+footer -->
+
+    <div class="container">
+
+        <header class="d-flex">
+            <div class="logo">
+                <!-- a[href="#"]{公司logo} -->
+                <a href="#">公司logo</a>
+            </div>
+            <nav>
+                <ul class="menu d-flex">
+                    <li class="list"><a href="#">公司簡介</a></li>
+                    <li class="list"><a href="#">專業服務</a></li>
+                    <li class="list"><a href="#">新聞活動</a></li>
+                    <li class="list"><a href="#">聯絡我們</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="d-flex">
+            <main class="d-flex">
+                <h2 class="mb3">設計新聞</h2>
+                <h3 class="mb3">Lorem ipsum dolor sit amet.</h3>
+                <p class="mb3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, natus!</p>
+                <p class="mb3">Lorem ipsum dolor sit amet.</p>
+                <p class="mb3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis dignissimos, aliquam nulla
+                    consequatur eius alias minima excepturi nihil fugiat optio.</p>
+                <p class="mb3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, odio.</p>
+            </main>
+
+            <aside class="d-flex">
+                <div class="asideimg"><img src="./img/221bf109-8cd4-4f47-82fa-3bb237ad6097.webp" alt=""></div>
+                <div class="asideimg"><img src="./img/322073a5-fee1-4f81-b268-60e8c36585bb.webp" alt=""></div>
+                <div class="asideimg"><img src="./img/592ca0d1-0bd1-4108-b426-bfec9eae4d17.webp" alt=""></div>
+            </aside>
+        </section>
+
+
+        <footer class="d-flex">copyright</footer>
+
+    </div>
+
+</body>
+
+</html>

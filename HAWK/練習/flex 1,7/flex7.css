@@ -1,0 +1,43 @@
+img{
+    display: block;
+}
+
+.container {
+    width: 860px;
+    height: 468px;
+    display: flex;
+    background-color: #ccc;
+}
+
+.main {
+    width: 347px;
+    height: 468px;
+    background-color: #86180F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main h2 {
+    width: 220px;
+    height: 280px;
+    color: #FFF;
+    font-family: Microsoft JhengHei;
+    font-size: 20px;
+    line-height: 2;
+    /* font-style: normal;  */
+    /* font-weight: 400; */
+    /* margin: 94px 56px; */
+}
+
+.pic {
+    width: 440px;
+    height: 468px;
+    background-color: #aaa;
+    background-image:url(https://hawkjou.github.io/pic_storage/flexbox_practice_final/images/fx-7.png) ;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: contain; */
+    /* background-position: 100px 0; */
+}

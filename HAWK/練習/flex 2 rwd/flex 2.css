@@ -1,0 +1,174 @@
+body {
+    font-family: Microsoft JhengHei;
+    font-size: 1.5rem;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* nav */
+
+.nav {
+    background-color: #86180F;
+    /* height: 100vh; */
+    padding: 72px 13px 40px;
+    width: 326px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav img{
+    width: 300px;
+    object-fit: cover;
+}
+
+/* .list {
+    margin-top: 32px;
+} */
+
+.listItem {
+    color: #FFF;
+}
+
+.listItem:hover {
+    border: 1px solid #FFEFD6;
+}
+
+/* main */
+
+.main {
+    flex-direction: column;
+    padding: 72px 82px;
+    background-color: #FFEFD6;
+}
+
+.main h3{
+    font-weight: bold;
+    /* op.8 */
+    opacity: 0.8;
+}
+
+.main p{
+    opacity: 0.67;
+    line-height: 1.33;
+    /* text-indent: 48px; */
+}
+
+.mainPic{
+    flex-wrap: wrap;
+    /* g8 */
+    gap: 8px;
+}
+
+.mainPicImg{
+    width: 32%;
+}
+
+/* 工具 */
+
+.d-flex {
+    display: flex;
+}
+
+.mb-4{
+    margin-bottom: 32px;
+}
+
+@media (max-width:992px) {
+
+    body{
+        font-size: 1.25rem;
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+
+    .nav{
+        width: 100%;
+        padding: 24px;
+    }
+
+    ul.list{
+        width: 80%;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .list .listItem .mb-4{
+        margin-bottom: 8px;
+    }
+
+    .main{
+        padding-top: 32px;
+    }
+
+    .main p{
+        text-indent: 2.5rem;
+    }
+
+    .mainPicImg{
+        width: 48%;
+    }
+
+    .main .mb4{
+        margin-bottom: 24px;
+    }
+    
+}
+
+@media (max-width:767px) {
+
+    body{
+        font-size: 1rem;
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+
+    .nav{
+        width: 100%;
+        padding: 8px;
+    }
+
+    ul.list{
+        width: 80%;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    ul.list .listItem{
+        width: 48%;
+        text-align: center;
+        padding: 8px 24px;
+    }
+
+    .list .listItem.mb-4{
+        margin-bottom: 8px;
+    }
+
+    .main{
+        padding-top:24px 32px;
+    }
+
+    .main p{
+        text-indent: 2rem;
+    }
+
+    
+    .main .mb4{
+        margin-bottom: 16px;
+    }
+
+    .mainPic{
+        width: 98%;
+    }
+
+    .mainPicImg{
+        width: 98%;
+    }
+}

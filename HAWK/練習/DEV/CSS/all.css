@@ -1,0 +1,306 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, ”Microsoft JhengHei”, Roboto, “Helvetica Neue”, Arial, sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    color: #000;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-family: Roboto;
+    font-size: 80px;
+    font-weight: 900;
+}
+
+h2 {
+    font-family: Micrsoft JhengHei;
+    font-size: 32px;
+    font-weight: 700;
+    border-bottom: 2px solid #000;
+}
+
+h3 {
+    font-family: Micrsoft JhengHei;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.container {
+    width: 1200px;
+    background-color: #fdd493;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    border-bottom: 2px solid #5b5b5b;
+}
+
+/* profile */
+
+h2>span {
+    color: #A30101;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    /* 133.333% */
+    margin-left: 16px;
+    /* vertical-align: middle; */
+}
+
+.profile {
+    margin-bottom: 24px;
+}
+
+/* skills */
+.darkBlue {
+    background: #415165;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 2px;
+}
+
+.darkBlue * {
+    color: #fff;
+}
+
+.skill {
+    width: 996px;
+    margin: 0 auto;
+}
+
+.skill h2 {
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.skill ul {
+    width: 230px;
+    margin: 0 auto 0 382px;
+    text-align: left;
+    border-left: 1px solid #d9d9d9;
+}
+
+.skill li {
+    margin-bottom: 20px;
+}
+
+/* .education {
+    margin-bottom: 24px;
+} */
+
+/* workEx */
+.workEx ul{
+    width: 587px;
+    border-left: 1px solid #415161;
+    margin-left: 24px;
+}
+
+.footer{
+    background: #415165;
+}
+
+.contact {
+    border-bottom:1px solid #d9d9d9;
+}
+
+.darkBlue li:nth-child(4){
+    margin-bottom: 20px;
+}
+
+.darkBlue img{
+    margin: 0px 12px;
+}
+
+/* .title{}
+.photo{
+
+} */
+
+/* 通用工具 */
+.block {
+    display: block;
+}
+
+.pb-1 {
+    padding-bottom: 8px;
+}
+
+.pb-4 {
+    padding-bottom: 32px;
+}
+
+.pl-3 {
+    padding-left: 24px;
+
+}
+
+.mb-2 {
+    margin-bottom: 16px;
+}
+
+.mb-3 {
+    margin-bottom: 24px;
+}
+
+.mb-4 {
+    margin-bottom: 32px;
+}
+
+.mb-6 {
+    margin-bottom: 48px;
+}
+
+.mb-9 {
+    margin-bottom: 72px;
+}

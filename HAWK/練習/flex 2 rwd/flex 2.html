@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 2</title>
+
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./flex 2.css">
+
+</head>
+
+<body>
+
+    <!-- .container>.nav>img.logo+ul.list>li.listItem*4^^.main>.content(h3+p*2)^.mainPic>img.picture*6 -->
+
+    <!-- 老師打的 -->
+    <!-- .container>(.nav>img.logo+ul.list>li.listItem*4)+(.main>.content>h3+p*2^.mainPic>img.*6 -->
+
+    <div class="container d-flex">
+
+        <div class="nav d-flex">
+
+            <img src="https://hawkjou.github.io/pic_storage/flexbox_practice_final/images/steak_house.png" alt="banner"
+                class="logo mb-4" width="300">
+
+            <ul class="list">
+                <li class="listItem mb-4">回到首頁</li>
+                <li class="listItem mb-4">關於我們</li>
+                <li class="listItem mb-4">熱銷排餐</li>
+                <li class="listItem">購物車　</li>
+            </ul>
+        </div>
+        <div class="main d-flex">
+            <div class="content"></div>
+            <h3 class="mb-4">享受一頓豐盛的高品質餐飲體驗</h3>
+            <p class="mb-4">　　我們的牛排採用最優質的牛肉，精心烤製而成，口感柔嫩多汁，鮮美無比。每一口牛排都是對味蕾的極致享受，讓您感受到肉質的豐富層次感和獨特風味。</p>
+            <p class="mb-4">
+                　　我們的牛排來自於最優秀的農場，每頭牛都受到精心的關愛和管理，並且遵循最嚴格的食品安全和衛生標準。我們致力於提供最高品質的食材，並且在烤製過程中保持最佳的新鮮度和口感。讓您的味蕾沉浸在豐富的肉香和風味中。我們期待為您帶來一頓難忘的美食之旅！
+            </p>
+
+            <div class="mainPic d-flex">
+                <div class="mainPicImg"><img
+                        src="https://hawkjou.github.io/pic_storage/flexbox_practice_final/images/fx-2.png" alt="產品圖">
+                </div>
+                <div class="mainPicImg"><img
+                        src="https://hawkjou.github.io/pic_storage/flexbox_practice_final/images/fx-2.png" alt="產品圖">
+                </div>
+                <div class="mainPicImg"><img
+                        src="https://hawkjou.github.io/pic_storage/flexbox_practice_final/images/fx-2.png" alt="產品圖">
+                </div>
+                <div class="mainPicImg"><img
+                        src="https://hawkjou.github.io/pic_storage/flexbox_practice_final/images/fx-2.png" alt="產品圖">
+                </div>
+                <div class="mainPicImg"><img
+                        src="https://hawkjou.github.io/pic_storage/flexbox_practice_final/images/fx-2.png" alt="產品圖">
+                </div>
+                <div class="mainPicImg"><img
+                        src="https://hawkjou.github.io/pic_storage/flexbox_practice_final/images/fx-2.png" alt="產品圖">
+                </div>
+
+            </div>
+
+</body>
+
+</html>

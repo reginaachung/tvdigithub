@@ -1,0 +1,44 @@
+img {
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.container {
+    width: 1132px;
+    height: 822px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    display: flex;
+}
+
+.logo,
+.main {
+    width: 550px;
+    height: 806px;
+    background-color: #FFEFD6;
+    border-radius: 8px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+}
+
+.content {
+    width: 340px;
+    height: 384px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content p {
+    line-height: 1.5;
+    opacity: 0.67;
+}

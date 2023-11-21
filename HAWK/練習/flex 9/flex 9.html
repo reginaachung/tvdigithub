@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 9</title>
+    <link rel="stylesheet" href="./css reset.css">
+    <link rel="stylesheet" href="./flex 9.css">
+</head>
+
+<body>
+    <!-- .container>ul.nav>li.navItem*5^.main>(.product>img+.item>(.productName+.price)^a)*3 -->
+
+    <div class="container d-flex">
+
+        <ul class="nav">
+            <li class="nivItem bg-primary text-secondary">排餐類別</li>
+            <li class="nivItem bg-secondary">所有排餐 (24)</li>
+            <li class="nivItem">本日精選 (11)</li>
+            <li class="nivItem">人氣精選 (13)</li>
+            <li class="nivItem">新品上市 (10)</li>
+        </ul>
+
+        <div class="main d-flex">
+
+            <div class="product">
+                <img src="https://hawkjou.github.io/pic_storage/flexbox_practice_final/images/Pic_1.png" alt="pic-1">
+                <div class="item d-flex">
+                    <div class="productName">安格斯沙朗</div>
+                    <div class="price">NT$ 450</div>
+                </div>
+                <a class="perchase text-primary bg-secondary" href="#">加入購物車</a>
+            </div>
+
+            <div class="product">
+                <img src="https://hawkjou.github.io/pic_storage/flexbox_practice_final/images/Pic_2.png" alt="pic-2">
+                <div class="item d-flex">
+                    <div class="productName">安格斯沙朗</div>
+                    <div class="price">NT$ 450</div>
+                </div>
+                <a class="perchase text-primary bg-secondary" href="#">加入購物車</a>
+            </div>
+
+            <div class="product">
+                <img src="https://hawkjou.github.io/pic_storage/flexbox_practice_final/images/Pic_3.png" alt="pic-3">
+                <div class="item d-flex">
+                    <div class="productName">安格斯沙朗</div>
+                    <div class="price">NT$ 450</div>
+                </div>
+                <a class="perchase text-primary bg-secondary" href="#">加入購物車</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
