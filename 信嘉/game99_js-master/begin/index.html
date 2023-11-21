@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Game99CAI</title>
+</head>
+
+<body>
+    <h1>九九乘法CAI</h1>
+    <p><img src="images/3.jpg" id="pic_a"><img src="images/mul.jpg"><img src="images/7.jpg" id="pic_b"></p>
+    <p>
+        <input type="button" value="換一題" id="btn_Q">
+        <input type="button" value="看答案" id="btn_A">
+        <!-- <input type="button" value="換一題" onclick="show_question();"> -->
+        <!-- <input type="button" value="看答案" onclick="show_answer();"> -->
+    </p>
+
+    <p><span id="answer"></span></p>
+
+    <script>
+        // 定義按鍵的功能
+        document.getElementById('btn_Q').onclick = function () { show_question();}
+        document.getElementById('btn_A').onclick = function () { show_answer();};
+
+        // 定義公用變數
+        let a = 3;
+        let b = 7;
+
+        // 定義各個函式
+        function show_question() {
+            a = Math.floor(Math.random() * 9) + 1;
+            b = Math.floor(Math.random() * 9) + 1;
+
+            console.log(a + "x" + b);
+
+            // 畫面顯示
+            document.getElementById('pic_a').src = 'images/' + a + '.jpg';
+            document.getElementById('pic_b').src = 'images/' + b + '.jpg';
+        }
+
+        function show_answer() {
+            let ans = a * b;
+            console.log(a + "x" + b + "=" + ans);
+
+            let n1 = ans % 10;  // 個位數
+            let n2 = Math.floor(ans / 10);  // 十位數
+
+            let n1_pic = '<img src="images/' + n1 + '.jpg">';
+            let n2_pic = '<img src="images/' + n2 + '.jpg">';
+            // let n2_pic = '<img src=`images/${n2}.jpg`>';
+
+            // 去0
+
+            // 寫法1
+            // let pic = '';  // 完整顯示的圖
+            // if (n2 == 0) {
+            //     var pic = '<img src="images/' + n1 + '.jpg">';
+            // }
+            // else {
+            //     var pic = '<img src="images/' + n2 + '.jpg"><img src="images/' + n1 + '.jpg">';
+            // }
+
+            // 寫法2 讚 (依條件指定傳回值)
+            let pic = ((n2 == 0) ? '' : n2_pic) + n1_pic;
+
+            // document.getElementById('answer').innerHTML = '<img src="images/'+n2+'.jpg"><img src="images/'+n1+'.jpg">';
+            // document.getElementById('answer').innerHTML = n2_pic + n1_pic;
+            document.getElementById('answer').innerHTML = pic;
+
+        }
+
+        // 立即執行
+        show_question();
+
+    </script>
+
+</body>
+
+</html>
