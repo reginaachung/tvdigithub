@@ -1,0 +1,128 @@
+body {
+    background-image: url(./images/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 192px;
+    /* border: 1px solid #000; */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid #000; */
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 210px;
+    display: flex;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    font-family: Inter, Philosopher, serif;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: Philosopher, Inter, serif;
+    font-size: 80px;
+    line-height: 2;
+}
+
+p {
+    font-family: 'Noto Sans TC', Inter, Philosopher;
+    font-size: 18px;
+    line-height: 2;
+}
+
+button {
+    background-color: #0BD;
+    color: #fff;
+    font-family: 'Noto Sans TC', Inter, Philosopher;
+    font-size: 22px;
+    padding: 18px 32px;
+    border-radius: 5px;
+    border: 0;
+}
+
+
+/* 工具 */
+.m36 {
+    margin: 36px;
+}
+
+.mb12 {
+    margin-bottom: 12px;
+}
+
+/* ==================================== */
+
+@media screen and (max-width:768px) {
+
+    body {
+        background-position: center;
+    }
+
+    /* .container{} */
+
+    .nav {
+        flex-wrap: wrap;
+        margin-bottom: 75px;
+    }
+
+    .logo{
+        margin: 0 auto;
+        margin-top: 17px;
+        margin-bottom: 27px;
+    }
+
+    .list{
+        margin: 0 auto;
+        /* width: 100%; */
+    }
+
+    main{
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    li {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+
+}

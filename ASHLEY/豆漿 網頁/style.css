@@ -1,0 +1,48 @@
+h1 {
+    color: rgb(60, 14, 14);
+    background-color: #cabed9;
+    font-size: 100px;
+    /* line-height: 1.5; */
+    text-align: center;
+    font-weight: 900;
+    margin: 0;
+}
+h2 {
+    color: brown;
+    background-color: #e2d5d5;
+    font-size: 70px;
+    /* line-height: 1.5; */
+    text-align: center;
+    font-weight: 600;
+    margin: 0;
+}
+.test{
+    color: blue;
+    font-size: 60px;
+}
+h6 {
+    color: gray;
+    font-size: 40px;
+}
+.h15{
+    color: brown;
+    background-color: #cac4d1;
+    font-size: 20px;
+    line-height: 1.5;
+    text-indent: 40px;
+    font-weight: 100;
+}
+.h2{
+    color: rgb(114, 106, 160);
+    background-color: #1f122e;
+    font-size: 20px;
+    line-height: 2;
+    text-indent: 40px;
+    font-weight: 900;
+}
+a{
+    text-decoration: none;
+}
+p{
+    border: solid 1px;
+}

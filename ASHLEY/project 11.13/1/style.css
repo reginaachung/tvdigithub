@@ -1,0 +1,63 @@
+.en{
+    font-family: 'Merriweather', serif;
+    
+}
+
+.en2{
+
+    font-family: 'Agbalumo', serif;
+    
+}
+
+.ch{
+font-family: 'Noto Sans TC', sans-serif;
+}
+
+.ch3{
+    font-family: 'Merriweather','Agbalumo','Noto Sans TC', sans-serif;
+}
+
+.fa-ghost{
+    color: #000;
+    font-size: 50px;
+}
+
+.fa-droplet{
+    color: lightblue;
+    /* font-size: 50px; */
+}
+
+.box1{
+    width: 500px;
+    height: 500px;
+    border: 1px solid #000;
+    background-image: url(https://mood-ettoday.cdn.hinet.net/B/rs:fill:1200/sm:1/plain/https%3A%2F%2Fmoodstatic-ettoday.cdn.hinet.net%2F95ca1251-a377-41a8-8a0e-c1ae235c3b07.jpg);
+    background-repeat: no-repeat;
+    /* background-repeat: round; */
+    background-repeat: space;
+    background-size: contain;
+    background-size: auto;
+    background-size: 100% 100%;
+    background-size: cover;
+    background-position: 0px -50px;
+}
+
+.box2{
+    width: 500px;
+    height: 500px;
+    border: 1px solid #000;
+    background-image: url(https://picsum.photos/seed/picsum/536/354);
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-position: center;
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    /* background-position: 0px -50px; */
+}
+
+.box3{
+    width: 500px;
+    height: 500px;
+    border: 1px solid #000;
+    background-image: url(https://picsum.photos/200/300/?blur=2) no-repeat  center / cover;
+}

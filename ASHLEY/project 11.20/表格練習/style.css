@@ -1,0 +1,42 @@
+body{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    border: 1px solid #000;
+    /* border-collapse: collapse; */
+}
+
+table th,table td{
+    border: 1px solid #000;
+    padding: 12px;
+    text-align: center;
+}
+
+table th{
+    background-color: #f0f;
+}
+
+table th:hover{
+    background-color: #ff0;
+}
+
+table td:hover{
+    background-color: #0ff;
+}
+
+table tr:hover{
+    background-color: #aaa;
+}
+
+/* 偶數 */
+table tr:nth-child(even){
+    background-color: #ccc;
+}
+/* 奇數 */
+table tr:nth-child(abbr){
+    background-color: #eee;
+}

@@ -1,0 +1,151 @@
+.menubp{
+    background-image: url(./images/menu-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-bottom: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 192px;
+    /* border: 1px solid #000; */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-bottom: 488px; */
+    /* border: 1px solid #000; */
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 68px;
+    margin-bottom: 50px;
+    /* flex-direction: column; */
+}
+
+footer{
+    background-color: #443322;
+    text-align: center;
+    color: #fff;
+    padding: 28px 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 210px;
+    display: flex;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    font-family: Inter, Philosopher, serif;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: Philosopher, Inter, serif;
+    font-size: 80px;
+    line-height: 2;
+}
+
+p {
+    font-family: 'Noto Sans TC', Inter, Philosopher;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.picsection{
+    width: 28%;
+    /* gap: 28px; */
+
+    /* margin-bottom: 28px; */
+}
+
+/* 工具 */
+.m36 {
+    margin: 36px;
+}
+
+.mr68{
+    margin-right: 68px;
+}
+
+.mb12 {
+    margin-bottom: 12px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+/* ==================================== */
+
+@media screen and (max-width:768px) {
+
+    body {
+        background-position: center;
+    }
+
+    /* .container{} */
+
+    .nav {
+        flex-wrap: wrap;
+        margin-bottom: 75px;
+    }
+
+    .logo{
+        margin: 0 auto;
+        margin-top: 17px;
+        margin-bottom: 27px;
+    }
+
+    .list{
+        margin: 0 auto;
+        /* width: 100%; */
+    }
+
+    main{
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    li {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+
+}

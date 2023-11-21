@@ -1,0 +1,32 @@
+/* @media screen and (max-width:768px){
+    .test{
+        color: blue;
+        background-color: green;
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .test{
+        color: orange;
+        background-color: purple;
+        font-size: 20px;
+    }
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    width: 50%;
+    /* height: 50%; */
+    border: 1px solid #000;
+}
+
+.smallbox{
+    width: 50%;
+    /* height: 50%; */
+    border: 1px solid #000;
+}

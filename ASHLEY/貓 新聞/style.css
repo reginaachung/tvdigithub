@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+p{
+    font-size: 20px;
+}
+
+.text-gray {
+    color: #7e7e7e;
+}
+
+.link-blue {
+    color: #0074ad;
+}
+
+.link-gray{
+color: #7e7e7e;
+border-bottom: solid 1px #7e7e7e;
+/* text-decoration:underline ; */
+}
+
+.small-text{
+    font-size: 12px;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    /* margin: 0, 0, 20; */
+}
+
+/* div {
+    font-size: 13px;
+    margin: 0 2px;
+    color: #c7c7c7;
+}
+
+p {
+    font-size: 16px;
+    margin: 0 2px;
+    color: #333;
+    font-family: Noto Sans TC, 黑體-繁, Apple LiGothic Medium, PingFang, 微軟正黑體, Microsoft JhengHei, WenQuanYi Zen Hei, helvetica, Arial, sans-serif;
+    background: #fafafa;
+    padding: 10, 0;
+}
+
+a {
+    text-decoration: none;
+    color: #7e7e7e;
+}
+
+img {} */
