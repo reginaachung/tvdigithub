@@ -51,10 +51,11 @@
         //           2 再把其中class屬性為 middle 的 
         //             border-color設為"紅色" 
         //============================================
+        
         $(".box").css("background", "green")
-            .------------------
-            .------------------
-        //
+        .filter('.middle')
+        .css('border-color','red');
+
     </script>
   </body>
 </html>

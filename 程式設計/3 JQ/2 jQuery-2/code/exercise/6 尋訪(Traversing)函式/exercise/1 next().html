@@ -74,7 +74,8 @@
         // ===============================
 
         // $("td").click(function(){
-        //     ------.css("background", "red")
+        //   // console.log(this);
+        //   $(this).css("background", "red")
         // })
         
         //===========================================
@@ -83,7 +84,7 @@
         //===========================================
 
         // $("td").click(function(){
-        //     --------------.css("background", "blue")
+        //   $(this).next().css("background", "blue")
         // })
 
         //===========================================
@@ -92,7 +93,7 @@
         //===========================================
         
         // $("td").click(function(){
-        //      -----------.css("background", "blue")
+        //   $(this).nextAll().css("background", "gray")
         // })
         
         //============================================
@@ -101,9 +102,9 @@
         //註： 範圍：同一tr標籤內的td
         //============================================
         
-        // $("td").click(function(){
-        //     ---------------.css("background", "red")
-        // })
+        $("td").click(function(){
+          $(this).nextUntil('.stop').css("background", "gray")
+        })
 
     </script>
   </body>

@@ -80,9 +80,9 @@
         //==============================================
         
         // $("td").click(function(){
-        //     ------.css("background","none")
-        //     ------.css("background", "red")
-        // })
+        //         $(this).css("background", "none")
+        //         .next().css("background", "red")
+        //     })
 
         //==============================================
         // 練習：
@@ -95,7 +95,7 @@
         // $("td").click(function(){
         //     $(this).css("background","none")
         //     .next().css("background", "red")
-        //     -------.css("background", "blue")
+        //     .prev().prev().css("background", "blue")
         // })
         
         //============================================
@@ -104,12 +104,11 @@
         // .end() 回到原本的 selector
         //============================================
         
-        // $("td").click(function(){
-        //     $(this).css("background","none")
-        //     .next().css("background", "red")
-        //     -------.css("background", "blue")
-        // })
-
+        $("td").click(function(){
+            $(this).css("background","none")
+            .next().css("background", "red")
+            .end().prev().css("background", "blue")
+        })
 
     </script>
   </body>

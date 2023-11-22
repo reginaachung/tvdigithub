@@ -37,6 +37,6 @@ table tr:nth-child(even){
     background-color: #ccc;
 }
 /* 奇數 */
-table tr:nth-child(abbr){
+table tr:nth-child(odd){
     background-color: #eee;
 }

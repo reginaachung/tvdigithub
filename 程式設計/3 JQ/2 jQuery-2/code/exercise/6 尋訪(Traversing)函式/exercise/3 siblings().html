@@ -69,9 +69,11 @@
         //===========================
         // 練習： 被點擊td 的 兄弟姊妹,變成 紅色
         //===========================
-        // $("td").click(function(){
-        //     --------.css("background", "red")
-        // })
+
+        $("td").click(function(){
+          $(this).siblings().css("background", "red")
+        })
+
     </script>
   </body>
 </html>

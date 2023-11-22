@@ -69,15 +69,19 @@
         // =====================================
         // 練習： 點擊 checkbox , 使該td變成 黃色
         // ========================
-        // ------------.click(function(){
-        //     -----------.css("background", "yellow")
+
+        // $('input[type="checkbox"]').click(function(){
+        //     $(this).parent().css("background", "yellow")
         // })
         
         // ===============================================
         // 練習： 點擊 checkbox , 使該td 之往上2層變成 黃色
         // ===============================================
 
-        
+        // $('input[type="checkbox"]').click(function(){
+        //   $(this).parent().parent().css("background", "yellow")
+        // });
+
         // ===============================================
         // .closest() 到底是誰（符合條件最接近的「長輩」）
         // ===============================================
@@ -85,16 +89,18 @@
         // ===============================================
 
         // $("input[type = 'checkbox']").click(function(){            
-        //     -------------.css("background", "yellow")
+        //     $(this).closest("tr").css("background", "yellow")
         // })
+
         // ==========================================
         // .parents()  祖先    （較不常用）
         // ==========================================
         // 練習： 找出所有的祖先，使變成黃色
         // ==========================================
-        // $("input[type = 'checkbox']").click(function(){            
-        //     -------------.css("background", "yellow")
-        // })
+        
+        $("input[type = 'checkbox']").click(function(){            
+            $(this).parents().css("background", "yellow")
+        })
 
     </script>
   </body>

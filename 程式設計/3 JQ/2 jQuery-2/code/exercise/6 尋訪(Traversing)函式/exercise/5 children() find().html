@@ -37,9 +37,8 @@
               <tr>
                   <td>
                       <div class="box"></div>
-                      <div class="box">
-                        <div class="box"></div>
-                      </div>                     
+                      <div class="box"></div>
+                      <div class="box"></div>
                   </td>
                   <td></td>
                   <td></td>
@@ -48,7 +47,10 @@
               </tr>
               <tr>
                   <td></td>
-                  <td><div class="box"></div><div class="box"></div></td>
+                  <td>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                  </td>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -57,22 +59,30 @@
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td><div class="box"></div><div class="box"></div><div class="box"></div></td>
+                  <td>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                  </td>
                   <td></td>
               </tr>
               <tr>
                   <td></td>
                   <td></td>
-                  <td><div class="box"></div><div class="box"></div></td>
+                  <td>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                  </td>
                   <td></td>
                   <td></td>
               </tr>
               <tr>
                   <td></td>
-                  <td><div>
-                           <div class="box"></div>
-                           <div class="box"></div>
-                      </div>
+                  <td>
+                    <div>
+                      <div class="box"></div>
+                      <div class="box"></div>
+                    </div>
                   </td>
                   <td></td>
                   <td></td>
@@ -87,17 +97,18 @@
         // ==========================
         // 練習： 點擊 td ,使其下一層(子層)的 box 變紅色
         // ==========================
+        
         // $("td").click(function(){
-        //     ------------.css("background", "red")
+        //     $(this).children().css("background", "red")
         // })
 
         //=================================================
-        // 練習： 點擊 td ,使其子孫曾的 box 變紅色
+        // 練習： 點擊 td ,使其子孫層的 box 變紅色
         //=================================================
         
-        // $("td").click(function(){
-        //     ---------------.css("background", "red")
-        // })
+        $("td").click(function(){
+            $(this).find('.box').css("background", "red")
+        })
 
     </script>
   </body>
