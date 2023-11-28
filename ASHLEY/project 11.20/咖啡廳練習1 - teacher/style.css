@@ -75,67 +75,8 @@ header {
     font-size: 22px;
 }
 
-.menu .banner {
-    background-image: url(./images/menu-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    /* margin-bottom: 100px; */
-}
 
-.foodMenu {
-    margin-top: 100px;
-}
-
-.foodList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.foodPic {
-    width: 305px;
-    height: 226px;
-}
-
-.foodTitle {
-    font-size: 16px;
-    margin-top: 8px;
-}
-
-footer{
-    font-size: 14px;
-    margin-top: 50px;
-    background-color: #443322;
-    color: #fff;
-    text-align: center;
-    padding: 28px 0;
-}
-
-/* 平板 */
-@media screen and (max-width:992px) {
-
-    .foodList {
-        justify-content: flex-start;
-    }
-
-    .foodItem {
-        width: 48%;
-        height: auto;
-    }
-
-    .foodPic {
-        width: 100%;
-        height: auto;
-    }
-
-    .foodItem:nth-child(even) {
-        margin-left: 4%;
-    }
-
-}
-
-/* 手機 */
+/* ==================================== */
 
 @media screen and (max-width:768px) {
 
@@ -178,18 +119,4 @@ footer{
         font-size: 16px;
     }
 
-    /* ================================= */
-
-    header{
-        flex-direction: column;
-    }
-
-    .foodItem {
-        width: 100%;
-        height: auto;
-    }
-
-    .foodItem:nth-child(even) {
-        margin-left: 0;
-    }
 }
