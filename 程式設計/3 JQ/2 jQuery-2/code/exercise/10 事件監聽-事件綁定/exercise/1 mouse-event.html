@@ -1,85 +1,95 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Mouse Event</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  </head>
-  <body>
-      <div class="container">
-          <button type="button" class="btn ">你對我做了什麼</button>
-      </div>
-    <script>
-        // ==============================
-        // 滑鼠事件
-        // ==============================
-        // .click()
-        // ==============================
+<head>
+  <title>Mouse Event</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        // $(".btn").click(function(){
-        //     console.log("click");
-        // })
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
 
-        // ==============================
-        // .dblclick()
-        // ==============================
-        
-        // $(".btn").dblclick(function(){
-        //     console.log("double click")
-        // })
-        
-        //====================================
-        // .contextmenu() 右鍵
-        //====================================
+<body>
+  <div class="container">
+    <button type="button" class="btn ">你對我做了什麼</button>
+  </div>
+  <script>
+    // ==============================
+    // 滑鼠事件
+    // ==============================
+    // .click()
+    // ==============================
 
-        // $(".btn").contextmenu(function(){
-        //     console.log("你按了右鍵contextmenu")
-        // })
-            
-        //=======================================
-        // 註：.click()事件＝.mousedown()與.mouseup()兩事件
-        //=======================================
-        
-        // $(".btn").mousedown(function(){
-        //     console.log("mouse down")
-        // })
-              
-        // $(".btn").mouseup(function(){
-        //     console.log("mouse up")
-        // })
-                
-        // $(".btn").click(function(){
-        //     console.log("click")
-        // })
-                
-        //=======================================
-        // 註 .hover() ＝ .mouseenter() + .mouseleave()
-        //=======================================
+    $(".btn").click(function () {
+      console.log("click");
+    })
 
-        // $(".btn").mouseenter(function(){
-        //     console.log("mouse enter")
-        // })
+    // ==============================
+    // .dblclick()
+    // ==============================
 
-        // $(".btn").mouseleave(function(){
-        //     console.log("mouse leave")
-        // })
+    $(".btn").dblclick(function () {
+      console.log("double click")
+    })
 
-        // .hover()
+    //====================================
+    // .contextmenu() 右鍵
+    //====================================
 
-        // $(".btn").hover(function(){
-        //     console.log("hover")
-        // })
+    $(".btn").contextmenu(function () {
+      console.log("你按了右鍵contextmenu")
+    })
 
-        //==========================================
-        // .hover() 做了2個動作 .mouseenter() 和 .mouseleave()
-        // 註：hover() 可以觸發 2 個事件
-        //==========================================
-        // 練習：
+    //=======================================
+    // 註：.click()事件＝.mousedown()與.mouseup()兩事件
+    //=======================================
+
+    // $(".btn").mousedown(function(){
+    //     console.log("mouse down")
+    // })
+
+    // $(".btn").mouseup(function(){
+    //     console.log("mouse up")
+    // })
+
+    // $(".btn").click(function(){
+    //     console.log("click")
+    // })
+
+    //=======================================
+    // 註 .hover() ＝ .mouseenter() + .mouseleave()
+    //=======================================
+
+    // $(".btn").mouseenter(function(){
+    //     console.log("mouse enter")
+    // })
+
+    // $(".btn").mouseleave(function(){
+    //     console.log("mouse leave")
+    // })
+
+    // // .hover()
+
+    // $(".btn").hover(function(){
+    //     console.log("hover")
+    // })
+
+    //==========================================
+    // .hover() 做了2個動作 .mouseenter() 和 .mouseleave()
+    // 註：hover() 可以觸發 2 個事件
+    //==========================================
+    // 練習：
+
+    $(".btn").hover(function () {
+      conssole.log("jon")
+    }, function () {
+      conssole.log("wait")
+    })
 
 
-    </script>
-  </body>
+  </script>
+</body>
+
 </html>

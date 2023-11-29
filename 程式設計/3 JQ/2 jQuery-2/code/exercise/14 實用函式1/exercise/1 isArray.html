@@ -1,27 +1,32 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>isArray</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  </head>
-  <body>
-      
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script>
-      // =============================
-      //  $.isArray() 判斷是不是陣列
-      // =============================
-        let arr=[1, 2, 3]
-        let str="array"
+<head>
+  <title>isArray</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        // 判斷 arr是否為陣列
-        console.log(---------);
+</head>
 
-        // 判斷 str是否為陣列
-        console.log(-----------);
-    </script>
-  </body>
+<body>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    // =============================
+    //  $.isArray() 判斷是不是陣列
+    // =============================
+    let arr = [1, 2, 3]
+    let str = "array"
+
+    // 判斷 arr是否為陣列
+    console.log($.isArray(arr));
+
+    // 判斷 str是否為陣列
+    console.log($.isArray(str));
+
+  </script>
+</body>
+
 </html>

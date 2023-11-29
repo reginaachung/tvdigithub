@@ -84,14 +84,14 @@
         //  easeInQuart 、 easeInOutQuart效果
         //===============================
 
-        // $(".btn").click(function(){
-        //     $(".box").animate({
-        //         width: "400px",
-        //         height: "300px"
-        //     }, 3000, 填充, function(){
-        //         alert("動畫完成")
-        //     })
-        // })
+        $(".btn").click(function(){
+            $(".box").animate({
+                width: "400px",
+                height: "300px"
+            }, 3000, "easeInQuart", function(){
+                alert("動畫完成")
+            })
+        })
     </script>
   </body>
 </html>

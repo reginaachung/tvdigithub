@@ -1,43 +1,51 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>extend</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  </head>
-  <body>
-      
-    <script>
-      // ============================
-      // $.extend(參數1, 參數2) 物件的合併與取代 
-      // 執行合併後
-      // 「參數1」物件中原有的屬性仍然存在，
-      //  若「參數2」物件中有的屬性，「參數1 」物件也有
-      //     ==>「參數2」之屬性內容 取代 「參數1」物件 
-      // 
-      //  若「參數2」物件中有的屬性，「參數1 」物件沒有
-      //     ==>則會增加 「參數2」物件 的屬性          
-      // ============================
-        let obj1={
-            apple: 0,
-            banana: {weight: 52, price: 100},
-            cherry: 97
-        }
-        // console.log(obj1);
-    
-        let obj2={
-            banana: {price: 200},
-            durain: 100
-        }
-        // console.log(obj2);
+<head>
+  <title>extend</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        // ========================
-        // 練習： obj3 為 obj1 與 obj2 合併
-        // ========================
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
 
-    </script>
-  </body>
+<body>
+
+  <script>
+    // ============================
+    // $.extend(參數1, 參數2) 物件的合併與取代 
+    // 執行合併後
+    // 「參數1」物件中原有的屬性仍然存在，
+    //  若「參數2」物件中有的屬性，「參數1 」物件也有
+    //     ==>「參數2」之屬性內容 取代 「參數1」物件 
+    // 
+    //  若「參數2」物件中有的屬性，「參數1 」物件沒有
+    //     ==>則會增加 「參數2」物件 的屬性          
+    // ============================
+
+    let obj1 = {
+      apple: 0,
+      banana: { weight: 52, price: 100 },
+      cherry: 97
+    }
+    // console.log(obj1);
+
+    let obj2 = {
+      banana: { price: 200 },
+      durain: 100
+    }
+    // console.log(obj2);
+
+    // ========================
+    // 練習： obj3 為 obj1 與 obj2 合併
+    // ========================
+
+    let obj3 = $.extend(obj1, obj2);
+    console.log(obj3)
+
+  </script>
+</body>
+
 </html>
