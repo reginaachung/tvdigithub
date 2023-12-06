@@ -9,15 +9,28 @@
 //        功能： 把文字變成紅色
 // ============================
 
+(function ($) {
 
+    $.fn.redText = function () {
+        $(this).css("color", "red");
+        return $(this);
+    }
 
+// 1-1
 
+    $.fn.coclor = function (jon) {
+        $(this).css("color", `${jon}`);
+        return $(this);
+    }
 
+    // ===========================
+    // 練習2： 寫一個 bgGrey()外掛
+    //         功能：背景顏色變成灰色
+    // ===========================
 
+    $.fn.bgGrey() = function () {
+        $(this).css("background-color", "grey");
+        return $(this);
+    }
 
-// ===========================
-// 練習2： 寫一個 bgGrey()外掛
-//         功能：背景顏色變成灰色
-// ===========================
-
-
+})(jQuery)
