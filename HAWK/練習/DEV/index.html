@@ -6,21 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./CSS/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.7.0/csshake.min.css"
+        integrity="sha512-Kd+SEhBK155eAi26GMJymGkvztAnpEGA/PsJc9OKxRwkhJGblvtVv5Fv1R8zYvPq7dbsy+3o4QJco6hzBdxVjg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
 
     <div class="container">
 
-        <header class="mb-6">
+        <header data-aos="flip-left" class="shake-chunk" class="mb-6">
             <h1 class="title">Monica<br>Zhao</h1>
         </header>
 
-        <div class="photo mb-6">
+        <div data-aos="flip-left" class="shake-slow shake-constant shake-constant--hover" class="photo mb-6">
             <img class="block" src="./IMG/unsplash_ibRYzVEof_Y.png" alt="大頭照">
         </div>
 
-        <div class="profile">
+        <div data-aos="fade-up" class="animate__animated animate__bounce" class="profile">
             <h2 class="pb-1 mb-3">個人資料<span>PROFILE</span></h2>
             <ul class="mb-9">
                 <li class="mb-3">趙茉苛 Monica Zhao
@@ -30,7 +36,7 @@
             </ul>
         </div>
 
-        <div class="education">
+        <div data-aos="fade-up" class="animate__animated animate__bounce" class="education">
             <h2 class="pb-1 mb-3">學歷<span>EDUCATION</span></h2>
             <ul class="mb-9">
                 <li class="mb-3">國立台北師範大學 視覺設計學系 學士學位 | 2016－2020</li>
@@ -38,7 +44,7 @@
             </ul>
         </div>
 
-        <div class="darkBlue mb-9">
+        <div data-aos="fade-up" class="darkBlue mb-9">
 
             <div class="skill">
 
@@ -58,7 +64,7 @@
 
         </div>
 
-        <div class="workEx">
+        <div data-aos="fade-up" class="workEx">
 
             <h2 class="pb-1 mb-3">工作經驗<span>WORK EXPERIENCE</span></h2>
 
@@ -112,7 +118,7 @@
 
         </div>
 
-        <footer class="darkBlue">
+        <footer data-aos="fade-up" class="darkBlue">
 
             <div clsaa="container">
 
@@ -138,6 +144,11 @@
         </footer>
 
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
