@@ -1,0 +1,79 @@
+h2>input{
+    background-color: #D9D9D9;
+    color: #1348D0;
+    border-radius: 30px;
+    border:2px solid #201CD2;
+    font-size: 20px;
+    padding: 13px 126px 13px 24px;
+}
+
+.test1{
+    margin-top: 20px;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 30px;
+    width: 250px;
+    height: 50px;
+    color: #1348D0;
+    font-size: 20px;
+    padding-left: 24px;
+}
+
+.test2{
+    margin-top: 20px;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 30px;
+    width: 250px;
+    height: 50px;
+    color: #1348D0;
+    font-size: 20px;
+    padding-left: 24px;
+}
+
+.test2::placeholder{
+    color: #fff;
+}
+
+.test3{
+    margin-top: 20px;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 30px;
+    width: 250px;
+    height: 50px;
+    color: #1348D0;
+    font-size: 20px;
+    padding-left: 24px;
+}
+
+.test3:focus{
+    border:solid 2px #201CD2;
+    outline:none;
+}
+
+.test4{
+    
+    width: 250px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 30px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.test5{
+    width: 100%;
+    height: 100%;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 30px;
+}
+
+.test6{
+    font-size: 27px;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    padding-left: 24px;
+}
