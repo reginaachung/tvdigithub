@@ -210,7 +210,10 @@ aside {
     margin-top: 0;
 }
 
-.content input {
+.contact a {}
+
+.content input,
+.content textarea {
     display: block;
     width: 240px;
     height: 50px;
@@ -218,14 +221,15 @@ aside {
     background-color: rgba(255, 255, 255, 0.5);
     /* opacity: 0.5; */
     border-radius: 5px;
+    outline: none;
 }
 
-.content .ask {
+.content textarea {
     width: 480px;
     height: 96px;
 }
 
-.content button {
+.content .button {
     background-color: #0BD;
     padding: 18px 54px;
     color: #fff;
@@ -233,14 +237,60 @@ aside {
     font-size: 22px;
     border: 0px;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
-.contact .map {
+.location {
     display: flex;
+    justify-content: space-between;
     margin-top: 75px;
 }
 
+.location-info {
+    width: 19%;
+    /* height: auto; */
+}
 
+.location-map {
+    width: 63%;
+}
+
+.media {
+    background-color: #FAF7F0;
+}
+
+.media-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 76px;
+    padding: 76px 0;
+}
+
+.media-item {
+    width: 30%;
+}
+
+.media-item h4 {
+    margin-bottom: 30px;
+}
+
+iframe {
+    width: 100%;
+}
+
+/* .box {
+    width: 283px;
+    height: 315px;
+    background-color: #ccc;
+} */
+
+/* .mb-30 {
+    margin-bottom: 30px;
+} */
+
+footer {
+    margin-top: 0;
+}
 
 /* 平板 */
 @media screen and (max-width:992px) {
@@ -261,6 +311,20 @@ aside {
 
     .foodItem:nth-child(even) {
         margin-left: 4%;
+    }
+
+    /* =======contact======================= */
+
+    .location {
+        flex-wrap: wrap;
+    }
+
+    .location-info {
+        width: 100%;
+    }
+
+    .location-map {
+        width: 100%;
     }
 
 }
@@ -329,11 +393,24 @@ aside {
         flex-wrap: wrap;
     }
 
-    article {
+    article,
+    aside {
+        width: 100%;
+    }
+
+    /* article {
         width: 100%;
     }
 
     aside {
+        width: 100%;
+    } */
+
+    .media-content {
+        flex-wrap: wrap;
+    }
+
+    .media-item {
         width: 100%;
     }
 
